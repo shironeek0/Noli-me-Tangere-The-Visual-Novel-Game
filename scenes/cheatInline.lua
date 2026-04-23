@@ -3,6 +3,8 @@ cheatInline = {}
 cheatInput = ""
 cheatTarget = 1
 
+local password = cheatTarget
+
 function cheatInline.draw()
     love.graphics.printf("Kabanata "..cheatTarget.." Password", 0, 200, 800, "center")
     love.graphics.printf(cheatInput, 0, 250, 800, "center")
@@ -11,7 +13,11 @@ end
 function cheatInline.keypressed(key)
 
     if key == "return" then
-        if cheatInput == "UNLOCK"..cheatTarget then 
+
+        local input = cheatInput:upper()
+        local code  = (chapterCodes[cheatTarget] or ""):upper()
+
+        if input == code then 
             save.unlocked[cheatTarget] = true
             save.quizPassed[cheatTarget] = true
             save.write()

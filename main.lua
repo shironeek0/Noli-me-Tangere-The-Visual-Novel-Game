@@ -1,5 +1,6 @@
 require("utils.state")
 require("utils.transition")
+require("utils.audio")
 
 require("data.save")
 require("data.script")
@@ -48,6 +49,7 @@ settingsData = {
 function love.load()
     Fonts = love.graphics.newFont(18)
     save.load()
+    audio.load()
     state.switch(menu)
     titleImg.menu = love.graphics.newImage("assets/ui/title.png")
     bgImages.menu = love.graphics.newImage("assets/backgrounds/tempback.png")
@@ -87,6 +89,7 @@ function love.update(dt)
         state.current.update(dt)
     end
 
+    audio.update()
     fade.update(dt)
 end
 

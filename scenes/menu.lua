@@ -45,6 +45,8 @@ function menu.draw()
             love.graphics.printf(v.name, 80, y, 400, "left")
         end
     end
+
+    audio.stopBGM()
 end
 
 ------------------------------------------------------------
@@ -63,6 +65,7 @@ function menu.update()
             selected = i
         end
     end
+    
 end
 
 ------------------------------------------------------------
@@ -105,9 +108,4 @@ function menu.keypressed(key)
         menu.mousepressed()
     end
 
-    if key == "c" then
-        fade.to(cheat)
-    end
-
-    
 end

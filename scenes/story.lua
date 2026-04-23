@@ -18,6 +18,10 @@ local currentFont = nil
 local boxX, boxY, boxW, boxH = 50, 400, 700, 160
 local textX, textY = 70, 420
 
+local eventText  = nil
+local eventAlpha = 0
+local eventTimer = 0
+
 --------------------------------------------------
 
 local function loadBG(name)
@@ -40,7 +44,7 @@ end
 --------------------------------------------------
 
 local function resetTyping()
-    story.textTimer = 0
+    story.textTimer  = 0
     story.shownChars = 0
     story.finishedTyping = false
 end
@@ -49,7 +53,7 @@ end
 
 function story.start(ch)
     story.chapter = ch
-    story.line = 1
+    story.line  = 1
     story.timer = 1
     story.index = 1
     story.shownChars = 0
@@ -60,29 +64,56 @@ end
 --------------------------------------------------
 
 function story.update(dt)
-
+    
     local chapterData = chapter[story.chapter]
-
+    
     if not chapterData then return end
-
+    
     local d = chapterData[story.index]
-
+    
+    if d.bgm then
+        audio.playBGM(d.bgm)
+    end
+    
     if not d then 
         quizPrompt.setChapter(story.chapter)
+        audio.stopBGM()
         fade.to(quizPrompt)
         return
     end
-
+    
+    if eventText then
+        eventTimer = eventTimer + dt
+        
+        if eventTimer < 1 then
+            eventAlpha = eventTimer
+        elseif eventTimer < 2 then
+            eventAlpha = 1
+        elseif eventTimer < 3 then
+            eventAlpha = 3 - eventTimer
+        else
+            eventText = nil
+        end
+    end
+    
+    if d.event then
+        eventText = d.event
+        eventTimer = 0
+        eventAlpha = 0
+        story.index = story.index + 1
+        return
+    end
+    
     local speedMap = {20, 40, 80}
     local speed = speedMap[settingsData.textSpeed or 2]
-
+    
     if not story.finishedTyping then
         story.textTimer = story.textTimer + dt * speed
-
+        
         if story.textTimer >= 1 then
             story.textTimer = 0
             story.shownChars = story.shownChars + 1
-
+            
             local length = utf8.len(d.text)
             if story.shownChars >= length then
                 story.shownChars = length
@@ -92,16 +123,39 @@ function story.update(dt)
     end
 end
 
+
 --------------------------------------------------
 
 function story.draw()
     
+    if eventText then
+        love.graphics.setColor(1, 1, 1, eventAlpha)
+        
+        love.graphics.printf(eventText, 0, 200, 800, "center")
+        
+        love.graphics.setColor(1, 1, 1)
+        return
+    end
+    
     local d = chapter[story.chapter][story.line]
+
     if not d then return end
 
     -- bg
     if d.bg then
-        love.graphics.draw(loadBG(d.bg), 0, 0)
+        local bg = loadBG(d.bg)
+        
+        if bg then
+
+            local baseW, baseH = 800, 600
+            
+            local scale = math.max(
+                baseW / bg:getWidth(),
+                baseH / bg:getHeight()
+            )
+
+            love.graphics.draw(bg, 0, 0, 0, scale, scale)
+        end
     end
 
     -- characters
@@ -112,60 +166,75 @@ function story.draw()
         center = {},
         right = {}
         }
-
+    
+    
         -- group characters by position
         for _,c in ipairs(d.characters) do
             table.insert(groups[c.pos or "center"], c)
         end
-
+    
+    
         local baseX = {
             left = 120,
             center = 320,
             right = 520
         }
-
+    
         for pos, list in pairs(groups) do
-
+            
             for i, c in ipairs(list) do
-
+                
                 local img = loadChar(c.name, c.pose)
-
+                
                 -- spacing if multiple characters
                 local offset = (i-1) * 60
-
+                
                 local x = baseX[pos] + offset
                 local y = 180
-
+                
                 -- dim effect
                 if c.dim then
                     love.graphics.setColor(0.6,0.6,0.6)
                 else    
                     love.graphics.setColor(1,1,1)
                 end
-
+                
                 love.graphics.draw(img, x, y)
                 love.graphics.setColor(1,1,1)
             end
         end
-    end
+    end    
+    
 
     local sizeMap = {18, 24, 32}
     local size = sizeMap[settingsData.textSize or 2]
-
+    
     if not currentFont or currentFont:getHeight() ~= size then
         currentFont = love.graphics.newFont(size)
         love.graphics.setFont(currentFont)
     end
 
+    
     -- dialogue box
     love.graphics.setColor(0,0,0,0.7)
     love.graphics.rectangle("fill", boxX, boxY, boxW, boxH, 8, 8)
     love.graphics.setColor(1,1,1)
-
-    love.graphics.print(d.speaker or "", textX, textY - 22)
+    
+    if d.speaker and d.speaker ~= "" then
+        
+        love.graphics.setColor(0,0,0,0.7)
+        love.graphics.rectangle("fill", 50, 380, 200, 40)
+        
+        love.graphics.setColor(1, 1, 1)
+        love.graphics.print(d.speaker, 60, 390)
+        
+        love.graphics.setColor(1, 1, 1)
+    end
+    
+    local text = d.text or ""
 
     local byteOffset = utf8.offset(d.text, story.shownChars + 1)
-
+    
     local shownText
     if byteOffset then
         shownText = d.text:sub(1, byteOffset - 1)
@@ -186,6 +255,13 @@ end
 
 function story.mousepressed()
 
+    if eventText then
+        eventText  = nil
+        eventAlpha = 0
+        eventTimer = 0
+        return
+    end
+
     local d = chapter[story.chapter][story.line]
     if not d then return end
 
@@ -200,6 +276,7 @@ function story.mousepressed()
     if story.line > #chapter[story.chapter] then
 
         quizPrompt.setChapter(story.chapter)
+        audio.stopBGM()
         state.switch(quizPrompt)
         return
     end
@@ -207,3 +284,8 @@ function story.mousepressed()
     resetTyping()
 end
 
+function story.keypressed(key)
+    if key == "escape" then
+        fade.to(menu)
+    end
+end

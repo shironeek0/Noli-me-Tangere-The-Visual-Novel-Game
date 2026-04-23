@@ -12,6 +12,14 @@ local function hit(x,y,w,h,mx,my)
     return mx>=x and mx<=x+w and my>=y and my<=y+h
 end
 
+chapterCodes = {
+    [1] = "",
+    [2] = "HAHA",
+    [3] = "HI",
+    [4] = "BANANA",
+    [5] = "HADOG"
+}
+
 --------------------------------------------------
 
 function chapterSelect.draw()
@@ -36,26 +44,29 @@ function chapterSelect.draw()
         -- title
         love.graphics.printf("Chapter "..i, x, y+120, cardW, "center")
         
-        -- PLAY button
         if save.unlocked[i] then
-            love.graphics.rectangle("line", x+20, y+150, 60, 25)
-            love.graphics.print("Play", x+30, y+155)
-        else
-            love.graphics.setColor(1,1,1,0.3)
-            love.graphics.rectangle("line", x+20, y+150, 60, 25)
-            love.graphics.print("Play", x+30, y+155)
-            love.graphics.setColor(1,1,1)
-        end
 
-        -- QUIZ button
-        if save.unlocked[i] then
-            love.graphics.rectangle("line", x+100, y+150, 60, 25)
-            love.graphics.print("Quiz", x+110, y+155)
-        else
-            love.graphics.setColor(1,1,1,0.3)
-            love.graphics.rectangle("line", x+100, y+150, 60, 25)
-            love.graphics.print("Quiz", x+110, y+155)
-            love.graphics.setColor(1,1,1)
+            -- PLAY button
+            if save.unlocked[i] then
+                love.graphics.rectangle("line", x+20, y+150, 60, 25)
+                love.graphics.print("Play", x+30, y+155)
+            else
+                love.graphics.setColor(1,1,1,0.3)
+                love.graphics.rectangle("line", x+20, y+150, 60, 25)
+                love.graphics.print("Play", x+30, y+155)
+                love.graphics.setColor(1,1,1)
+            end
+
+            -- QUIZ button
+            if save.unlocked[i] then
+                love.graphics.rectangle("line", x+100, y+150, 60, 25)
+                love.graphics.print("Quiz", x+110, y+155)
+            else
+                love.graphics.setColor(1,1,1,0.3)
+                love.graphics.rectangle("line", x+100, y+150, 60, 25)
+                love.graphics.print("Quiz", x+110, y+155)
+                love.graphics.setColor(1,1,1)
+            end
         end
 
         -- UNLOCK button (only if locked)
@@ -109,16 +120,21 @@ function chapterSelect.mousepressed(mx,my)
         local x = startX + (i-1)*(cardW + spacing)
         local y = 200
 
-        -- PLAY
-        if hit(x+20,y+150,60,25,mx,my) then
-            story.start(i)
-            fade.to(story)
-        end
+        if save.unlocked[i] then
 
-        -- QUIZ
-        if hit(x+100,y+150,60,25,mx,my) then
-            quiz.start(i)
-            fade.to(quiz)
+            -- PLAY
+            if hit(x+20,y+150,60,25,mx,my) then
+                story.start(i)
+                fade.to(story)
+                return
+            end
+
+            -- QUIZ
+            if hit(x+100,y+150,60,25,mx,my) then
+                quiz.start(i)
+                fade.to(quiz)
+                return
+            end
         end
 
         -- only clickable if locked
