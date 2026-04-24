@@ -8,7 +8,7 @@
     
     
 --     speaker = "",
---     text = "Isang marangyang salu-salo ang ipinag-anyaya ni Don Santiago de los Santos—mas kilala bilang Kapitan Tiago."
+--     text = ""
 -- },
 chapter = {
     -- chapter 1
@@ -38,8 +38,21 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "left"},
-                {name = "char1", pose = "normal", pos = "left"}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    dim = true
+                },
+                {
+                    name = "char1", 
+                    pose = "normal", 
+                    pos = "left"
+                }
             },
             
             
@@ -50,7 +63,7 @@ chapter = {
             bg = "bg2",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "center"}
+                {name = "char2", pose = "normal", pos = "left"}
             },
             
             speaker = "",
@@ -60,7 +73,7 @@ chapter = {
             bg = "bg2",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "center"}
+                {name = "char3", pose = "normal", pos = "right", flip = true}
             },
             
             speaker = "",
@@ -70,14 +83,14 @@ chapter = {
             bg = "bg2",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "center"}
+                {name = "char3", pose = "normal", pos = "center"}
             },
             
             speaker = "",
             text = "*Chatter*"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
@@ -87,7 +100,7 @@ chapter = {
             text = "Nais kong maunawaan ang lupain ng mga Indiyo."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
@@ -97,7 +110,7 @@ chapter = {
             text = "Ang mga Indiyo? Mababa ang kanilang uri."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
@@ -242,7 +255,7 @@ chapter = {
     {
         {
             event = "Kabanata 2: Si Crisostomo Ibarra",
-            bg = "bg2",
+            bg = "bg1",
             
             characters = {
                 {name = "char1", pose = "normal", pos = "right"},
@@ -253,7 +266,7 @@ chapter = {
             text = "Dumating si Kapitan Tiyago kasama ang isang binatang bagong balik mula Europa, si Crisostomo Ibarra."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
             
             characters = {
                 {name = "char1", pose = "normal", pos = "right"},

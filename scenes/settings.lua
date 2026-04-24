@@ -26,6 +26,7 @@ end
 
 function settings.draw()
     love.graphics.setFont(Fonts)
+    love.graphics.setColor(1, 1, 1, 0.5)
     love.graphics.printf("SETTINGS", 0, 120, 800, "center")
 
     for i, v in ipairs(options) do
@@ -34,7 +35,7 @@ function settings.draw()
         if i == selected then
             love.graphics.setColor(1, 1, 0.8)
             love.graphics.printf("> "..v.." <", 4, y, 790, "center")
-            love.graphics.setColor(1, 1, 1)
+            love.graphics.setColor(1, 1, 1, 0.5)
         else
             love.graphics.printf(v, 0, y, 800, "center")
         end

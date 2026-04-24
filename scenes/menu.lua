@@ -13,6 +13,13 @@ local baseY = 240
 
 ------------------------------------------------------------
 
+function menu.load()
+    audio.playBGM("theme2")
+    arrow = love.graphics.newImage("assets/ui/Arrow1.png")
+end
+
+------------------------------------------------------------
+
 local function hit(x,y,rx,ry,rw,rh)
     return x>=rx and x<=rx+rw and y>=ry and y<=ry+rh
 end
@@ -21,7 +28,17 @@ end
 
 function menu.draw()
 
-    love.graphics.draw(bgImages.menu, 0, 0)
+    local bg = bgImages.menu
+        
+    if bg then
+        local baseW, baseH = 1600, 1000
+        
+        local scale = math.max(
+            baseW / bg:getWidth(),
+            baseH / bg:getHeight()
+        ) / 2
+        love.graphics.draw(bg, 0, 30, 0, scale , scale)
+    end
 
     love.graphics.setColor(0, 0, 0, 0.36)
     love.graphics.rectangle("fill", 60, 0, 300, love.graphics.getHeight())
@@ -31,18 +48,22 @@ function menu.draw()
     
     local titleWidth = 400
     local titleScale = titleWidth / titleImg.menu:getWidth()
-
+    
     love.graphics.draw(titleImg.menu, 16, 50, 0, titleScale, titleScale)
     
     love.graphics.setFont(Fonts)
     for i,v in ipairs(items) do
         
         local y = baseY + i * 40
+
+        local arrowWidth = 15
+        local arrowScale = arrowWidth / arrow:getWidth()
         
         if i == selected then
-            love.graphics.printf("> "..v.name, 75, y, 400, "left")
+            love.graphics.draw(arrow, 75, y+3, 0, arrowScale, arrowScale)
+            love.graphics.printf(v.name, 95, y, 400, "left")
         else
-            love.graphics.printf(v.name, 80, y, 400, "left")
+            love.graphics.printf(v.name, 90, y, 400, "left")
         end
     end
 

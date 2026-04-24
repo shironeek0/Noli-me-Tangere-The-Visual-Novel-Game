@@ -6,10 +6,10 @@ require("data.save")
 require("data.script")
 require("data.quizzes")
 
+require("scenes.splash")
 require("scenes.menu")
 require("scenes.chapterSelect")
 require("scenes.story")
-require("scenes.cheat")
 require("scenes.cheatInline")
 require("scenes.quiz")
 require("scenes.quizPrompt")
@@ -50,10 +50,11 @@ function love.load()
     Fonts = love.graphics.newFont(18)
     save.load()
     audio.load()
-    state.switch(menu)
+    state.switch(splash)
     titleImg.menu = love.graphics.newImage("assets/ui/title.png")
-    bgImages.menu = love.graphics.newImage("assets/backgrounds/tempback.png")
+    bgImages.menu = love.graphics.newImage("assets/backgrounds/menuBG.png")
     uiFonts = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF", 18)
+
 end
 
 function updateScale()
@@ -89,7 +90,7 @@ function love.update(dt)
         state.current.update(dt)
     end
 
-    audio.update()
+    audio.update(dt)
     fade.update(dt)
 end
 

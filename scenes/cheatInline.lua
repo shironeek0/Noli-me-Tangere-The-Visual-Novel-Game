@@ -20,6 +20,7 @@ function cheatInline.keypressed(key)
         if input == code then 
             save.unlocked[cheatTarget] = true
             save.quizPassed[cheatTarget] = true
+            
             save.write()
         end
 
@@ -29,5 +30,12 @@ function cheatInline.keypressed(key)
     elseif key:match("^[a-z0-9]$") then
         cheatInput = cheatInput .. key:upper()
     end
-end
 
+    for i=1, cheatTarget do
+        save.unlocked[i] = true
+        save.quizPassed[i] = true
+    end
+
+    save.write()
+
+end

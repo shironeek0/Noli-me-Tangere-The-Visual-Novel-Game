@@ -12,15 +12,30 @@ local utf8 = require("utf8")
 
 local bgCache   = {}
 local charCache = {}
+local charState = {}
+
+local currentBG     = nil
+local currentBGName = nil
+
+local nextBG     = nil
+local nextBGName = nil
+
+local bgAlpha = 1
 
 local currentFont = nil
 
-local boxX, boxY, boxW, boxH = 50, 400, 700, 160
+local boxX, boxY, boxW, boxH = 0, 400, 800, 160
 local textX, textY = 70, 420
 
 local eventText  = nil
 local eventAlpha = 0
 local eventTimer = 0
+
+local baseX = {
+    left = 1,
+    center = 300,
+    right = 520
+}
 
 --------------------------------------------------
 
@@ -52,8 +67,11 @@ end
 --------------------------------------------------
 
 function story.start(ch)
+    currentBG = nil
+    nextBG  = nil
+    bgAlpha = 1
+
     story.chapter = ch
-    story.line  = 1
     story.timer = 1
     story.index = 1
     story.shownChars = 0
@@ -71,10 +89,12 @@ function story.update(dt)
     
     local d = chapterData[story.index]
     
+    -- bgm
     if d.bgm then
         audio.playBGM(d.bgm)
     end
-    
+
+    -- quizz   
     if not d then 
         quizPrompt.setChapter(story.chapter)
         audio.stopBGM()
@@ -82,6 +102,7 @@ function story.update(dt)
         return
     end
     
+    -- event
     if eventText then
         eventTimer = eventTimer + dt
         
@@ -103,6 +124,40 @@ function story.update(dt)
         story.index = story.index + 1
         return
     end
+
+    -- bg
+    local d = chapter[story.chapter][story.index]
+    if not d then return end
+        
+    if d.bg then
+        
+        if not currentBG then
+            currentBG = loadBG(d.bg)
+            currentBGName = d.bg
+            lastBGLine = story.index
+
+        elseif currentBGName ~= d.bg and lastBGLine ~= story.index then
+            nextBG = loadBG(d.bg)
+            nextBGName = d.bg
+            bgAlpha = 0
+            lastBGLine = story.index
+        end
+    end
+
+    -- bg transition
+    if nextBG then
+        bgAlpha = bgAlpha + dt * 2
+
+        if bgAlpha >= 1 then
+            currentBG = nextBG
+            currentBGName = nextBGName
+
+            nextBG = nil
+            nextBGName = nil
+            
+            bgAlpha = 1
+        end
+    end
     
     local speedMap = {20, 40, 80}
     local speed = speedMap[settingsData.textSpeed or 2]
@@ -121,6 +176,70 @@ function story.update(dt)
             end
         end
     end
+
+    local groups = {
+    left = {},
+    center = {},
+    right = {}
+    }
+
+    -- group characters by position
+    for _,c in ipairs(d.characters or {}) do
+        local pos = c.pos or "center"
+        table.insert(groups[pos], c)
+    end
+
+    -- process each group
+    for pos, list in pairs(groups) do
+
+        local targetBase = baseX[pos]
+
+        for i, c in ipairs(list) do
+
+            charState[c.name] = charState[c.name] or {
+                x = 0,
+                alpha = 0,
+                initialized = false
+            }
+
+            local state = charState[c.name]
+
+            local spacing = 60
+            local offset = (i - 1) * spacing
+            offset = offset - ((#list - 1) * spacing / 2)
+
+            local targetX = targetBase + offset
+
+            -- INIT
+            if not state.initialized then
+
+                if c.enterFrom == "left" then
+                    state.x = -200
+                elseif c.enterFrom == "right" then
+                    state.x = 800
+                else
+                    state.x = targetX
+                end
+
+                state.alpha = c.fade and 0 or 1
+                state.initialized = true
+            end
+
+            -- MOVE
+            if c.move ~= false then
+                state.x = state.x + (targetX - state.x) * 6 * dt
+            else
+                state.x = targetX
+            end
+
+            -- FADE
+            if c.fade then
+                state.alpha = math.min(1, state.alpha + dt * 2)
+            else
+                state.alpha = 1
+            end
+        end
+    end
 end
 
 
@@ -128,35 +247,43 @@ end
 
 function story.draw()
     
+    -- event
     if eventText then
         love.graphics.setColor(1, 1, 1, eventAlpha)
         
-        love.graphics.printf(eventText, 0, 200, 800, "center")
+        love.graphics.printf(eventText, 0, 260, 800, "center")
         
         love.graphics.setColor(1, 1, 1)
         return
     end
     
-    local d = chapter[story.chapter][story.line]
-
+    local d = chapter[story.chapter][story.index]
     if not d then return end
+    
+    -- BG
+    local function drawBG(bg, alpha)
+        if not bg then return end
 
-    -- bg
-    if d.bg then
-        local bg = loadBG(d.bg)
-        
-        if bg then
+        local baseW, baseH = 1600, 1000
 
-            local baseW, baseH = 800, 600
-            
-            local scale = math.max(
-                baseW / bg:getWidth(),
-                baseH / bg:getHeight()
-            )
+        local scale = math.max(
+            baseW / bg:getWidth(),
+            baseH / bg:getHeight()
+        ) / 2
 
-            love.graphics.draw(bg, 0, 0, 0, scale, scale)
-        end
+        love.graphics.setColor(1, 1, 1, alpha)
+        love.graphics.draw(bg, 0, 50, 0, scale, scale)
     end
+
+    if currentBG then 
+        drawBG(currentBG, 1)
+    end
+
+    if nextBG then 
+        drawBG(nextBG, bgAlpha)
+    end
+
+    love.graphics.setColor( 1, 1, 1)
 
     -- characters
     if d.characters then
@@ -173,13 +300,6 @@ function story.draw()
             table.insert(groups[c.pos or "center"], c)
         end
     
-    
-        local baseX = {
-            left = 120,
-            center = 320,
-            right = 520
-        }
-    
         for pos, list in pairs(groups) do
             
             for i, c in ipairs(list) do
@@ -190,7 +310,20 @@ function story.draw()
                 local offset = (i-1) * 60
                 
                 local x = baseX[pos] + offset
-                local y = 180
+                local y = 115
+                
+                local state = charState[c.name]
+                
+                if state then
+                    local scaleX = c.flip and -1 or 1
+                    local offsetx = c.flip and img:getWidth() or 0
+
+                    love.graphics.setColor(1, 1, 1, state.alpha)
+                    
+                    love.graphics.draw(img, state.x + offsetx, y, 0, scaleX, 1)
+                    
+                    love.graphics.setColor(1, 1, 1)
+                end
                 
                 -- dim effect
                 if c.dim then
@@ -198,9 +331,6 @@ function story.draw()
                 else    
                     love.graphics.setColor(1,1,1)
                 end
-                
-                love.graphics.draw(img, x, y)
-                love.graphics.setColor(1,1,1)
             end
         end
     end    
@@ -223,10 +353,10 @@ function story.draw()
     if d.speaker and d.speaker ~= "" then
         
         love.graphics.setColor(0,0,0,0.7)
-        love.graphics.rectangle("fill", 50, 380, 200, 40)
+        love.graphics.rectangle("fill", 40, 375, 200, 25)
         
         love.graphics.setColor(1, 1, 1)
-        love.graphics.print(d.speaker, 60, 390)
+        love.graphics.print(d.speaker, 60, 380)
         
         love.graphics.setColor(1, 1, 1)
     end
@@ -246,7 +376,7 @@ function story.draw()
         shownText,
         textX,
         textY,
-        boxW - 40,
+        boxW - 120,
         "left"
     )
 end
@@ -262,7 +392,7 @@ function story.mousepressed()
         return
     end
 
-    local d = chapter[story.chapter][story.line]
+    local d = chapter[story.chapter][story.index]
     if not d then return end
 
     if not story.finishedTyping then
@@ -271,9 +401,9 @@ function story.mousepressed()
         return
     end
 
-    story.line = story.line + 1
+    story.index = story.index + 1
 
-    if story.line > #chapter[story.chapter] then
+    if story.index > #chapter[story.chapter] then
 
         quizPrompt.setChapter(story.chapter)
         audio.stopBGM()
