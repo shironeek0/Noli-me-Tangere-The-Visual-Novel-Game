@@ -1,0 +1,26 @@
+name: Build LÖVE Game
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build LÖVE game
+        uses: nhartland/love-build@v1
+        with:
+          app-name: "Balik_Tanaw:NoliMeTangere"
+          love-version: "11.4"
+
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: game-build
+          path: build/
