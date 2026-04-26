@@ -2,25 +2,31 @@ name: Build LÖVE Game
 
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch:
+    tags:
+      - "v*"
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build LÖVE game
+      - name: Install LÖVE build tools
+        run: sudo apt-get update
+
+      - name: Build game
         uses: nhartland/love-build@v1
         with:
-          app-name: "Balik_Tanaw:NoliMeTangere"
+          app-name: "MyVNGame"
           love-version: "11.4"
+
+      - name: Show build output (DEBUG)
+        run: ls -R
 
       - name: Upload build
         uses: actions/upload-artifact@v4
         with:
           name: game-build
-          path: build/
+          path: build/windows/
