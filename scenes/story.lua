@@ -32,10 +32,12 @@ local eventAlpha = 0
 local eventTimer = 0
 
 local baseX = {
-    left = 1,
-    center = 300,
-    right = 520
+    left = 120,
+    center = 400,
+    right = 680
 }
+
+
 
 --------------------------------------------------
 
@@ -204,12 +206,44 @@ function story.update(dt)
 
             local state = charState[c.name]
 
-            local spacing = 60
-            local offset = (i - 1) * spacing
-            offset = offset - ((#list - 1) * spacing / 2)
+            -- local spacing = 60
+            -- local offset = (i - 1) * spacing
+            -- offset = offset - ((#list - 1) * spacing / 2)
 
-            local targetX = targetBase + offset
+            -- local targetX = targetBase + offset
 
+            -- calculate total width
+            local totalWidth = 0
+            local widths = {}
+
+            for _, char in ipairs(list) do
+                local img = loadChar(char.name, char.pose)
+                local w = img:getWidth()
+                table.insert(widths, w)
+                totalWidth = totalWidth + w
+            end
+
+            -- add spacing between characters
+            local spacing = 20
+            totalWidth = totalWidth + (#list - 1) * spacing
+
+            -- starting X (centered)
+            local startX = targetBase - totalWidth / 2
+
+            -- assign positions
+            local currentX = startX
+
+            for i, c in ipairs(list) do
+
+                local img = loadChar(c.name, c.pose)
+                local w = widths[i]
+
+                local targetX = currentX
+
+                currentX = currentX + w + spacing
+
+                -- (use targetX below in your animation logic)
+            
             -- INIT
             if not state.initialized then
 
@@ -239,6 +273,7 @@ function story.update(dt)
                 state.alpha = 1
             end
         end
+    end
     end
 end
 
@@ -310,7 +345,12 @@ function story.draw()
                 local offset = (i-1) * 60
                 
                 local x = baseX[pos] + offset
-                local y = 115
+                local baseY = 550
+
+                local img = loadChar(c.name, c.pose)
+                local charHeight = 400
+                local scale = charHeight / img:getHeight()
+                local y = baseY - (img:getHeight() * scale)
                 
                 local state = charState[c.name]
                 
@@ -318,9 +358,10 @@ function story.draw()
                     local scaleX = c.flip and -1 or 1
                     local offsetx = c.flip and img:getWidth() or 0
 
+
                     love.graphics.setColor(1, 1, 1, state.alpha)
                     
-                    love.graphics.draw(img, state.x + offsetx, y, 0, scaleX, 1)
+                    love.graphics.draw(img, state.x + offsetx, y, 0, scaleX, scale)
                     
                     love.graphics.setColor(1, 1, 1)
                 end

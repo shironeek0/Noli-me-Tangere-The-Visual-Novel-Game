@@ -1,6 +1,7 @@
 require("utils.state")
 require("utils.transition")
 require("utils.audio")
+require("utils.ui")
 
 require("data.save")
 require("data.script")
@@ -52,8 +53,10 @@ function love.load()
     audio.load()
     state.switch(splash)
     titleImg.menu = love.graphics.newImage("assets/ui/title.png")
+    buttons = love.graphics.newImage("assets/ui/button.png")
     bgImages.menu = love.graphics.newImage("assets/backgrounds/menuBG.png")
-    uiFonts = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF", 18)
+    uiFonts = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF", 30)
+    originFont = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF", 50)
 
 end
 
