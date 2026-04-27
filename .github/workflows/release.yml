@@ -1,7 +1,10 @@
 name: Build and Release LÖVE Game
 
 on:
-push:
+  push:
+    branches:
+      main
+
 tags:
 - "v*"
 
