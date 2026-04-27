@@ -4,11 +4,11 @@ local selected = 1
 local baseY = 240
 
 local buttons = {
-    {text="Start", y=260},
-    {text="Chapters", y=315},
-    {text="Settings", y=370},
-    {text="Credits", y=425},
-    {text="Exit", y=480}
+    {text="Simulan", y=260},
+    {text="Kabanata", y=315},
+    {text="Setting", y=370},
+    {text="Kredito", y=425},
+    {text="Umalis", y=480}
 }
 
 local btnX = 300
@@ -20,6 +20,7 @@ local btnH = 50
 function menu.load()
     audio.playBGM("theme2")
     arrow = love.graphics.newImage("assets/ui/Arrow1.png")
+    balikTanaw = love.graphics.newImage("assets/ui/Balik_Tanaw.png")
 end
 
 ------------------------------------------------------------
@@ -47,9 +48,7 @@ function menu.draw()
     love.graphics.setColor(0, 0, 0, 0.36)
     love.graphics.rectangle("fill", 240, 245, 300, 300, 20, 20)
     
-    love.graphics.setColor(0, 0, 0)
-    love.graphics.setFont(originFont)
-    love.graphics.print("BALIK TANAW", 250, 60)
+    -- love.graphics.print("BALIK TANAW", 250, 60)
 
     love.graphics.setColor(255, 255, 255)
     love.graphics.setFont(uiFont)
@@ -57,7 +56,8 @@ function menu.draw()
     local titleWidth = 400
     local titleScale = titleWidth / titleImg.menu:getWidth()
     
-    love.graphics.draw(titleImg.menu, 200, 75, 0, titleScale, titleScale)
+    love.graphics.draw(titleImg.menu, 200, 85, 0, titleScale, titleScale)
+    love.graphics.draw(balikTanaw, 218, 0, 0, titleScale/1.4, titleScale/1.4)
     
     -- buttons
     love.graphics.setFont(Fonts)
@@ -69,8 +69,6 @@ function menu.draw()
         local hovered = ui.isHovered(mx, my, btnX, b.y, btnW, btnH)
         ui.drawButton(btnX, b.y, btnW, btnH, b.text, hovered)
     end
-
-    print(mx, my, x, y, w, h)
 
 
     -- for i,v in ipairs(items) do
@@ -120,20 +118,20 @@ function menu.mousepressed(x, y)
 
         if ui.isHovered(x, y, btnX, b.y, btnW, btnH) then
 
-            if b.text == "Start" then
+            if b.text == "Simulan" then
                 story.start(1)
                 fade.to(story)
 
-            elseif b.text == "Chapters" then
+            elseif b.text == "Kabanata" then
                 fade.to(chapterSelect)
 
-            elseif b.text == "Settings" then
+            elseif b.text == "Setting" then
                 fade.to(settings)
 
-            elseif b.text == "Credits" then
+            elseif b.text == "Kredito" then
                 fade.to(credits)
 
-            elseif b.text == "Exit" then
+            elseif b.text == "Umalis" then
                 love.event.quit()
             end
         end

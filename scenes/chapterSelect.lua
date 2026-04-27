@@ -88,71 +88,71 @@ chapterCodes = {
     [64] = "KATAPUSAN"
 }
 
-local chapterTitle = {
-    [1] = "",
-    [2] = "IBARRA",
-    [3] = "HAPUNAN",
-    [4] = "EREHE",
-    [5] = "PANGARAP",
-    [6] = "TIYAGO",
-    [7] = "ASOTEA",
-    [8] = "ALAALA",
-    [9] = "BAYAN",
-    [10] = "SANDIEGO",
-    [11] = "KAPANGYARIHAN",
-    [12] = "LIBING",
-    [13] = "UNOS",
-    [14] = "TASYO",
-    [15] = "SAKRISTAN",
-    [16] = "SISA",
-    [17] = "BASILIO",
-    [18] = "KALULUWA",
-    [19] = "GURO",
-    [20] = "TRIBUNAL",
-    [21] = "INA",
-    [22] = "LIWANAG",
-    [23] = "PANGINGISDA",
-    [24] = "GUBAT",
-    [25] = "ISIP",
-    [26] = "BISPERAS",
-    [27] = "TAKIPSILIM",
-    [28] = "SULAT",
-    [29] = "UMAGA",
-    [30] = "SIMBAHAN",
-    [31] = "SERMON",
-    [32] = "HUGOS",
-    [33] = "KALAYAAN",
-    [34] = "PANANGHALI",
-    [35] = "USAPAN",
-    [36] = "FILIPO",
-    [37] = "HENERAL",
-    [38] = "PRUSISYON",
-    [39] = "CONSOLACION",
-    [40] = "LAKAS",
-    [41] = "DALAW",
-    [42] = "ESPADANA",
-    [43] = "PLANO",
-    [44] = "BUDHI",
-    [45] = "INUSIG",
-    [46] = "SABONG",
-    [47] = "SENYORA",
-    [48] = "PALAISIPAN",
-    [49] = "TINIG",
-    [50] = "ELIAS",
-    [51] = "PAGBABAGO",
-    [52] = "ANINO",
-    [53] = "BABALA",
-    [54] = "LIHIM",
-    [55] = "GULO",
-    [56] = "KURO",
-    [57] = "TALO",
-    [58] = "SINUMPA",
-    [59] = "BAYANI",
-    [60] = "KASAL",
-    [61] = "HABULAN",
-    [62] = "PALIWANAG",
-    [63] = "PASKO",
-    [64] = "KATAPUSAN"
+chapterTitles = {
+    [1] = "Isang Pagtitipon",
+    [2] = "Chrisostomo Ibarra",
+    [3] = "Ang Hapunan",
+    [4] = "Erehe at Pilibustero",
+    [5] = "Pangarap sa Gabing Madilim",
+    [6] = "Si Kapitan Tiyago",
+    [7] = "Suyuan sa Asotea",
+    [8] = "Mga Alaala",
+    [9] = "Mga Suliranin Tungkol sa Bayan",
+    [10] = "Ang San Diego",
+    [11] = "Ang mga Makapangyarihan",
+    [12] = "Araw ng mga Patay",
+    [13] = "Mga Unang Banta ng Unos",
+    [14] = "Si Pilosopo Tasyo",
+    [15] = "Ang mga Sakristan",
+    [16] = "Si Sisa",
+    [17] = "Si Basilio",
+    [18] = "Mga Kaluluwang Naghihirap",
+    [19] = "Mga Suliranin ng Isang Guro",
+    [20] = "Ang Pulong sa Tribunal",
+    [21] = "Kasaysayan ng Isang Ina",
+    [22] = "Ang Liwanag at Dilim",
+    [23] = "Ang Pangingisda",
+    [24] = "Sa Gubat",
+    [25] = "Sa Tahanan ng Pilosopo",
+    [26] = "Ang Bisperas ng Pista",
+    [27] = "Sa Takipsilim",
+    [28] = "Sulat ni Ibarra kay Maria Clara",
+    [29] = "Ang Umaga",
+    [30] = "Sa Simbahan",
+    [31] = "Ang Sermon",
+    [32] = "Ang Panghugos",
+    [33] = "Malayang Kaisipan",
+    [34] = "Ang Pananghalian",
+    [35] = "Mga Usap-usapan",
+    [36] = "Ang Unang Suliranin ni Don Filipo",
+    [37] = "Ang Kapitan-Heneral",
+    [38] = "Ang Prusisyon",
+    [39] = "Si Donya Consolacion",
+    [40] = "Ang Karapatan at Lakas",
+    [41] = "Dalawang Dalaw",
+    [42] = "Ang Mag-asawang de Espadaña",
+    [43] = "Mga Plano",
+    [44] = "Pagsusuri ng Budhi",
+    [45] = "Ang mga Pinag-uusig",
+    [46] = "Ang Sabungan",
+    [47] = "Ang Dalawang Senyora",
+    [48] = "Ang Palaisipan",
+    [49] = "Ang Tinig ng mga Inuusig",
+    [50] = "Ang mga Kamag-anak ni Elias",
+    [51] = "Mga Pagbabago",
+    [52] = "Ang Baraha ng mga Patay at ang mga Anino",
+    [53] = "Ang Mabuting Araw ay Nakikilala sa Umaga",
+    [54] = "Walang Lihim ang Hindi Nabubunyag",
+    [55] = "Ang Pagkakagulo",
+    [56] = "Mga Sabi at Kuro-kuro",
+    [57] = "Vae Victis",
+    [58] = "Ang Sinumpa",
+    [59] = "Pag-ibig sa Bayan",
+    [60] = "Ikakasal si Maria Clara",
+    [61] = "Ang Habulan sa Lawa",
+    [62] = "Ang Paliwanag ni Padre Damaso",
+    [63] = "Noche Buena",
+    [64] = "Katapusan"
 }
 
 --------------------------------------------------
@@ -216,34 +216,37 @@ function chapterSelect.draw()
         local y = 200
         
         -- card
-        love.graphics.draw(cardImg, x-8, y-5, 0, 0.35)
+        love.graphics.draw(cardImg, x-23, y-15, 0, 0.4)
         
         -- image (placeholder)
         love.graphics.draw(cardImage, x+13, y+13, 0, 0.081)
         -- title
-        love.graphics.printf(("Chapter "..i), x, y+120, cardW, "center")
+        love.graphics.printf(("Kabanata "..i), x, y+115, cardW, "center")
+
+        local title = chapterTitles[i] or "???"
+        love.graphics.printf(title, x+10, y+135, cardW-20, "center")
 
         if save.unlocked[i] then
             
             -- PLAY button
             if save.unlocked[i] then
-                love.graphics.draw(button1, x+37, y+155, 0, 0.40, 0.37)
-                love.graphics.print("Play", x+72, y+163)
+                love.graphics.draw(button1, x+37, y+185, 0, 0.40, 0.37)
+                love.graphics.print("Simulan", x+55, y+194)
             else
                 love.graphics.setColor(1,1,1,0.3)
-                love.graphics.draw(button1, x+37, y+155, 0, 0.40, 0.37)
-                love.graphics.print("Play", x+72, y+163)
+                love.graphics.draw(button1, x+37, y+185, 0, 0.40, 0.37)
+                love.graphics.print("Simulan", x+55, y+194)
                 love.graphics.setColor(1,1,1)
             end
             
             -- QUIZ button
             if save.unlocked[i] then
-                love.graphics.draw(button1, x+37, y+196, 0, 0.40, 0.37)
-                love.graphics.print("Quiz", x+70, y+203)
+                love.graphics.draw(button1, x+28, y+223, 0, 0.48, 0.37)
+                love.graphics.print("Pagsusulit", x+46, y+230)
             else
                 love.graphics.setColor(1,1,1,0.3)
-                love.graphics.draw(button1, x+37, y+196, 0, 0.40, 0.37)
-                love.graphics.print("Quiz", x+70, y+203)
+                love.graphics.draw(button1, x+28, y+223, 0, 0.48, 0.37)
+                love.graphics.print("Pagsusulit", x+46, y+230)
                 love.graphics.setColor(1,1,1)
             end
         end
@@ -251,14 +254,14 @@ function chapterSelect.draw()
         -- locked overlay
         if not save.unlocked[i] then
             love.graphics.setColor(0,0,0,0.5)
-            love.graphics.rectangle("fill", x, y, cardW, cardH+25, 10,10)
+            love.graphics.rectangle("fill", x-12, y-5, cardW+20, cardH+55, 10,10)
             love.graphics.setColor(1,1,1)
         end
         
         -- UNLOCK button (only if locked)
         if not save.unlocked[i] then
-            love.graphics.draw(button1, x+42, y+177, 0, 0.37)
-            love.graphics.print("Unlock", x+60, y+185)
+            love.graphics.draw(button1, x+41, y+200, 0, 0.37)
+            love.graphics.print("Buksan", x+58, y+208)
         end
         
     end
@@ -268,9 +271,6 @@ function chapterSelect.draw()
     
     love.graphics.rectangle("line", 720, 300, 40, 40)
     love.graphics.draw(arrow, 725, 303, 0, 0.07)
-
-    love.graphics.rectangle("line", 20, 20, 120, 30)
-    love.graphics.print("Back to Menu", 30, 25)
 end
 
 --------------------------------------------------
@@ -301,14 +301,14 @@ function chapterSelect.mousepressed(mx,my)
         
         if save.unlocked[i] then
             -- PLAY
-            if hit(x+37,y+153,100,25,mx,my) then
+            if hit(x+37,y+194,100,25,mx,my) then
                 story.start(i)
                 fade.to(story)
                 return
             end
 
             -- QUIZ
-            if hit(x+37,y+193,100,25,mx,my) then
+            if hit(x+37,y+230,100,25,mx,my) then
                 quiz.start(i)
                 fade.to(quiz)
                 return
@@ -316,14 +316,9 @@ function chapterSelect.mousepressed(mx,my)
         end
 
         -- only clickable if locked
-        if not save.unlocked[i] and hit(x+42,y+177,100,30,mx,my) then
+        if not save.unlocked[i] and hit(x+42,y+200,100,30,mx,my) then
             chapterSelect.askCheat(i)
         end
-    end
-
-    if mx > 20 and mx < 240 and my > 20 and my < 50 then
-        fade.to(menu)
-        return
     end
 end
 

@@ -56,7 +56,7 @@ function love.load()
     buttons = love.graphics.newImage("assets/ui/button.png")
     bgImages.menu = love.graphics.newImage("assets/backgrounds/menuBG.png")
     uiFonts = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF", 30)
-    originFont = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF", 50)
+    originFont = love.graphics.newFont("assets/fonts/Origins.ttf", 50)
 
 end
 

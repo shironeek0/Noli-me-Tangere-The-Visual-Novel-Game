@@ -2,14 +2,14 @@ settingsGameplay = {}
 
 local selected = 1
 
-local speeds = {"Slow","Normal","Fast"}
-local sizes  = {"Small","Medium","Large"}
+local speeds = {"Mabagal","Normal","Mabilis"}
+local sizes  = {"Maliit","Katam-taman","Malaki"}
 
 function settingsGameplay.draw()
 
-    love.graphics.setFont(uiFont)
+    love.graphics.setFont(Fonts)
 
-    love.graphics.printf("GAMEPLAY",0,100,800,"center")
+    love.graphics.printf("TUNGKOL SA LARO",0,100,800,"center")
 
     -- tSpeed
     love.graphics.print("<", 160, 200)
@@ -23,11 +23,11 @@ function settingsGameplay.draw()
     love.graphics.print("<", 160, 300)
     love.graphics.print(">", 500, 300)
 
-    love.graphics.print("Text Speed: "..speeds[settingsData.textSpeed], 200, 200)
-    love.graphics.print("Autoplay: "..(settingsData.autoplay and "ON" or "OFF"), 200, 250)
-    love.graphics.print("Text Size: "..sizes[settingsData.textSize], 200, 300)
+    love.graphics.print("Bilis ng Teksto: "..speeds[settingsData.textSpeed], 200, 200)
+    love.graphics.print("Autoplay: "..(settingsData.autoplay and "Oo" or "Hindi"), 200, 250)
+    love.graphics.print("Lake ng Teksto: "..sizes[settingsData.textSize], 200, 300)
 
-    love.graphics.print("ESC = BACK", 200, 360)
+    love.graphics.print('"ESC" Para Bumalik', 200, 360)
 end
 
 --------------------------------------------------

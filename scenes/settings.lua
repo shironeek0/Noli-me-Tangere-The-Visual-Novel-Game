@@ -1,10 +1,10 @@
 settings = {}
 
 local options = {
-    "Graphics",
-    "Audio",
-    "Gameplay",
-    "Back"
+    "Grapiko",
+    "Tunog",
+    "Laro",
+    "Bumalik"
 }
 
 local selected = 1
@@ -54,16 +54,16 @@ function settings.keypressed(key)
 
     elseif key == "return" then
 
-        if options[selected] == "Graphics" then
+        if options[selected] == "Grapiko" then
             fade.to(settingsGraphics)
 
-        elseif options[selected] == "Audio" then
+        elseif options[selected] == "Tunog" then
             fade.to(settingsAudio)
 
-        elseif options[selected] == "Gameplay" then
+        elseif options[selected] == "Laro" then
             fade.to(settingsGameplay)
 
-        elseif options[selected] == "Back" then
+        elseif options[selected] == "Bumalik" then
             fade.to(menu)
         end
     elseif key == "escape" then
@@ -75,16 +75,16 @@ function settings.mousepressed(x,y)
 
     local choice = options[selected]
 
-    if choice == "Graphics" then
+    if choice == "Grapiko" then
         state.switch(settingsGraphics)
 
-    elseif choice == "Audio" then
+    elseif choice == "Tunog" then
         state.switch(settingsAudio)
 
-    elseif choice == "Gameplay" then
+    elseif choice == "Laro" then
         state.switch(settingsGameplay)
 
-    elseif choice == "Back" then
+    elseif choice == "Bumalik" then
         state.switch(menu)
     end
 end

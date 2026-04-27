@@ -8,7 +8,7 @@ function settingsAudio.draw()
 
     love.graphics.setFont(Fonts)
 
-    love.graphics.printf("AUDIO", 0, 100, 800, "center")
+    love.graphics.printf("TUNOG", 0, 100, 800, "center")
 
     local labels = {"Master", "Music", "SFX", "Voice"}
 
@@ -22,7 +22,7 @@ function settingsAudio.draw()
         love.graphics.rectangle("fill", 320 + val*200 - 3, y+6, 6, 14)
     end
 
-    love.graphics.print("ESC = BACK", 200, 380)
+    love.graphics.print('"ESC" Para Bumalik', 200, 380)
 end
 
 -------------------------------------------------

@@ -11,7 +11,7 @@ local resolutions = {
     {1280,720}
 }
 
-local brightnessModes = {"Dark", "Normal", "Bright"}
+local brightnessModes = {"Madilim", "Katam-taman", "Maliwanag"}
 
 local function applyGraphics()
 
@@ -35,7 +35,7 @@ function settingsGraphics.draw()
 
     love.graphics.setFont(Fonts)
     
-    love.graphics.printf("GRAPHICS",0,100,800,"center")
+    love.graphics.printf("GRAPIKO",0,100,800,"center")
     
     love.graphics.print("<", 160, 200) -- Display
     love.graphics.print(">", 500, 200)
@@ -44,12 +44,12 @@ function settingsGraphics.draw()
     love.graphics.print("<", 160, 300) -- Brightness
     love.graphics.print(">", 500, 300)
     
-    love.graphics.print("Display Mode: "..displayModes[settingsData.display], 200, 200)
-    love.graphics.print("Resolution: "..resolutions[settingsData.resolution][1].."x"..resolutions[settingsData.resolution][2], 200, 250)
-    love.graphics.print("Brightness: "..brightnessModes[settingsData.brightness], 200, 300)
+    love.graphics.print("Pang-Display: "..displayModes[settingsData.display], 200, 200)
+    love.graphics.print("Resolusyon: "..resolutions[settingsData.resolution][1].."x"..resolutions[settingsData.resolution][2], 200, 250)
+    love.graphics.print("Pagkakabasa: "..brightnessModes[settingsData.brightness], 200, 300)
     
-    love.graphics.print("ENTER = APPLY", 200, 360)
-    love.graphics.print("ESC = BACK", 200, 390)
+    love.graphics.print('"ENTER" Para ma Apply', 200, 360)
+    love.graphics.print('"ESC" Para Bumalik', 200, 390)
 
 
 end
