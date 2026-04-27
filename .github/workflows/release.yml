@@ -6,7 +6,7 @@ on:
       - main
 
     tags:
-    - "v*"
+    - "v0.4"
 
 env:
   GAME_NAME: "BALIK_TANAW-NoliMeTangere"
