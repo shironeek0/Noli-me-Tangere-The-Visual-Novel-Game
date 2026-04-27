@@ -3,64 +3,64 @@ name: Build and Release LÖVE Game
 on:
   push:
     branches:
-      main
+      - main
 
-tags:
-- "v*"
+    tags:
+    - "v*"
 
 env:
 GAME_NAME: "BALIK_TANAW-NoliMeTangere"
 
 jobs:
-build:
-runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-steps:
-  - name: Checkout repo
-    uses: actions/checkout@v4
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-  # Install required tools
-  - name: Install dependencies
-    run: sudo apt-get update && sudo apt-get install -y zip unzip wget
+      # Install required tools
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y zip unzip wget
 
-  # Create .love file
-  - name: Create .love package
-    run: |
-      zip -r game.love . -x "*.git*" ".github/*"
+      # Create .love file
+      - name: Create .love package
+        run: |
+          zip -r game.love . -x "*.git*" ".github/*"
 
-  # Download LÖVE engine (Windows)
-  - name: Download LÖVE
-    run: |
-      wget https://github.com/love2d/love/releases/download/11.4/love-11.4-win64.zip
-      unzip love-11.4-win64.zip
+      # Download LÖVE engine (Windows)
+      - name: Download LÖVE
+        run: |
+          wget https://github.com/love2d/love/releases/download/11.4/love-11.4-win64.zip
+          unzip love-11.4-win64.zip
 
-  # Build .exe
-  - name: Build Windows .exe
-    run: |
-      mkdir dist
-      cp game.love dist/
-      cat love-11.4-win64/love.exe game.love > dist/${GAME_NAME}.exe
-      cp -r love-11.4-win64/* dist/
-      rm dist/love.exe
+      # Build .exe
+      - name: Build Windows .exe
+        run: |
+          mkdir dist
+          cp game.love dist/
+          cat love-11.4-win64/love.exe game.love > dist/${GAME_NAME}.exe
+          cp -r love-11.4-win64/* dist/
+          rm dist/love.exe
 
-  # Zip the full build (for players)
-  - name: Zip build
-    run: |
-      cd dist
-      zip -r ${GAME_NAME}-win64.zip .
+      # Zip the full build (for players)
+      - name: Zip build
+        run: |
+          cd dist
+          zip -r ${GAME_NAME}-win64.zip .
 
-  # Debug (optional but useful)
-  - name: Show build files
-    run: ls -R dist
+      # Debug (optional but useful)
+      - name: Show build files
+        run: ls -R dist
 
-  # Create Release + Upload files
-  - name: Create Release
-    uses: softprops/action-gh-release@v1
-    with:
-      name: ${{ env.GAME_NAME }} ${{ github.ref_name }}
-      files: |
-        dist/${{ env.GAME_NAME }}.exe
-        dist/${{ env.GAME_NAME }}-win64.zip
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Create Release + Upload files
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ env.GAME_NAME }} ${{ github.ref_name }}
+          files: |
+            dist/${{ env.GAME_NAME }}.exe
+            dist/${{ env.GAME_NAME }}-win64.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
