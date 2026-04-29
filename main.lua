@@ -54,9 +54,11 @@ function love.load()
     state.switch(splash)
     titleImg.menu = love.graphics.newImage("assets/ui/title.png")
     buttons = love.graphics.newImage("assets/ui/button.png")
+    cards = love.graphics.newImage("assets/ui/card.png")
     bgImages.menu = love.graphics.newImage("assets/backgrounds/menuBG.png")
-    uiFonts = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF", 30)
-    originFont = love.graphics.newFont("assets/fonts/Origins.ttf", 50)
+    uiFonts = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF",25)
+    ITCBig = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF",40)
+    -- originFont = love.graphics.newFont("assets/fonts/Origins.ttf", 50)
 
 end
 

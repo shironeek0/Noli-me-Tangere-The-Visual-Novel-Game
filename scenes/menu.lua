@@ -4,11 +4,10 @@ local selected = 1
 local baseY = 240
 
 local buttons = {
-    {text="Simulan", y=260},
-    {text="Kabanata", y=315},
-    {text="Setting", y=370},
-    {text="Kredito", y=425},
-    {text="Umalis", y=480}
+    {text="Simulan", y=290},
+    {text="Setting", y=347},
+    {text="Kredito", y=403},
+    {text="Umalis", y=460}
 }
 
 local btnX = 300
@@ -32,9 +31,9 @@ end
 ------------------------------------------------------------
 
 function menu.draw()
-
+    
     local bg = bgImages.menu
-        
+    
     if bg then
         local baseW, baseH = 1600, 1000
         
@@ -44,6 +43,12 @@ function menu.draw()
         ) / 2
         love.graphics.draw(bg, 0, 30, 0, scale , scale)
     end
+    local tao1 = love.graphics.newImage("assets/characters/char2_normal.png")
+    local tao2 = love.graphics.newImage("assets/ui/menuChar.png")
+    local charScale = 370 / tao1:getWidth()
+    local charScale1 = 340 / tao2:getWidth()
+    love.graphics.draw(tao1,love.graphics.getWidth()-320,104,0, charScale, charScale)
+    love.graphics.draw(tao2,-50,110,0, charScale1, charScale1)
 
     love.graphics.setColor(0, 0, 0, 0.36)
     love.graphics.rectangle("fill", 240, 245, 300, 300, 20, 20)
@@ -56,7 +61,7 @@ function menu.draw()
     local titleWidth = 400
     local titleScale = titleWidth / titleImg.menu:getWidth()
     
-    love.graphics.draw(titleImg.menu, 200, 85, 0, titleScale, titleScale)
+    love.graphics.draw(titleImg.menu, 187, 105, 0, titleScale, titleScale)
     love.graphics.draw(balikTanaw, 218, 0, 0, titleScale/1.4, titleScale/1.4)
     
     -- buttons
@@ -119,12 +124,8 @@ function menu.mousepressed(x, y)
         if ui.isHovered(x, y, btnX, b.y, btnW, btnH) then
 
             if b.text == "Simulan" then
-                story.start(1)
-                fade.to(story)
-
-            elseif b.text == "Kabanata" then
                 fade.to(chapterSelect)
-
+                
             elseif b.text == "Setting" then
                 fade.to(settings)
 

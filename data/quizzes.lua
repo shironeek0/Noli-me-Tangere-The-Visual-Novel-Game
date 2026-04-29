@@ -4,10 +4,10 @@ quizzes = {
         {
             question = "Sino ang nagdaos ng handaan?",
             choices = {
-                "A. Don Rafael",
-                "B. inyente",
-                "C. Padre Damaso",
-                "D. Kapitan Tiyago"
+                "Don Rafael",
+                "Tinyente",
+                "Padre Damaso",
+                "Kapitan Tiyago"
             },
             correct = 4
         },
