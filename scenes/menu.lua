@@ -10,16 +10,18 @@ local buttons = {
     {text="Umalis", y=460}
 }
 
-local btnX = 300
+local btnX = 310
 local btnW = 180
 local btnH = 50
 
 ------------------------------------------------------------
 
 function menu.load()
-    audio.playBGM("theme2")
+    audio.playBGM("menu")
     arrow = love.graphics.newImage("assets/ui/Arrow1.png")
     balikTanaw = love.graphics.newImage("assets/ui/Balik_Tanaw.png")
+    tao1 = love.graphics.newImage("assets/characters/char2_normal.png")
+    tao2 = love.graphics.newImage("assets/characters/char4_normal.png")
 end
 
 ------------------------------------------------------------
@@ -43,15 +45,13 @@ function menu.draw()
         ) / 2
         love.graphics.draw(bg, 0, 30, 0, scale , scale)
     end
-    local tao1 = love.graphics.newImage("assets/characters/char2_normal.png")
-    local tao2 = love.graphics.newImage("assets/ui/menuChar.png")
     local charScale = 370 / tao1:getWidth()
     local charScale1 = 340 / tao2:getWidth()
-    love.graphics.draw(tao1,love.graphics.getWidth()-320,104,0, charScale, charScale)
-    love.graphics.draw(tao2,-50,110,0, charScale1, charScale1)
+    love.graphics.draw(tao1,480,104,0, charScale, charScale)
+    love.graphics.draw(tao2,300,110,0, -charScale1, charScale1)
 
     love.graphics.setColor(0, 0, 0, 0.36)
-    love.graphics.rectangle("fill", 240, 245, 300, 300, 20, 20)
+    love.graphics.rectangle("fill", 250, 245, 300, 300, 20, 20)
     
     -- love.graphics.print("BALIK TANAW", 250, 60)
 
@@ -61,11 +61,11 @@ function menu.draw()
     local titleWidth = 400
     local titleScale = titleWidth / titleImg.menu:getWidth()
     
-    love.graphics.draw(titleImg.menu, 187, 105, 0, titleScale, titleScale)
-    love.graphics.draw(balikTanaw, 218, 0, 0, titleScale/1.4, titleScale/1.4)
+    love.graphics.draw(titleImg.menu, 197, 105, 0, titleScale, titleScale)
+    love.graphics.draw(balikTanaw, 228, 0, 0, titleScale/1.4, titleScale/1.4)
     
     -- buttons
-    love.graphics.setFont(Fonts)
+    love.graphics.setFont(uiFonts)
     local mx, my = love.mouse.getPosition()
     mx = mx / scaleX
     my = my / scaleY

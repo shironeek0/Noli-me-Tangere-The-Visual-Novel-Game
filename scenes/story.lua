@@ -319,22 +319,22 @@ function story.draw()
     end
 
     love.graphics.setColor( 1, 1, 1)
-
+    
     -- characters
     if d.characters then
-
+        
         local groups = {
-        left = {},
-        center = {},
-        right = {}
+            left = {},
+            center = {},
+            right = {}
         }
-    
-    
+        
+        
         -- group characters by position
         for _,c in ipairs(d.characters) do
             table.insert(groups[c.pos or "center"], c)
         end
-    
+        
         for pos, list in pairs(groups) do
             
             for i, c in ipairs(list) do
@@ -342,11 +342,11 @@ function story.draw()
                 local img = loadChar(c.name, c.pose)
                 
                 -- spacing if multiple characters
-                local offset = (i-1) * 60
+                local offset = (i-1) * 90
                 
                 local x = baseX[pos] + offset
                 local baseY = 550
-
+                
                 local img = loadChar(c.name, c.pose)
                 local charHeight = 400
                 local scale = charHeight / img:getHeight()
@@ -355,13 +355,13 @@ function story.draw()
                 local state = charState[c.name]
                 
                 if state then
-                    local scaleX = c.flip and -1 or 1
-                    local offsetx = c.flip and img:getWidth() or 0
-
-
+                    local scaleX = c.flip and -0.5 or 0.5
+                    local offsetx = c.flip and img:getWidth()-330 or 0
+                    
+                    
                     love.graphics.setColor(1, 1, 1, state.alpha)
                     
-                    love.graphics.draw(img, state.x + offsetx, y, 0, scaleX, scale)
+                    love.graphics.draw(img, state.x + offsetx +200, y, 0, scaleX, scale)
                     
                     love.graphics.setColor(1, 1, 1)
                 end
@@ -376,7 +376,7 @@ function story.draw()
         end
     end    
     
-
+    
     local sizeMap = {18, 24, 32}
     local size = sizeMap[settingsData.textSize or 2]
     
@@ -384,9 +384,10 @@ function story.draw()
         currentFont = love.graphics.newFont(size)
         love.graphics.setFont(currentFont)
     end
-
+    
     
     -- dialogue box
+    love.graphics.setFont(uiFonts)
     love.graphics.setColor(0,0,0,0.7)
     love.graphics.rectangle("fill", boxX, boxY, boxW, boxH, 8, 8)
     love.graphics.setColor(1,1,1)

@@ -10,9 +10,9 @@ function settingsAudio.draw()
 
     love.graphics.printf("TUNOG", 0, 100, 800, "center")
 
-    local labels = {"Master", "Music", "SFX", "Voice"}
+    local labels = {"Master", "Music", "SFX"}
 
-    for i=1, 4 do
+    for i=1, 3 do
         local y = 180 + i*40
         local val = settingsData.audio[i]
 

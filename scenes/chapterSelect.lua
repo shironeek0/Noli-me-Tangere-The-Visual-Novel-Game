@@ -155,6 +155,10 @@ chapterTitles = {
     [64] = "Katapusan"
 }
 
+
+function chapterSelect.load()
+    audio.playBGM("menu")
+end
 --------------------------------------------------
 
 local function getScrollLimits()

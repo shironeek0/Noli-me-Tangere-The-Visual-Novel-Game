@@ -37,10 +37,10 @@ uiFont = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF", 50)
 
 settingsData = {
     display    = 1,
-    resolution = 1, -- set to 3 when launch to default 1280x720
-    brightness = 1,
+    resolution = 3, -- set to 3 when launch to default 1280x720
+    brightness = 2,
 
-    audio = {1,1,1,1},
+    audio = {0.7,0.8,1},
 
     textSpeed = 2,
     textSize  = 2,
@@ -48,6 +48,7 @@ settingsData = {
 }
 
 function love.load()
+    applyGraphics()
     Fonts = love.graphics.newFont(18)
     save.load()
     audio.load()

@@ -13,7 +13,7 @@ local resolutions = {
 
 local brightnessModes = {"Madilim", "Katam-taman", "Maliwanag"}
 
-local function applyGraphics()
+function applyGraphics()
 
     local r = resolutions[settingsData.resolution]
     local w,h = r[1], r[2]
@@ -27,6 +27,8 @@ local function applyGraphics()
     end
 
     updateScale()
+    baseW = 800
+    baseH = 600
 end
 
 --------------------------------------------------

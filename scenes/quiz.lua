@@ -103,8 +103,8 @@ function quiz.draw()
             love.graphics.print("> "..choice, 350, y-100)
             
         else
-            love.graphics.draw(button1, 315, y-110, 0, 0.8, 0.44)
-            love.graphics.print(choice, 350, y-100)
+            love.graphics.draw(button1, 254, y-110, 0, 1.25, 0.44)
+            love.graphics.printf(choice, 120, y-100, 600, "center")
         end
     end
 end
@@ -165,7 +165,7 @@ function quiz.mousepressed(x,y)
         local cy = 220 +i * 40
         cy = cy - 100
     
-        if x > 315 and x < 520 and y > cy and y < cy + 38 then
+        if x > 260 and x < 590 and y > cy and y < cy + 38 then
             selected = i
 
             if selected == q.correct then

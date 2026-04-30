@@ -8,8 +8,8 @@ audio = {
 local bgmList = {}
 
 function audio.load()
-    bgmList["theme"] = love.audio.newSource("assets/audio/theme.mp3","stream")
-    bgmList["theme2"] = love.audio.newSource("assets/audio/theme2.mp3","stream")
+    bgmList["menu"] = love.audio.newSource("assets/audio/Menu.mp3","stream")
+    bgmList["story"] = love.audio.newSource("assets/audio/story.mp3","stream")
     
 end
 
@@ -31,8 +31,8 @@ end
 
 function audio.update(dt)
 
-    local master = settingsData.audio[1] or 1
-    local musicVol = settingsData.audio[2] or 1
+    local master = settingsData.audio[1] or 0.7
+    local musicVol = settingsData.audio[2] or 0.8
     local vol = master * musicVol
 
     if audio.state == "fadeout" then
@@ -74,6 +74,14 @@ function audio.update(dt)
             audio.fade = 1
             audio.state = "idle"
         end
+    end
+
+    -- ✅ ALWAYS update volume even when idle
+    if audio.state == "idle" and audio.current then
+        audio.current:setVolume(
+            (settingsData.audio[1] or 0.7) *
+            (settingsData.audio[2] or 0.8)
+        )
     end
 end
 

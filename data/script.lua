@@ -3,7 +3,7 @@
     
 --     characters = {
 --         {name = "char2", pose = "normal", pos = "right"},
---         {name = "char1", pose = "normal", pos = "left", dim=true}
+--         {name = "char2", pose = "normal", pos = "left", dim=true}
 --     },
     
     
@@ -18,25 +18,25 @@ chapter = {
             bg = "bg1",
             
             
-            bgm = "theme",
+            bgm = "story",
             
             speaker = "",
             text = ""
         },
         {
-            bg = "bg2",
+            bg = "bg1",
             
             speaker = "",
             text = "Sa isang marangyang gabi sa Maynila, isang handaan ang inihanda ni Kapitan Tiyago, kilala sa kanyang kayamanan at pagiging mapagbigay."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
         
             speaker = "",
             text = "Ang paanyaya ay kumalat sa buong lungsod. Lahat ay nais dumalo."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {
@@ -47,13 +47,10 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
+                    flip = true,
                     dim = true
-                },
-                {
-                    name = "char1", 
-                    pose = "normal", 
-                    pos = "left"
                 }
+                
             },
             
             
@@ -61,27 +58,28 @@ chapter = {
             text = "Halika po! Dito po kayo!"
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "left"}
+                
+                {name = "char2", pose = "normal", flip = true, pos = "left"}
             },
             
             speaker = "",
             text = "Pinangangasiwaan ni Tiya Isabel ang mga panauhin."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
-                {name = "char3", pose = "normal", pos = "right", flip = true}
+                {name = "char3", pose = "normal", pos = "right"}
             },
             
             speaker = "",
             text = "..."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char3", pose = "normal", pos = "right"}
@@ -91,7 +89,7 @@ chapter = {
             text = "*Chatter*"
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -101,27 +99,27 @@ chapter = {
             text = "Nais kong maunawaan ang lupain ng mga Indiyo."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {name = "padreDamaso", pose = "normal", pos = "right"}
             },
             
             speaker = "Padre Damaso",
             text = "Ang mga Indiyo? Mababa ang kanilang uri."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
             },
             
-            speaker = "*",
+            speaker = "",
             text = "Naging mainit ang usapan nang talakayin ang monopolyo ng tabako."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
@@ -131,7 +129,7 @@ chapter = {
             text = "Marahil ay pag-usapan na lamang natin ang ibang bagay."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
@@ -141,57 +139,57 @@ chapter = {
             text = "May karapatan ang Kapitan Heneral bilang kinatawan ng hari."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "center"}
+                {name = "padreDamaso", pose = "normal", pos = "center"}
             },
             
             speaker = "Padre Damaso",
             text = "Ang simbahan ang may kapangyarihan sa mga erehe!"
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
             },
             
-            speaker = "*",
+            speaker = "",
             text = "Ang simbahan ang may kapangyarihan sa mga erehe!"
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
             },
             
-            speaker = "*",
+            speaker = "",
             text = "Isang bangkay ang ipinahukay at inilipat… dahil umano sa pagiging erehe."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "center"}
+                {name = "padreDamaso", pose = "normal", pos = "center"}
             },
             
             speaker = "Padre Damaso",
             text = "Isang malaking pang-aabuso iyon!"
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
             },
             
-            speaker = "*",
+            speaker = "",
             text = "Nagpupuyos sa galit ang pari."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
@@ -201,7 +199,7 @@ chapter = {
             text = "Kalmado lamang, Padre."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
@@ -211,17 +209,17 @@ chapter = {
             text = "*door noise*"
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
             },
             
-            speaker = "*",
+            speaker = "",
             text = "Dumating pa ang iba pang panauhin."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
@@ -231,23 +229,23 @@ chapter = {
             text = "."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
             },
             
-            speaker = "*",
+            speaker = "",
             text = "Patuloy ang kasiyahan… ngunit sa ilalim nito ay may tensyong unti-unting nabubuo."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "center"}
             },
             
-            speaker = "*",
+            speaker = "",
             text = "Patuloy ang kasiyahan… ngunit sa ilalim nito ay may tensyong unti-unting nabubuo."
         }
     },
@@ -256,25 +254,25 @@ chapter = {
     {
         {
             event = "Kabanata 2: Si Crisostomo Ibarra",
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
 
             speaker = "",
             text = ""
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
 
             speaker = "",
             text = "Dumating si Kapitan Tiyago kasama ang isang binatang bagong balik mula Europa, si Crisostomo Ibarra."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
 
             speaker = "",
             text = "Pitong taon siyang nag-aral sa Europa."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char1", pose = "normal", pos = "right"},
@@ -285,160 +283,165 @@ chapter = {
             text = "Mga ginoo at ginang, siya si Crisostomo Ibarra, anak ng aking kaibigang pumanaw."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
 
             speaker = "",
             text = "Napatingin ang lahat. Isang edukadong Indio… bihira at kapansin-pansin."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
 
             speaker = "",
             text = "*nanggagalaiti*"
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
 
             speaker = "",
             text = "Namutla si Padre Damaso nang makilala ang binata."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left"}
+                {name = "char2", pose = "normal", pos = "left", flip = true}
             },
 
             speaker = "Ibarra",
             text = "Padre… ako po si Ibarra. Anak ni Don Rafael."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
+
+            characters = {
+                {name = "padreDamaso", pose = "normal", pos = "right"},
+                {name = "char2", pose = "normal", pos = "left", flip = true}
+            },
 
             speaker = "Padre Damaso",
             text = "Hindi ko kilala ang iyong ama."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
 
             speaker = "",
             text = "..."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
 
             speaker = "",
             text = "Napahiya si Ibarra."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
 
             speaker = "",
             text = "Dahan-dahan niyang iniatras ang kamay."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left"}
+                {name = "char2", pose = "normal", pos = "left", flip = true}
             },
 
             speaker = "Tiyente",
             text = "Ikinalulugod kong ligtas kang nakabalik."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left"}
+                {name = "char2", pose = "normal", pos = "left", flip = true}
             },
 
             speaker = "Ibarra",
             text = "Maraming salamat po."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
             
             characters = {
                 {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left"}
+                {name = "char2", pose = "normal", pos = "left", flip = true}
             },
 
             speaker = "Tinyete",
             text = "Nawa'y maging mas mapalad ka kaysa sa iyong ama."
         },
         {
-            bg = "Kabanata_1_Scene_2",
+            bg = "bg1",
 
             speaker = "",
             text = "Isang pahiwatig… na may hindi alam si Ibarra."
         },
         {
-            bg = "Kabanata_2_Scene_6",
+            bg = "bg1",
 
             speaker = "",
             text = "Iniwasan ng Tinyente ang binata matapos mapansin ang tingin ni Padre Damaso."
         },
         {
-            bg = "Kabanata_2_Scene_6",
+            bg = "bg1",
 
             speaker = "",
             text = "Naiwang mag-isa si Ibarra sa gitna ng maraming tao."
         },
         {
-            bg = "Kabanata_2_Scene_6",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left"}
+                {name = "char2", pose = "normal", pos = "right"},
+                {name = "char2", pose = "normal", pos = "left", flip = true}
             },
 
             speaker = "Ibarra",
             text = "Ako po si Crisostomo Ibarra."
         },
         {
-            bg = "Kabanata_2_Scene_6",
+            bg = "bg1",
 
             speaker = "",
             text = "Tulad ng kanyang natutunan sa Europa, siya na mismo ang nagpakilala sa iba."
         },
         {
-            bg = "Kabanata_2_Scene_6",
+            bg = "bg1",
 
             speaker = "",
             text = "Ngunit ang mga babae… hindi umimik."
         },
         {
-            bg = "Kabanata_2_Scene_6",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left"}
+                {name = "char2", pose = "normal", pos = "right"},
+                {name = "char2", pose = "normal", pos = "left", flip = true}
             },
 
             speaker = "Kapitan Tinong",
             text = "Inaanyayahan kita sa pananghalian bukas."
         },
         {
-            bg = "Kabanata_2_Scene_6",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left"}
+                {name = "char2", pose = "normal", pos = "right"},
+                {name = "char2", pose = "normal", pos = "left", flip = true}
             },
 
             speaker = "Ibarra",
             text = "Pasensya na po. Ako'y tutungo sa San Diego."
         },
         {
-            bg = "Kabanata_2_Scene_6",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left"}
+                {name = "char2", pose = "normal", pos = "right"},
+                {name = "char2", pose = "normal", pos = "left", flip = true}
             },
 
             speaker = "",
@@ -450,350 +453,352 @@ chapter = {
     {
         {
             event = "Kabanata 3: Ang Hapunan",
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Nagtungo ang mga panauhin sa hapag-kainan."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Nagtungo ang mga panauhin sa hapag-kainan."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "scene 2"
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Si Padre Damaso ay halatang banas at magaspang ang kilos."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Padre Sibyla",
             text = "Dapat si Padre Damaso ang maupo rito."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"},
+                {name = "padreDamaso", pose = "normal", pos = "left", flip = true}
             },
 
             speaker = "Padre Damaso",
             text = "Hindi, ikaw ang nararapat bilang kura rito."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Nag-agawan ang dalawang pari sa kabisera ng mesa."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Padre Sibyla",
             text = "Tinyente, kayo na lamang?"
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Ako'y tatanggi."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Si Ibarra ang naupo sa kabisera."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Ibarra",
             text = "Kapitan, kayo na po ang maupo rito."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Kapitan Tiyago",
             text = "Huwag mo na akong alalahanin."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Inihain ang tinola."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Kay Padre Damaso napunta ang leeg at pakpak."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Kay Ibarra naman ang pinakamasarap na bahagi."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "(hindi direktang linya, galit na ekspresyon)"
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Laruja",
             text = "Matagal kang nawala sa Pilipinas?"
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Ibarra",
             text = "Pitong taon. Ngunit hindi ko nakalimutan ang aking bayan."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Ibarra",
             text = "Sa halip… ako ang nakalimutan."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Wala siyang nalalaman sa sinapit ng kanyang ama."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Donya Victorina",
             text = "Hindi ka man lang nagpadala ng balita?"
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Ibarra",
             text = "Nasa ibang bansa ako nitong mga huling taon."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Marami siyang napuntahang bansa at natutunang wika."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Ibarra",
             text = "Magkakatulad ang mga bansa sa kabuhayan, pulitika, at relihiyon…"
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "padreDamaso", pose = "normal", pos = "left", flip = true},
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Padre Damaso",
             text = "Kung iyan lang ang natutunan mo, nag-aksaya ka ng pera!"
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Nagulat ang lahat."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Ibarra",
             text = "Naalala ko lamang po ang inyong pagbisita sa aming tahanan noon."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Naalala ko lamang po ang inyong pagbisita sa aming tahanan noon."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Ibarra",
             text = "Ako po'y magpapaalam na."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Kapitan Tiyago",
             text = "Hintayin mo si Maria Clara—"
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Ibarra",
             text = "Babalik na lamang po ako bukas."
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "padreDamaso", pose = "normal", pos = "left", flip = true}
             },
 
             speaker = "Padre Damaso",
             text = "Mapagmataas ang binatang iyon!"
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "padreDamaso", pose = "normal", pos = "left", flip = true}
             },
 
             speaker = "Padre Damaso",
             text = "Hindi dapat pinapag-aral sa Espanya ang mga Indio!"
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Sa hapag na puno ng pagkain…"
         },
         {
-            bg = "Kabanata_3_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
@@ -805,360 +810,360 @@ chapter = {
     {
         {
             event = "Kabanata 4: Erehe at Pilibustero",
-            bg = "Kabanata_4_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Mag-isang naglalakad si Ibarra sa gabi."
         },
         {
-            bg = "Kabanata_4_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Pitong taon ang lumipas… ngunit tila walang nagbago sa kanyang bayan."
         },
         {
-            bg = "Kabanata_4_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Ibarra."
         },
         {
-            bg = "Kabanata_4_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Hinabol siya ng Tinyente Guevarra."
         },
         {
-            bg = "Kabanata_4_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Mag-ingat ka."
         },
         {
-            bg = "Kabanata_4_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Ibarra",
             text = "Bakit po?"
         },
         {
-            bg = "Kabanata_4_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Ayokong matulad ka sa iyong ama."
         },
         {
-            bg = "Kabanata_4_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Ibarra",
             text = "Sabihin ninyo po sa akin… ano ang nangyari sa aking ama?"
         },
         {
-            bg = "Kabanata_4_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Wala siyang alam. Ni isang detalye."
         },
         {
-            bg = "Kabanata_4_Scene_5",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Ang iyong ama… si Don Rafael… ay isang mabuting tao."
         },
         {
-            bg = "Kabanata_4_Scene_5",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Mayaman, iginagalang… ngunit maraming naiinggit."
         },
         {
-            bg = "Kabanata_4_Scene_5",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "At tulad ng liwanag, may mga aninong gustong patayin ito."
         },
         {
-            bg = "Kabanata_4_Scene_5",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Nagkaroon siya ng kaaway- mga Kastila at pari."
         },
         {
-            bg = "Kabanata_4_Scene_5",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Isa na roon si Padre Damaso."
         },
         {
-            bg = "Kabanata_4_Scene_5",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Pinagbintangan siyang erehe… at pilibustero."
         },
         {
-            bg = "Kabanata_4_Scene_5",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Dalawang salitang kay bigat… na maaaring magwasak ng buhay."
         },
         {
-            bg = "Kabanata_4_Scene_9",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "May isang artilyero na nanakit ng bata."
         },
         {
-            bg = "Kabanata_4_Scene_9",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Dumaan ang iyong ama… at ipinagtanggol ang bata."
         },
         {
-            bg = "Kabanata_4_Scene_9",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Sa gitna ng gulo… nabuwal ang artilyero."
         },
         {
-            bg = "Kabanata_4_Scene_9",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "At siya'y pinagbintangang pumatay."
         },
         {
-            bg = "Kabanata_4_Scene_9",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Kahit walang sapat na patunay."
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Siya ay ibinilanggo."
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Dinagdagan pa ang paratang…"
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "pagbabasa ng ipinagbabawal na aklat… pakikipag-ugnayan sa tulisan…"
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Tinulungan ko siya. Naghanap ako ng abogado."
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Lumabas sa pagsusuri… hindi niya kasalanan ang pagkamatay ng artilyero."
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Malapit na siyang mapawalang-sala…"
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "..."
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "Ngunit… namatay siya sa loob ng bilangguan."
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Hindi na niya naabutan ang kalayaan."
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "At si Ibarra… naiwan sa bigat ng katotohanan."
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "Tinyente",
             text = "At si Ibarra… naiwan sa bigat ng katotohanan."
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Naghiwalay sila sa tapat ng kuwartel."
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "Sa gabing iyon…"
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
             text = "hindi lamang alaala ang kanyang dala…"
         },
         {
-            bg = "Kabanata_4_Scene_11",
+            bg = "bg11",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
 
             speaker = "",
@@ -1177,17 +1182,17 @@ chapter = {
         },
         {
             event = "Kabanata 5: Pangarap sa Gabing Madilim",
-            bg = "Kabanata_5_Scene_1",
+            bg = "bg1",
             
             speaker = "",
             text = "Dumating si Ibarra sa Fonda de Lala."
         },
         {
             
-            bg = "Kabanata_5_Scene_1",
+            bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"}
+                {name = "char2", pose = "normal", pos = "right"}
             },
             
             speaker = "Ibarra",
@@ -1195,98 +1200,98 @@ chapter = {
         },
         {
             
-            bg = "Kabanata_5_Scene_2",
+            bg = "bg1",
             
             speaker = "",
             text = "Umupo siya sa isang silyon… tahimik… mag-isa."
         },
         {
             
-            bg = "Kabanata_5_Scene_2",
+            bg = "bg1",
             
             speaker = "",
             text = "Magulo ang kanyang isip sa sinapit ng kanyang ama."
         },
         {
             
-            bg = "Kabanata_5_Scene_3",
+            bg = "bg1",
             
             speaker = "",
             text = "Sa kabilang dako… may kasiyahan."
         },
         {
             
-            bg = "Kabanata_5_Scene_3",
+            bg = "bg1",
             
             speaker = "",
             text = "Sa kabilang dako… may kasiyahan."
         },
         {
             
-            bg = "Kabanata_5_Scene_3",
+            bg = "bg1",
             
             speaker = "",
             text = "Naroon si Maria Clara… hinahangaan ng lahat."
         },
         {
             
-            bg = "Kabanata_5_Scene_3",
+            bg = "bg1",
             
             speaker = "",
             text = "Ang mga panauhin pari, opisyal, at mamamayan lahat ay nakatuon sa kanyang kagandahan."
         },
         {
             
-            bg = "Kabanata_5_Scene_3",
+            bg = "bg1",
             
             speaker = "",
             text = "Si Padre Sibyla ay abala sa pakikipag-usap."
         },
         {
             
-            bg = "Kabanata_5_Scene_3",
+            bg = "bg1",
             
             speaker = "",
             text = "Ngunit may isang hindi nakikibahagi."
         },
         {
             
-            bg = "Kabanata_5_Scene_3",
+            bg = "bg1",
             
             speaker = "",
             text = "Ngunit may isang hindi nakikibahagi."
         },
         {
             
-            bg = "Kabanata_5_Scene_3",
+            bg = "bg1",
             
             speaker = "",
             text = "Sa isang panig - kasiyahan."
         },
         {
             
-            bg = "Kabanata_5_Scene_3",
+            bg = "bg1",
             
             speaker = "",
             text = "Sa kabila - kalungkutan."
         },
         {
             
-            bg = "bg2",
+            bg = "bg1",
             
             speaker = "",
             text = "Sa pagod ng isip at katawan… madali siyang nakatulog."
         },
         {
             
-            bg = "bg2",
+            bg = "bg1",
             
             speaker = "",
             text = "Ngunit sa gabing iyon… Ngunit sa gabing iyon…"
         },
         {
             
-            bg = "bg2",
+            bg = "bg1",
             
             speaker = "",
             text = "Habang ang iba'y nagdiriwang… may mga pusong hindi mapalagay."
@@ -1321,7 +1326,7 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1331,7 +1336,7 @@ chapter = {
             text = "Siya ay pandak, bilugan ang mukha, at may kayumangging kutis.",
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1343,7 +1348,7 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1353,7 +1358,7 @@ chapter = {
             text = "Siya ang pinakamayaman sa Binondo."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1365,7 +1370,7 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1375,7 +1380,7 @@ chapter = {
             text = "Ako ay isang tunay na Kastila."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1387,7 +1392,7 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1397,7 +1402,7 @@ chapter = {
             text = "Naniniwala siyang nabibili ang kaligtasan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1409,7 +1414,7 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1419,7 +1424,7 @@ chapter = {
             text = "Sinusunod niya ang lahat ng utos ng mga Kastila."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1432,7 +1437,7 @@ chapter = {
         --scene 7
 
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1442,7 +1447,7 @@ chapter = {
             text = "Anak siya ng isang kuripot na mangangalakal."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1454,7 +1459,7 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1464,7 +1469,7 @@ chapter = {
             text = "Natuto siya sa tulong ng isang paring Dominiko."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 { name = "char2", pose = "normal", pos = "center" }
@@ -1480,10 +1485,10 @@ chapter = {
         --       Kapitan Tiyago = left
         --       Pia            = right
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1491,10 +1496,10 @@ chapter = {
             text = "Nakilala niya si Pia Alba."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1504,10 +1509,10 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
 
                 -- si Don Rafael sana nasa gitna nina Kapitan Tiyago at Pia(?)
@@ -1520,10 +1525,10 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1531,10 +1536,10 @@ chapter = {
             text = "Matagal silang walang anak."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1544,11 +1549,11 @@ chapter = {
 
         --scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1556,10 +1561,10 @@ chapter = {
             text = "Sa wakas... naglihi si Pia."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1569,22 +1574,22 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "center" }
+                { name = "char2", pose = "normal", pos = "center" }
             },
 
             speaker = "",
             text = "Ang bata ay pinangalanang Maria Clara."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Maria Clara  = center
             -- Padre Damaso = right
             characters = {
-                { name = "char1", pose = "normal", pos = "center" },
+                { name = "char2", pose = "normal", pos = "center" },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1594,24 +1599,24 @@ chapter = {
 
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
 
 
             -- Maria Clara  = center
             -- Tiya Isabel = left
             characters = {
-                { name = "char1", pose = "normal", pos = "center" },
-                { name = "char2", pose = "normal", pos = "left" }
+                { name = "char2", pose = "normal", pos = "center" },
+                { name = "char2", pose = "normal", pos = "left", flip = true }
             },
 
             speaker = "",
             text = "Lumaki si Maria Clara sa pangangalaga ni Tiya Isabel."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "center" }
+                { name = "char2", pose = "normal", pos = "center" }
             },
 
             speaker = "",
@@ -1620,12 +1625,12 @@ chapter = {
 
         -- scene 15
         {
-            bg = "bg2",
+            bg = "bg1",
             
             -- Don Rafael     = left
             -- Kapitan Tiyago = right
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1633,12 +1638,12 @@ chapter = {
             text = "Nagkasundo sina Don Rafael at Kapitan Tiyago."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
             
             -- Maria Clara        = left
             -- Crisostomo Ibarra  = right
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1648,13 +1653,13 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa likod ng kayamanan at kabanalan…"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "nakatago ang isang mundong umiikot sa kapangyarihan at pakinabang."
@@ -1667,11 +1672,11 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 7: Suyuan sa Asotea",
-            bg = "bg2",
+            bg = "bg1",
 
             -- Maria Clara = center
             characters = {
-                { name = "char1", pose = "normal", pos = "center" },
+                { name = "char2", pose = "normal", pos = "center" },
             },
 
             speaker = "",
@@ -1680,20 +1685,20 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "center" }
+                { name = "char2", pose = "normal", pos = "center" }
             },
 
             speaker = "",
             text = "Pagbalik, si Maria ay nanahi… ngunit hindi mapakali."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
             
             characters = {
-                { name = "char1", pose = "normal", pos = "center" }
+                { name = "char2", pose = "normal", pos = "center" }
             },
 
             speaker = "",
@@ -1702,24 +1707,24 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Maria Clara    = center
             -- Kapitan Tiyago = left
             characters = {
-                { name = "char1", pose = "normal", pos = "center" },
-                { name = "char2", pose = "normal", pos = "left" }
+                { name = "char2", pose = "normal", pos = "center" },
+                { name = "char2", pose = "normal", pos = "left", flip = true }
             },
 
             speaker = "Kapitan Tiyago",
             text = "Maghanda ka. Hindi ka na babalik sa beaterio."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "center" },
-                { name = "char2", pose = "normal", pos = "left" }
+                { name = "char2", pose = "normal", pos = "center" },
+                { name = "char2", pose = "normal", pos = "left", flip = true }
             },
 
             speaker = "",
@@ -1728,24 +1733,24 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "center" },
-                { name = "char2", pose = "normal", pos = "left" }
+                { name = "char2", pose = "normal", pos = "center" },
+                { name = "char2", pose = "normal", pos = "left", flip = true }
             },
 
             speaker = "Maria Clara",
             text = "...",
         },
         {
-            bg = "bg2",
+            bg = "bg1",
             -- ito ung part ni Maria Clara na mag-eexit and returns composed
             -- sabi sa script
 
             characters = {
-                { name = "char1", pose = "normal", pos = "center" },
-                { name = "char2", pose = "normal", pos = "left" }
+                { name = "char2", pose = "normal", pos = "center" },
+                { name = "char2", pose = "normal", pos = "left", flip = true }
             },
 
             speaker = "",
@@ -1754,12 +1759,12 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Ibarra      = left
             -- Maria Clara = right
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1767,10 +1772,10 @@ chapter = {
             text = "Nagtagpo ang kanilang mga mata."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1780,7 +1785,7 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Upang makaiwas sa ingay… nagtungo sila sa asotea."
@@ -1788,10 +1793,10 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1799,10 +1804,10 @@ chapter = {
             text = "Hindi mo ba ako nalimutan… sa dami ng magagandang dalaga sa Europa?"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1812,10 +1817,10 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1823,10 +1828,10 @@ chapter = {
             text = "Ikaw ang nasa aking alaala… sa lahat ng oras."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1836,10 +1841,10 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1847,10 +1852,10 @@ chapter = {
             text = "Hindi rin kita nakalimutan…"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1860,10 +1865,10 @@ chapter = {
 
         --scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1871,10 +1876,10 @@ chapter = {
             text = "Naalala mo ba ang ating kabataan?"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1884,10 +1889,10 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1896,10 +1901,10 @@ chapter = {
 
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1908,10 +1913,10 @@ chapter = {
 
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1922,10 +1927,10 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1933,10 +1938,10 @@ chapter = {
             text = "Itinago ko ito."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1946,13 +1951,13 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Isinulat ni Don Rafael ang dahilan ng pag-alis ni Ibarra"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Upang mag-aral… at maglingkod sa bayan."
@@ -1960,10 +1965,10 @@ chapter = {
 
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1971,10 +1976,10 @@ chapter = {
             text = "Kailangan kong umalis."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1982,10 +1987,10 @@ chapter = {
             text = "Bakit?"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -1995,12 +2000,12 @@ chapter = {
 
         -- scene 15
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Ibarra      = left
             -- Maria Clara = center
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "center" }
             },
 
@@ -2010,16 +2015,16 @@ chapter = {
 
         -- scene 16
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "Kapitan Tiyago",
             text = "Sabihin mo kay Anding, ihanda ang bahay sa San Diego."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "center" }
+                { name = "char2", pose = "normal", pos = "center" }
             },
 
             speaker = "Ibarra",
@@ -2028,7 +2033,7 @@ chapter = {
 
         -- scene 17
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Naghiwalay sila… na may pangakong muling pagkikita."
@@ -2036,10 +2041,10 @@ chapter = {
 
         -- scene 18
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" }
+                { name = "char2", pose = "normal", pos = "left", flip = true }
             },
 
             speaker = "",
@@ -2048,13 +2053,13 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa gitna ng pag-ibig…"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "may mga puwersang tahimik na humahadlang."
@@ -2067,10 +2072,10 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 8: Mga Alaala",
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "right" }
+                { name = "char2", pose = "normal", pos = "right" }
             },
 
             speaker = "",
@@ -2079,10 +2084,10 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "right" }
+                { name = "char2", pose = "normal", pos = "right" }
             },
 
             speaker = "",
@@ -2092,19 +2097,19 @@ chapter = {
         -- scene 3
         -- this is the montage visuals sa script
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Mga kalesa at karumata… walang tigil sa pagbiyahe."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Mga taong may iba’t ibang anyo"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Pilipino, Kastila, Intsik."
@@ -2112,13 +2117,13 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "May mga babaeng naglalako ng prutas."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "May mga lalaking nagpapasan ng mabibigat na karga."
@@ -2126,13 +2131,13 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ngunit hindi lahat ay payapa."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "May mga bilanggo… tila bahagi lamang ng lansangan."
@@ -2140,13 +2145,13 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Walang nagbago sa punong Talisay sa San Gabriel."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Walang nagbago sa punong Talisay sa San Gabriel."
@@ -2154,13 +2159,13 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "May mga kawaning papasok sa trabaho…"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "mga paring tahimik… mga Tsinong mangangalakal."
@@ -2168,7 +2173,7 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "mga paring tahimik… mga Tsinong mangangalakal."
@@ -2176,12 +2181,12 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Kapitan Tinong = left
             -- Ibarra         = right
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -2189,10 +2194,10 @@ chapter = {
             text = "Magandang araw, Ibarra!"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -2202,13 +2207,13 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Naalala niya ang pagawaan ng tabako."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Minsan na siyang nahilo sa masangsang nitong amoy."
@@ -2216,13 +2221,13 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Saglit siyang napawi ng Hardin Botaniko."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ngunit hindi ito maihahambing sa mga hardin sa Europa."
@@ -2230,13 +2235,13 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa malayo… ang matandang Maynila."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Napapalibutan ng makakapal at lumang pader."
@@ -2244,7 +2249,7 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Naalala niya ang bilin ng kanyang guro."
@@ -2252,25 +2257,25 @@ chapter = {
 
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
             
             speaker = "",
             text = "Ang karunungan ay para sa tao… ngunit para lamang sa may puso."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ito ay dapat ipamana sa susunod na henerasyon."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "At kung ang dayuhan ay kumuha ng yaman dito…"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "nararapat lamang na kunin din ang kanilang kaalaman."
@@ -2278,19 +2283,19 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa bawat tanawin…"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "hindi lamang lungsod ang kanyang nakikita"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "kundi ang kanyang nakaraan… at ang landas na tatahakin."
@@ -2303,12 +2308,12 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 9: Mga Suliranin Tungkol sa Bayan",
-            bg = "bg2",
+            bg = "bg1",
 
             -- Maria Clara = left
             -- Tiya Isabel = center
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "center" },
             },
 
@@ -2318,12 +2323,12 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Padre Damaso = right
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
-                { name = "char2", pose = "normal", pos = "center" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
+                { name = "padreDamaso", pose = "normal", pos = "center" },
                 -- { name = "char3", pose = "normal", pos = "right" },
             },
 
@@ -2331,10 +2336,10 @@ chapter = {
             text = "Saan kayo patutungo?"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "center" },
                 -- { name = "char3", pose = "normal", pos = "right" },
             },
@@ -2345,27 +2350,27 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "right" }
+                { name = "char2", pose = "normal", pos = "right" }
             },
 
             speaker = "",
             text = "Hindi ito nagustuhan ng pari."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "right" }
+                { name = "padreDamaso", pose = "normal", pos = "right" }
             },
 
             speaker = "Padre Damaso",
             text = "..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Nagpatuloy siya papasok sa bahay."
@@ -2373,10 +2378,10 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right", dim = true }
             },
 
@@ -2384,10 +2389,10 @@ chapter = {
             text = "Padre!"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right", dim = true }
             },
 
@@ -2397,10 +2402,10 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -2410,10 +2415,10 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -2421,10 +2426,10 @@ chapter = {
             text = "Bakit mo ito itinago sa akin?"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -2432,10 +2437,10 @@ chapter = {
             text = "Padre..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -2445,10 +2450,10 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" }
             },
 
@@ -2456,7 +2461,7 @@ chapter = {
             text = "Ako ang inaama ni Maria Clara."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Hindi ito simpleng paalala… kundi babala."
@@ -2464,7 +2469,7 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Samantala, nagtungo si Padre Sibyla sa kumbento."
@@ -2472,10 +2477,10 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" }
+                { name = "char2", pose = "normal", pos = "left", flip = true }
             },
 
             speaker = "Padre Sibyla",
@@ -2484,17 +2489,17 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" }
+                { name = "char2", pose = "normal", pos = "left", flip = true }
             },
 
             speaker = "Padre Sibyla",
             text = "Si Ibarra ay isang mabuting binata."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Pinag-usapan nila si Ibarra, Maria Clara, at Kapitan Tiyago."
@@ -2502,16 +2507,16 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Hindi dahil sa kabutihan... kundi sa kanilang pakinabang."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" }
+                { name = "char2", pose = "normal", pos = "left", flip = true }
             },
 
             speaker = "Matandang Pari",
@@ -2520,20 +2525,20 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" }
+                { name = "char2", pose = "normal", pos = "left", flip = true }
             },
 
             speaker = "Matandang Pari",
             text = "Humihina ang aming yaman sa Europa."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left", dim = true }
+                { name = "char2", pose = "normal", pos = "left", flip = true, dim = true }
             },
 
             speaker = "",
@@ -2542,24 +2547,24 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
-                { name = "char1", pose = "normal", pos = "left" }
+                { name = "char2", pose = "normal", pos = "left", flip = true }
             },
 
             speaker = "Padre Sibyla",
             text = "At sa Pilipinas... nagiging hamon ang mga mamamayan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "At ang nangyari sa handaan… nalaman din ng Kapitan Heneral."
         },
 
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Natapos ang pag-uusap nina Kapitan Tiyago at Padre Damaso."
@@ -2567,12 +2572,12 @@ chapter = {
 
         -- scene 15
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Kapitan Tiyago = left
             -- Padre Damaso   = right
             characters = {
-                { name = "char1", pose = "normal", pos = "left" },
+                { name = "char2", pose = "normal", pos = "left", flip = true },
                 { name = "char2", pose = "normal", pos = "right" },
             },
 
@@ -2582,7 +2587,7 @@ chapter = {
 
         -- scene 16
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Pinatay ni Padre Damaso ang mga kandilang inalay para kay Ibarra."
@@ -2590,13 +2595,13 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa likod ng mga panalangin..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "may mga kapasyahang tahimik na binabago ang kapalaran ng iba."
@@ -2609,13 +2614,13 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 10: Ang San Diego",
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ang San Diego ay isang tahimik na bayan sa tabi ng lawa."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Napapalibutan ito ng malalawak na bukirin at palayan."
@@ -2623,13 +2628,13 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Karamihan sa mga tao rito ay magsasaka."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ngunit dahil sa kamangmangan... naibebenta nila ang kanilang ani sa murang halaga."
@@ -2637,7 +2642,7 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Mula sa tuktok ng simbahan… matatanaw ang buong bayan."
@@ -2645,7 +2650,7 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa gitna ng kapatagan… may isang tila pulong gubat."
@@ -2653,7 +2658,7 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ayon sa alamat… may isang matandang Kastila ang dumating."
@@ -2661,13 +2666,13 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Binili niya ang buong gubat gamit ang salapi at alahas."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ngunit hindi nagtagal… siya ay nawala."
@@ -2675,7 +2680,7 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Natagpuan ang kanyang bangkay… nakabitin sa isang puno."
@@ -2683,7 +2688,7 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Kinakatakutan siya dahil sa kanyang anyo at kakaibang asal."
@@ -2691,13 +2696,13 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sinunog ang kanyang mga damit."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ang mga alahas… itinapon sa ilog."
@@ -2705,13 +2710,13 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Dumating ang kanyang anak"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "si Saturnino."
@@ -2719,13 +2724,13 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Pinagyaman niya ang lupa."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Unti-unting naging maunlad ang lugar."
@@ -2733,13 +2738,13 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Nagkaroon siya ng anak"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "si Don Rafael."
@@ -2747,13 +2752,13 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Isang mabait at makatarungang tao."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Minahal siya ng mga mamamayan."
@@ -2761,7 +2766,7 @@ chapter = {
 
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa ilalim niya… ang nayon ay naging bayan."
@@ -2769,7 +2774,7 @@ chapter = {
 
         -- scene 15
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ngunit nagbago ang lahat nang dumating ang bagong kura"
@@ -2777,13 +2782,13 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ang San Diego ay hindi lamang isang bayan"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ito ay isang kasaysayan ng kapangyarihan, pagbabago, at mga aninong hindi nawawala."
@@ -2796,13 +2801,13 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 11: Ang mga Makapangyarihan",
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa San Diego, hindi sapat ang yaman upang maging makapangyarihan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "May mga taong iginagalang… ngunit hindi nasusunod."
@@ -2810,11 +2815,11 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2824,11 +2829,11 @@ chapter = {
             text = "Si Don Rafael, pinakamayaman at pinakamabait."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2838,11 +2843,11 @@ chapter = {
             text = "Ngunit hindi siya ang tunay na makapangyarihan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2854,11 +2859,11 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2868,11 +2873,11 @@ chapter = {
             text = "Si Kapitan Tiyago, mayaman at kilala."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2884,11 +2889,11 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2898,11 +2903,11 @@ chapter = {
             text = "Ang Kapitan ng bayan… hindi rin makapangyarihan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2914,7 +2919,7 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Kung gayon… sino ang tunay na makapangyarihan?"
@@ -2922,11 +2927,11 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2936,11 +2941,11 @@ chapter = {
             text = "Si Padre Salvi, ang kura paroko."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2952,11 +2957,11 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2966,11 +2971,11 @@ chapter = {
             text = "At ang Alperes, pinuno ng Guardia Civil."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2982,11 +2987,11 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -2996,11 +3001,11 @@ chapter = {
             text = "Ang kanyang asawa, si Donya Consolacion."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -3012,15 +3017,15 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Padre Salvi = left
             -- Alferes     = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3035,13 +3040,13 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3054,13 +3059,13 @@ chapter = {
             text = "Magandang araw."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3073,13 +3078,13 @@ chapter = {
             text = "Magandang araw din."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3094,13 +3099,13 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ngunit sa likod nito..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "pareho silang gumagawa ng paraan upang pabagsakin ang isa't isa."
@@ -3108,13 +3113,13 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Simbahan… at Pamahalaan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Dalawang puwersang naglalaban para sa kapangyarihan."
@@ -3122,13 +3127,13 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "ang kapangyarihan ay hindi nakikita sa yaman"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "kundi sa kakayahang kontrolin ang iba."
@@ -3145,13 +3150,13 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 12: Araw ng mga Patay",
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ang sementeryo ng San Diego ay nasa gitna ng malawak na palayan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Napapalibutan ito ng lumang pader at kawayan."
@@ -3159,13 +3164,13 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Makitid ang daan papunta rito, maalikabok kung tag-init, maputik kung tag-ulan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Masukal at tila napabayaan ang buong lugar."
@@ -3173,13 +3178,13 @@ chapter = {
         
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa gitna… may isang malaking krus."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Kupas na ang marka ng panahon."
@@ -3187,15 +3192,15 @@ chapter = {
         
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Sepulturero    = left
             -- Bagong Katulong = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3210,13 +3215,13 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3229,13 +3234,13 @@ chapter = {
             text = "Lumipat na tayo… hindi ko kaya."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3250,13 +3255,13 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3269,13 +3274,13 @@ chapter = {
             text = "Sanayan lang iyan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3290,13 +3295,13 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3309,13 +3314,13 @@ chapter = {
             text = "May inutos sa akin noon..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3330,13 +3335,13 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3351,13 +3356,13 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3372,13 +3377,13 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3391,13 +3396,13 @@ chapter = {
             text = "Ngunit dahil sa hirap ng sitwasyon..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3412,13 +3417,13 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3433,13 +3438,13 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3454,13 +3459,13 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3475,13 +3480,13 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa araw ng mga patay..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "mas malinaw kung paano pinahahalagahan ang buhay."
@@ -3495,15 +3500,15 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 13: Mga Unang Banta ng Unos",
-            bg = "bg2",
+            bg = "bg1",
 
             -- Matandang Utusan = left
             -- Ibarra           = center
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3518,13 +3523,13 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3537,13 +3542,13 @@ chapter = {
             text = "Nasaan ang puntod ng aking ama?"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3558,14 +3563,14 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Sepulturero = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3583,13 +3588,13 @@ chapter = {
             text = "Alam mo ba ang libingan ni Don Rafael?"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3609,13 +3614,13 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3633,13 +3638,13 @@ chapter = {
             text = "Sinunog ang krus..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3659,13 +3664,13 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3685,13 +3690,13 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3713,7 +3718,7 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Biglang umalis si Ibarra... parang wala sa sarili."
@@ -3722,13 +3727,13 @@ chapter = {
         -- scene 8
         -- tf no one speaks here haha
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -3738,15 +3743,15 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Padre Salvi = left
             -- Ibarra      = center
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3761,13 +3766,13 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3780,13 +3785,13 @@ chapter = {
             text = "Hindi ako ang may kagagawan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -3801,11 +3806,11 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -3815,11 +3820,11 @@ chapter = {
             text = "Galit... sakit... at kawalan ng katarungan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -3831,13 +3836,13 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ang unos... ay hindi nagsisimula sa kulog"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "kundi sa isang tahimik na galit."
@@ -3851,11 +3856,11 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 14: Si Pilosopo Tasyo",
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -3865,11 +3870,11 @@ chapter = {
             text = "Si Pilosopo Tasyo... kilala ng marami bilang baliw."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -3881,13 +3886,13 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Anak siya ng mayamang pamilya."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ngunit pinatigil sa pag-aaral… dahil sa takot na makalimot sa Diyos."
@@ -3895,13 +3900,13 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Hindi siya naging pari."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa halip... nag-asawa."
@@ -3909,13 +3914,13 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ngunit maaga niyang nawala ang kanyang asawa."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Mula noon… inilaan niya ang sarili sa pag-aaral."
@@ -3923,7 +3928,7 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa sobrang kaalaman... tinawag siyang baliw."
@@ -3931,7 +3936,7 @@ chapter = {
 
         -- scene 6 - ARAW NG MGA PATAY
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa araw ng mga patay... nagtungo siya sa libingan."
@@ -3939,7 +3944,7 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Nagbabanta ang unos."
@@ -3947,13 +3952,13 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -3961,13 +3966,13 @@ chapter = {
             text = "Ang bagyo… ang aking pag-asa."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -3977,13 +3982,13 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -3993,13 +3998,13 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -4007,13 +4012,13 @@ chapter = {
             text = "May paraan upang maiwasan ang kidlat."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -4023,13 +4028,13 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -4037,13 +4042,13 @@ chapter = {
             text = "Ngunit siya'y pinagtawanan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -4053,13 +4058,13 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -4069,16 +4074,16 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Tasyo   = left
             -- Crispin = center
             -- Basilio  = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4096,13 +4101,13 @@ chapter = {
             text = "May handa ang inyong ina."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4122,16 +4127,16 @@ chapter = {
 
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Tasyo       = left
             -- Don Filipo  = center
             -- Aling Doray = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4149,13 +4154,13 @@ chapter = {
             text = "Nakita mo ba si Ibarra?"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4175,13 +4180,13 @@ chapter = {
 
         -- scene 16
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4201,13 +4206,13 @@ chapter = {
 
         -- scene 17
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4225,13 +4230,13 @@ chapter = {
             text = "Naniniwala ka ba sa purgatoryo?"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4251,13 +4256,13 @@ chapter = {
 
         -- scene 18
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4277,7 +4282,7 @@ chapter = {
 
         -- scene 19
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Umalis si Tasyo habang lumalakas ang ulan."
@@ -4285,11 +4290,11 @@ chapter = {
 
         -- scene 20
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "right"
                 }
@@ -4299,11 +4304,11 @@ chapter = {
             text = "..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "right"
                 }
@@ -4313,11 +4318,11 @@ chapter = {
             text = "Habang ang iba'y natatakot sa bagyo..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "right"
                 }
@@ -4337,15 +4342,15 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 15: Ang mga Sakristan",
-            bg = "bg2",
+            bg = "bg1",
 
             -- Basilio = left
             -- Crispin = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4360,13 +4365,13 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4379,13 +4384,13 @@ chapter = {
             text = "Kung kasama lang tayo ni Inay..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4400,13 +4405,13 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4419,13 +4424,13 @@ chapter = {
             text = "Pinagbintangan nila akong magnanakaw..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4440,13 +4445,13 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4459,13 +4464,13 @@ chapter = {
             text = "Wala tayong pambayad..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4480,13 +4485,13 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4499,13 +4504,13 @@ chapter = {
             text = "Bayaran na lang natin..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4520,13 +4525,13 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4539,13 +4544,13 @@ chapter = {
             text = "Mabuti pang magnakaw na lang talaga..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4560,13 +4565,13 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4579,13 +4584,13 @@ chapter = {
             text = "Kung malaman ni Inay..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4600,16 +4605,16 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Basilio         = left
             -- Crispin         = center
             -- Sakristan Mayor = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4627,13 +4632,13 @@ chapter = {
             text = "Mali ang pagtugtog ng kampana!"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4651,13 +4656,13 @@ chapter = {
             text = "Pero—"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4677,13 +4682,13 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4701,13 +4706,13 @@ chapter = {
             text = "Hindi kayo makakauwi."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4727,13 +4732,13 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4751,13 +4756,13 @@ chapter = {
             text = "Ilabas mo ang ninakaw mo."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -4777,7 +4782,7 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Wala po akong ninakaw!"
@@ -4785,13 +4790,13 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "Crispin",
             text = "Kuya!"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Naririnig ni Basilio ang kanyang kapatid... ngunit wala siyang magawa."
@@ -4799,11 +4804,11 @@ chapter = {
 
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -4815,7 +4820,7 @@ chapter = {
 
         -- scene 15
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Tumakas si Basilio."
@@ -4823,7 +4828,7 @@ chapter = {
 
         -- scene 16
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Bumaba siya mula sa kampanaryo... patungo sa dilim."
@@ -4831,13 +4836,13 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa gabing iyon... isang bata ang tumakas"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "at isa ang naiwan."
@@ -4851,11 +4856,11 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 16: Si Sisa",
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -4867,11 +4872,11 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -4881,11 +4886,11 @@ chapter = {
             text = "Inihanda niya ang hapunan para sa kanyang mga anak."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -4897,11 +4902,11 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -4911,11 +4916,11 @@ chapter = {
             text = "Darating na sila..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -4927,11 +4932,11 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -4943,11 +4948,11 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -4957,11 +4962,11 @@ chapter = {
             text = "Inubos ng ama ang pagkain na para sana sa mga bata.",
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -4973,11 +4978,11 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -4987,11 +4992,11 @@ chapter = {
             text = "Mag-iwan ka ng pera.",
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5003,11 +5008,11 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5019,11 +5024,11 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5033,11 +5038,11 @@ chapter = {
             text = "Muling nagsaing si Sisa...",
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5049,11 +5054,11 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5063,11 +5068,11 @@ chapter = {
             text = "Basilio... Crispin...",
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5079,11 +5084,11 @@ chapter = {
         
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5095,11 +5100,11 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5109,11 +5114,11 @@ chapter = {
             text = "Ngunit hindi siya mapakali.",
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5125,11 +5130,11 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5141,11 +5146,11 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
@@ -5157,20 +5162,20 @@ chapter = {
 
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Sisa    = center
             -- Basilio = left
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5180,18 +5185,18 @@ chapter = {
 
         -- scene 15
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5201,18 +5206,18 @@ chapter = {
         
         -- scene 16
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5220,18 +5225,18 @@ chapter = {
             text = "Nahulog lang po ako...",
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5241,18 +5246,18 @@ chapter = {
 
         -- scene 17
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5260,18 +5265,18 @@ chapter = {
             text = "Nasaan ang kapatid mo?",
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5281,18 +5286,18 @@ chapter = {
 
         -- scene 18
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5302,18 +5307,18 @@ chapter = {
 
         -- scene 19
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5321,18 +5326,18 @@ chapter = {
             text = "Mas mabuti pa kung wala na siya...",
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5342,18 +5347,18 @@ chapter = {
 
         -- scene 20
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5361,18 +5366,18 @@ chapter = {
             text = "Magbabago tayo...",
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5382,7 +5387,7 @@ chapter = {
 
         -- scene 21
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa gitna ng dilim... may munting pag-asa.",
@@ -5390,13 +5395,13 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ngunit sa labas ng kanilang tahanan..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "may mga bagay na hindi nila kayang pigilan."
@@ -5410,18 +5415,18 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 17: Si Basilio",
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5431,18 +5436,18 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5452,18 +5457,18 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5471,18 +5476,18 @@ chapter = {
             text = "Hinabol po ako ng mga guwardiya sibil..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5492,18 +5497,18 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5511,18 +5516,18 @@ chapter = {
             text = "Sabihin na lang po natin... nahulog ako sa puno."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5532,18 +5537,18 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5553,18 +5558,18 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5572,18 +5577,18 @@ chapter = {
             text = "Naiwan po siya sa kumbento..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5593,18 +5598,18 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5612,18 +5617,18 @@ chapter = {
             text = "Napuno ng awa ang puso ni Sisa."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5633,18 +5638,18 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5652,18 +5657,18 @@ chapter = {
             text = "Hindi pa kumakain si Basilio."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5673,18 +5678,18 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5692,18 +5697,18 @@ chapter = {
             text = "Mas mabuti pa kung wala na siya..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5713,18 +5718,18 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5734,13 +5739,13 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5748,13 +5753,13 @@ chapter = {
             text = "Crispin...!"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5764,18 +5769,18 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5785,18 +5790,18 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5804,18 +5809,18 @@ chapter = {
             text = "Wala po... panaginip lang."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5825,11 +5830,11 @@ chapter = {
 
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5839,11 +5844,11 @@ chapter = {
             text = "Aalis na kami sa pagsasakristan..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5855,11 +5860,11 @@ chapter = {
 
         -- scene 15
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5869,11 +5874,11 @@ chapter = {
             text = "Hihingi ako ng trabaho kay Ibarra..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5885,11 +5890,11 @@ chapter = {
         
         -- scene 16
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 }
@@ -5901,13 +5906,13 @@ chapter = {
         
         -- scene 17
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -5917,7 +5922,7 @@ chapter = {
 
         -- scene 18
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa kanyang mga plano... wala ang kanyang ama."
@@ -5925,13 +5930,13 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa gitna ng pangarap..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "may mga katotohanang hindi pa kayang harapin."
@@ -5945,7 +5950,7 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 18: Mga Kaluluwang Naghihirap",
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa kumbento... nag-uusap ang mga manang tungkol sa indulhensiya."
@@ -5953,15 +5958,15 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Manang Rufa  = left
             -- Manang Juana = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -5974,13 +5979,13 @@ chapter = {
             text = "Ang indulhensiya... makapagliligtas sa kaluluwa."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -5993,13 +5998,13 @@ chapter = {
             text = "Mababawasan ang paghihirap sa purgatoryo."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6014,13 +6019,13 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                     dim = true
                 }
             },
@@ -6031,13 +6036,13 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                     dim = true
                 }
             },
@@ -6046,13 +6051,13 @@ chapter = {
             text = "Ngunit walang pumansin sa kanya."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                     dim = true
                 }
             },
@@ -6063,7 +6068,7 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Inayos niya ang mga gulay... umaasang maririnig ang tinig ng anak."
@@ -6071,13 +6076,13 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 }
             },
 
@@ -6087,18 +6092,18 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Sisa        = left
             -- Tagapagluto = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "right",
                 }
@@ -6110,16 +6115,16 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "right",
                     dim = true
@@ -6132,16 +6137,16 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "right",
                 }
@@ -6153,16 +6158,16 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "right",
                     dim = true
@@ -6175,16 +6180,16 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "right",
                 }
@@ -6196,16 +6201,16 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "right",
                 }
@@ -6217,11 +6222,11 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center",
                 },
@@ -6233,11 +6238,11 @@ chapter = {
 
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center",
                 },
@@ -6247,7 +6252,7 @@ chapter = {
             text = "Gulong-gulo ang kanyang isip."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Hindi niya alam kung saan pupunta."
@@ -6255,7 +6260,7 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa paghahanap ng sagot... unti-unti niyang nawawala ang kanyang sarili.",
@@ -6269,7 +6274,7 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 19: Mga Suliranin ng Isang Guro",
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa tabi ng lawa... nag-uusap si Ibarra at ang guro."
@@ -6277,15 +6282,15 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Ibarra = left
             -- Guro   = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6300,13 +6305,13 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6319,13 +6324,13 @@ chapter = {
             text = "Malaki ang utang na loob ko sa kanya."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6340,13 +6345,13 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6361,13 +6366,13 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6380,13 +6385,13 @@ chapter = {
             text = "Kulangan kami sa pondo... at kagamitan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6401,13 +6406,13 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6420,13 +6425,13 @@ chapter = {
             text = "Napipilitan kaming magpaulit-ulit ng memorisasyon."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6441,7 +6446,7 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ang klase ay ginaganap sa ilalim ng kumbento."
@@ -6450,13 +6455,13 @@ chapter = {
         -- scene 8
         -- di ko alam kung nag uusap pa ung guro at si Ibarra dito...
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6471,13 +6476,13 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6490,13 +6495,13 @@ chapter = {
             text = "Tinuruan ko sila ng mas maayos..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6511,13 +6516,13 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6530,13 +6535,13 @@ chapter = {
             text = "Hindi raw para sa kanila ang wikang Kastila."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6551,13 +6556,13 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6570,13 +6575,13 @@ chapter = {
             text = "Pinipilit din ang paggamit ng pamalo."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6591,13 +6596,13 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6612,7 +6617,7 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa kanyang pagbabalik... kakaunti na lamang ang kanyang tinuturuan."
@@ -6620,13 +6625,13 @@ chapter = {
         
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Nagkaroon ng bagong kura."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "At bahagyang nabuhayan ng pag-asa ang guro."
@@ -6634,13 +6639,13 @@ chapter = {
 
         -- scene 15
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6653,13 +6658,13 @@ chapter = {
             text = "Isinasalin ko ang mga aralin sa Tagalog..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6674,13 +6679,13 @@ chapter = {
 
         -- scene 16
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6695,13 +6700,13 @@ chapter = {
 
         -- scene 17
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6716,13 +6721,13 @@ chapter = {
 
         -- scene 18
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6735,13 +6740,13 @@ chapter = {
             text = "Magkakaroon ng pulong sa tribunal."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 },
                 {
                     name = "char2",
@@ -6756,13 +6761,13 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa isang sistemang puno ng hadlang..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "may mga taong patuloy pa ring lumalaban, tahimik... ngunit matatag."
@@ -6777,15 +6782,15 @@ chapter = {
         -- scene 1
         {
             event = "Kabanata 20: Ang Pulong sa Tribunal",
-            bg = "bg2",
+            bg = "bg1",
 
             -- Mga Kabesa         = left
             -- Gorbernadorcillo = center
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -6800,13 +6805,13 @@ chapter = {
 
         -- scene 2
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -6819,13 +6824,13 @@ chapter = {
             text = "May dalawang bagay tayong pag-uusapan"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -6840,13 +6845,13 @@ chapter = {
 
         -- scene 3
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -6859,13 +6864,13 @@ chapter = {
             text = "Gawin nating mas engrande ang pista!"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -6880,14 +6885,14 @@ chapter = {
 
         -- scene 4
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Don Filipo = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -6905,13 +6910,13 @@ chapter = {
             text = "Mas mainam na bawasan ang gastos."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -6931,13 +6936,13 @@ chapter = {
 
         -- scene 5
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -6955,13 +6960,13 @@ chapter = {
             text = "Tradisyon ang pista."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -6981,13 +6986,13 @@ chapter = {
 
         -- scene 6
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -7007,13 +7012,13 @@ chapter = {
 
         -- scene 7
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -7033,20 +7038,20 @@ chapter = {
 
         -- scene 8
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- Ibarra = center
             -- Guro   = left
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -7054,18 +7059,18 @@ chapter = {
             text = "Magpatayo tayo ng paaralan."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center"
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left"
+                    pos = "left", flip = true
                 }
             },
 
@@ -7075,14 +7080,14 @@ chapter = {
 
         -- scene 9
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- balik dun sa mga characters ng gobernadorcillio, kabesa at don blah blah
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -7100,13 +7105,13 @@ chapter = {
             text = "Magastos iyon..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -7126,18 +7131,18 @@ chapter = {
 
         -- scene 10
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center",
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
             },
 
@@ -7147,20 +7152,20 @@ chapter = {
 
         -- scene 11
         {
-            bg = "bg2",
+            bg = "bg1",
 
             -- biglang sumali si padre salvi ko lmao
             -- Padre Salvi = right
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center",
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char3",
@@ -7173,18 +7178,18 @@ chapter = {
             text = "Sang-ayon ako..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
                     pos = "center",
                 },
                 {
                     name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char3",
@@ -7199,7 +7204,7 @@ chapter = {
 
         -- scene 12
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Hindi pagtutol... ngunit hindi rin buong pagsang-ayon."
@@ -7207,13 +7212,13 @@ chapter = {
 
         -- scene 13
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -7231,13 +7236,13 @@ chapter = {
             text = "Kung sang-ayon ang kura..."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -7257,13 +7262,13 @@ chapter = {
 
         -- scene 14
         {
-            bg = "bg2",
+            bg = "bg1",
 
             characters = {
                 {
-                    name = "char1",
+                    name = "char2",
                     pose = "normal",
-                    pos = "left",
+                    pos = "left", flip = true,
                 },
                 {
                     name = "char2",
@@ -7283,7 +7288,7 @@ chapter = {
 
         -- scene 15
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Natapos ang pulong."
@@ -7291,13 +7296,13 @@ chapter = {
 
         -- scene 16
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Sa harap ng lahat… may pagkakaisa."
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ngunit sa likod nito… may kanya-kanyang interes."
@@ -7305,13 +7310,13 @@ chapter = {
 
         -- scene END
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "Ang pagbabago… ay hindi lamang ideya"
         },
         {
-            bg = "bg2",
+            bg = "bg1",
 
             speaker = "",
             text = "ito ay pakikipaglaban sa mga taong ayaw magbago."
@@ -7341,7 +7346,7 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                { name = "char1", pose = "normal", pos = "left", enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false }
+                { name = "char2", pose = "normal", pos = "left", flip = true, enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false }
             },
             
             speaker = "Sisa",
@@ -7384,7 +7389,7 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                { name = "char1", pose = "normal", pos = "center", enterFrom = "right", exitTo = nil, fade = true, move = true, dim = false }
+                { name = "char2", pose = "normal", pos = "center", enterFrom = "right", exitTo = nil, fade = true, move = true, dim = false }
             },
             
             speaker = "Sisa",
@@ -7411,7 +7416,7 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                { name = "char1", pose = "normal", pos = "left", enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false }
+                { name = "char2", pose = "normal", pos = "left", flip = true, enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false }
             },
             
             speaker = "Sisa",
@@ -7439,7 +7444,7 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                { name = "char1", pose = "normal", pos = "center", enterFrom = "right", exitTo = nil, fade = true, move = true, dim = false }
+                { name = "char2", pose = "normal", pos = "center", enterFrom = "right", exitTo = nil, fade = true, move = true, dim = false }
             },
             
             speaker = "Sisa",
@@ -7474,7 +7479,7 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                { name = "char1", pose = "normal", pos = "left", enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false }
+                { name = "char2", pose = "normal", pos = "left", flip = true, enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false }
             },
             
             speaker = "Sisa",
@@ -7518,7 +7523,7 @@ chapter = {
         {
             bg = "bg1",
             characters = {
-                { name = "char2", pose = "normal", pos = "left", enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false }
+                { name = "char2", pose = "normal", pos = "left", flip = true, enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false }
             },
             speaker = "Donya Victorina",
             text = "Napakaganda ng gabi!"
@@ -7541,7 +7546,7 @@ chapter = {
         {
             bg = "bg1",
             characters = {
-                { name = "char3", pose = "normal", pos = "left", enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false },
+                { name = "char3", pose = "normal", pos = "left", flip = true, enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false },
                 { name = "char2", pose = "normal", pos = "right", enterFrom = "right", exitTo = nil, fade = true, move = true, dim = true }
             },
             speaker = "Bisita 1",
@@ -7565,7 +7570,7 @@ chapter = {
         {
             bg = "bg1",
             characters = {
-                { name = "char1", pose = "normal", pos = "left", enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false },
+                { name = "char2", pose = "normal", pos = "left", flip = true, enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false },
                 { name = "char2", pose = "normal", pos = "right", enterFrom = "right", exitTo = nil, fade = true, move = true, dim = true }
             },
             speaker = "Maria Clara",
@@ -7624,7 +7629,7 @@ chapter = {
         {
             bg = "bg1",
             characters = {
-                { name = "char1", pose = "normal", pos = "center", enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false }
+                { name = "char2", pose = "normal", pos = "center", enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false }
             },
             speaker = "Sisa",
             text = "Crispin… Basilio…"
@@ -7685,7 +7690,7 @@ chapter = {
         {
             bg = "bg1",
             characters = {
-                { name = "char1", pose = "normal", pos = "left", enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false },
+                { name = "char2", pose = "normal", pos = "left", flip = true, enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false },
                 { name = "char2", pose = "normal", pos = "right", enterFrom = "right", exitTo = nil, fade = true, move = true, dim = true }
             },
             speaker = "Maria Clara",
@@ -7817,7 +7822,7 @@ chapter = {
         {
             bg = "bg1",
             characters = {
-                { name = "char1", pose = "normal", pos = "left", enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false },
+                { name = "char2", pose = "normal", pos = "left", flip = true, enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false },
                 { name = "char2", pose = "normal", pos = "right", enterFrom = "right", exitTo = nil, fade = true, move = true, dim = true }
             },
             speaker = "Ibarra",
@@ -7964,8 +7969,8 @@ chapter = {
         {
             bg = "bg1",
             characters = {
-                { name = "char2", pose = "normal", pos = "left", enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false },
-                { name = "char1", pose = "normal", pos = "right", enterFrom = "right", exitTo = nil, fade = true, move = true, dim = true }
+                { name = "char2", pose = "normal", pos = "left", flip = true, enterFrom = "left", exitTo = nil, fade = true, move = true, dim = false },
+                { name = "char2", pose = "normal", pos = "right", enterFrom = "right", exitTo = nil, fade = true, move = true, dim = true }
             },
             speaker = "Tasyo",
             text = "Maligayang pagdating."
@@ -8697,10 +8702,10 @@ chapter = {
 
     -- {
     --     {
-    --         bg = "bg2",
+    --         bg = "bg1",
             
     --         characters = {
-    --             {name = "char1", pose = "normal", pos = "right"}
+    --             {name = "char2", pose = "normal", pos = "right"}
     --         },
 
     --         speaker = "",
