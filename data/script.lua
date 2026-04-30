@@ -256,6 +256,8 @@ chapter = {
             event = "Kabanata 2: Si Crisostomo Ibarra",
             bg = "bg1",
 
+            bgm = "story",
+
             speaker = "",
             text = ""
         },
@@ -418,7 +420,6 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"},
                 {name = "char2", pose = "normal", pos = "left", flip = true}
             },
 
@@ -429,7 +430,6 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"},
                 {name = "char2", pose = "normal", pos = "left", flip = true}
             },
 
@@ -440,7 +440,6 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"},
                 {name = "char2", pose = "normal", pos = "left", flip = true}
             },
 
@@ -454,13 +453,11 @@ chapter = {
         {
             event = "Kabanata 3: Ang Hapunan",
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
+
+            bgm = "story",
 
             speaker = "",
-            text = "Nagtungo ang mga panauhin sa hapag-kainan."
+            text = ""
         },
         {
             bg = "bg1",
@@ -810,6 +807,14 @@ chapter = {
     {
         {
             event = "Kabanata 4: Erehe at Pilibustero",
+            bg = "bg1",
+
+            bgm = "story",
+
+            speaker = "",
+            text = ""
+        },
+        {
             bg = "bg1",
             
             characters = {
@@ -1176,12 +1181,13 @@ chapter = {
         {
             event = "Kabanata 5: Pangarap sa Gabing Madilim",
             bg = "",
+
+            bgm = "story",
             
             speaker = "",
             text = ""
         },
         {
-            event = "Kabanata 5: Pangarap sa Gabing Madilim",
             bg = "bg1",
             
             speaker = "",

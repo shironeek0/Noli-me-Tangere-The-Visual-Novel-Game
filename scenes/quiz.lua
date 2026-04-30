@@ -107,6 +107,8 @@ function quiz.draw()
             love.graphics.printf(choice, 120, y-100, 600, "center")
         end
     end
+
+    
 end
 
 --------------------------------------------

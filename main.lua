@@ -1,3 +1,7 @@
+-- what are you looking at?
+-- BMMA ako boss ndi comsci wag ka mayabang
+
+
 require("utils.state")
 require("utils.transition")
 require("utils.audio")
@@ -36,7 +40,7 @@ Fonts  = nil
 uiFont = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF", 50)
 
 settingsData = {
-    display    = 1,
+    display    = 2,
     resolution = 3, -- set to 3 when launch to default 1280x720
     brightness = 2,
 
@@ -127,6 +131,3 @@ end
 
 
 
-
--- what are you looking at?
--- this is BMMA work i aint no comsci wag ka mayabang

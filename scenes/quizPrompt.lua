@@ -55,4 +55,3 @@ function quizPrompt.mousepressed(x,y)
     end
 end
 
-

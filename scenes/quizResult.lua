@@ -65,16 +65,20 @@ function quizResult.draw()
     
     local continueRetry = quizResult.passed and "Mapatuloy" or "Ulitin"
     local retryReread = quizResult.passed and "Ulitin" or "Basahin ulit"
+    local btnSize1 = quizResult.passed and 0.5 or 0.35
+    local btnSize2 = quizResult.passed and 0.35 or 0.6
+    local btnPos1 = quizResult.passed and 233 or 250
+    local btnPos2 = quizResult.passed and 432 or 400
     local back = "Bumalik"
     
     love.graphics.setColor(1,1,1)
     
     -- buttons
-    love.graphics.draw(buttons, 233, 315, 0, 0.50, 0.37)
+    love.graphics.draw(buttons, btnPos1, 315, 0, btnSize1, 0.37)
     love.graphics.printf(continueRetry, 150, 325, 300, "center")
-    love.graphics.draw(buttons, 400, 315, 0, 0.6, 0.37)
+    love.graphics.draw(buttons, btnPos2, 315, 0, btnSize2, 0.37)
     love.graphics.printf(retryReread, 330, 325, 300, "center")
-    love.graphics.draw(buttons, 345, 368, 0, 0.40, 0.37)
+    love.graphics.draw(buttons, 338, 368, 0, 0.46, 0.37)
     love.graphics.printf(back, 249, 378, 300, "center")
 end
 
