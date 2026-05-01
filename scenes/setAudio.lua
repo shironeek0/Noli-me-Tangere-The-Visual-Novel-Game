@@ -8,7 +8,7 @@ function settingsAudio.draw()
 
     love.graphics.setFont(Fonts)
 
-    love.graphics.printf("TUNOG", 0, 100, 800, "center")
+    love.graphics.printf("TUNOG", 0, 100, 1280, "center")
 
     local labels = {"Master", "Music", "SFX"}
 
@@ -28,10 +28,6 @@ end
 -------------------------------------------------
 
 function settingsAudio.mousepressed(x,y)
-
-    -- x = x / scale
-    -- y = y / scale
-
     for i=1, 4 do
         local sy = 180 + i*40
 

@@ -22,7 +22,6 @@ require("scenes.quizResult")
 require("scenes.settings")
 require("scenes.setAudio")
 require("scenes.setGraphics")
-require("scenes.setGameplay")
 require("scenes.credits")
 
 
@@ -45,8 +44,7 @@ Fonts  = nil
 uiFont = love.graphics.newFont("assets/fonts/ITCBenguiatStdBookCn.OTF", 50)
 
 settingsData = {
-    -- display    = 2,
-    -- resolution = 3, -- set to 3 when launch to default 1280x720
+    display    = 2,
     brightness = 2,
 
     audio = {0.7,0.8,1},
@@ -72,27 +70,9 @@ function love.load()
 
 end
 
--- function updateScale()
 
---     local w, h = love.graphics.getDimensions()
-
---     -- scaleX = w / BASE_W
---     -- scaleY = h / BASE_H
-
---     scale = math.min(w / BASE_W, h / BASE_H)
-
---     offsetX = (w - BASE_W * scale) / 2
---     offsetY = (h - BASE_H * scale) / 2
--- end
 
 function love.draw()
-
-    -- love.graphics.push()
-    -- -- love.graphics.scale(scaleX, scaleY)
-
-    -- love.graphics.translate(offsetX, offsetY)
-    -- love.graphics.scale(scale, scale)
-
     if settingsData.brightness == 1 then
         love.graphics.setColor(0.7, 0.7, 0.7)
     elseif settingsData.brightness == 3 then
@@ -103,8 +83,6 @@ function love.draw()
 
     state.current.draw()
     fade.draw()
-
-    -- love.graphics.pop()
 end
 
 ------------------------------------------------
@@ -119,10 +97,6 @@ function love.update(dt)
 end
 
 function love.mousepressed(x, y)
-
-    -- x = (x - offsetX) / scale
-    -- y = (y - offsetY) / scale
-    
     if state.current.mousepressed then
         state.current.mousepressed(x, y)
     end
@@ -133,35 +107,21 @@ function love.keypressed(key)
         state.current.keypressed(key)
     end
 
-    if DEV_MODE == true then 
-        if key == "escape" then
-           love.event.quit()
-        end
-    end
+    -- if DEV_MODE == true then 
+    --     if key == "escape" then
+    --        love.event.quit()
+    --     end
+    -- end
 end
 
 function love.mousemoved(x,y,dx,dy)
-    
-    -- x = (x - offsetX) / scale
-    -- y = (y - offsetY) / scale
-    -- dx = dx / scale
-    -- dy = dy / scale
-    
     if state.current.mousemoved then
         state.current.mousemoved(x,y,dx,dy)
     end
 end
 
 function love.mousereleased(x,y)
-
-    -- x = (x - offsetX) / scale
-    -- y = (y - offsetY) / scale
-
     if state.current.mousereleased then
         state.current.mousereleased(x,y)
     end
 end
-
-
-
-

@@ -33,8 +33,8 @@ local eventTimer = 0
 
 local baseX = {
     left = 120,
-    center = 400,
-    right = 680
+    center = 600,
+    right = 1080
 }
 
 

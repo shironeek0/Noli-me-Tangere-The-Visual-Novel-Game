@@ -23,226 +23,641 @@ chapter = {
             speaker = "",
             text = ""
         },
-        {
+        { -- scene 1
             bg = "bg1",
             
             speaker = "",
             text = "Sa isang marangyang gabi sa Maynila, isang handaan ang inihanda ni Kapitan Tiyago, kilala sa kanyang kayamanan at pagiging mapagbigay."
         },
-        -- {
-        --     bg = "bg1",
+        {
+            bg = "bg1",
         
-        --     speaker = "",
-        --     text = "Ang paanyaya ay kumalat sa buong lungsod. Lahat ay nais dumalo."
-        -- },
-        -- {
-        --     bg = "bg1",
+            speaker = "",
+            text = "Ang paanyaya ay kumalat sa buong lungsod. Lahat ay nais dumalo."
+        },
+        { -- scene 2
+            bg = "bg1",
             
-        --     characters = {
-        --         {
-        --             name = "char2", 
-        --             pose = "normal", 
-        --             pos = "left",
-        --             enterFrom = "left",
-        --             exitTo = nil,
-        --             fade = true,
-        --             move = true,
-        --             flip = true,
-        --             dim = true
-        --         }
+            characters = {
+                {
+                    name = "npc2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true,
+                    dim = false
+                }
                 
-        --     },
+            },
             
             
-        --     speaker = "Tiya Isabel",
-        --     text = "Halika po! Dito po kayo!"
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-                
-        --         {name = "char2", pose = "normal", flip = true, pos = "left"}
-        --     },
-            
-        --     speaker = "",
-        --     text = "Pinangangasiwaan ni Tiya Isabel ang mga panauhin."
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char3", pose = "normal", pos = "right"}
-        --     },
-            
-        --     speaker = "",
-        --     text = "..."
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char3", pose = "normal", pos = "right"}
-        --     },
-            
-        --     speaker = "",
-        --     text = "*Chatter*"
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char2", pose = "normal", pos = "right"}
-        --     },
-            
-        --     speaker = "Dayuhan",
-        --     text = "Nais kong maunawaan ang lupain ng mga Indiyo."
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "padreDamaso", pose = "normal", pos = "right"}
-        --     },
-            
-        --     speaker = "Padre Damaso",
-        --     text = "Ang mga Indiyo? Mababa ang kanilang uri."
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char2", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "",
-        --     text = "Naging mainit ang usapan nang talakayin ang monopolyo ng tabako."
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char2", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "Padre Sibyla",
-        --     text = "Marahil ay pag-usapan na lamang natin ang ibang bagay."
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char2", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "Tinyente",
-        --     text = "May karapatan ang Kapitan Heneral bilang kinatawan ng hari."
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "padreDamaso", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "Padre Damaso",
-        --     text = "Ang simbahan ang may kapangyarihan sa mga erehe!"
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char2", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "",
-        --     text = "Ang simbahan ang may kapangyarihan sa mga erehe!"
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char2", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "",
-        --     text = "Isang bangkay ang ipinahukay at inilipat… dahil umano sa pagiging erehe."
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "padreDamaso", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "Padre Damaso",
-        --     text = "Isang malaking pang-aabuso iyon!"
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char2", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "",
-        --     text = "Nagpupuyos sa galit ang pari."
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char2", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "Padre Sibyla",
-        --     text = "Kalmado lamang, Padre."
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char2", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "",
-        --     text = "*door noise*"
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char2", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "",
-        --     text = "Dumating pa ang iba pang panauhin."
-        -- },
-        -- {
-        --     bg = "bg1",
-            
-        --     characters = {
-        --         {name = "char2", pose = "normal", pos = "center"}
-        --     },
-            
-        --     speaker = "",
-        --     text = "Patuloy ang kasiyahan… ngunit sa ilalim nito ay may tensyong unti-unting nabubuo."
-        -- },
+            speaker = "Tiya Isabel",
+            text = "Halika po! Dito po kayo!"
+        },
         {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "center"}
+                
+                {  
+                    name = "npc2", 
+                    pose = "normal", 
+                    pos = "left",
+                    flip = true
+                }
+            },
+            
+            speaker = "",
+            text = "Pinangangasiwaan ni Tiya Isabel ang mga panauhin."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = false,
+                    move = true,
+                    flip = false
+                }
+                
+            },
+            
+            speaker = "Tinyente",
+            text = "..."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = false,
+                    move = false,
+                    flip = false,
+                    dim = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = false,
+                    move = true,
+                    flip = false
+                }
+                
+            },
+            
+            speaker = "Padre Sibyla",
+            text = "..."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = "left",
+                    fade = false,
+                    move = false,
+                    flip = false,
+                    dim = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = nil,
+                    exitTo = "left",
+                    fade = true,
+                    move = true,
+                    flip = false,
+                    dim = true
+                },
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true,
+                    dim = false
+                }
+                
+            },
+            
+            speaker = "Padre Damaso",
+            text = "hmmmpp..."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {name = "npc", pose = "normal", pos = "right", flip = true}
+            },
+            
+            speaker = "Dayuhan",
+            text = "Nais kong maunawaan ang lupain ng mga Indiyo."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                    {name = "npc", pose = "normal", pos = "right", dim = true},
+                    {
+                        name = "padreDamaso", 
+                        pose = "normal", 
+                        pos = "left",
+                        enterFrom = "left",
+                        exitTo = nil,
+                        fade = true,
+                        move = true,
+                        flip = true,
+                    }
+                },
+            
+            speaker = "Padre Damaso",
+            text = "Ang mga Indiyo? Mababa ang kanilang uri."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {name = "npc", pose = "normal", pos = "right", dim = true},
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true,
+                }
+                
+            },
+            
+            speaker = "",
+            text = "Naging mainit ang usapan nang talakayin ang monopolyo ng tabako."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {name = "npc", pose = "normal", pos = "right", dim = true},
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true,
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true,
+                }
+            },
+            
+            speaker = "Padre Sibyla",
+            text = "Marahil ay pag-usapan na lamang natin ang ibang bagay."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = false
+                }
+            },
+            
+            speaker = "Tinyente",
+            text = "May karapatan ang Kapitan Heneral bilang kinatawan ng hari."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = false
+                }
+            },
+            
+            speaker = "Padre Damaso",
+            text = "Ang simbahan ang may kapangyarihan sa mga erehe!"
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = false
+                }
+            },
+            
+            speaker = "",
+            text = "Lumalim ang tensyon nang mababanggit ang isang insidente."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = false
+                }
+            },
+            
+            speaker = "",
+            text = "Isang bangkay ang ipinahukay at inilipat… dahil umano sa pagiging erehe."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = false
+                }
+            },
+            
+            speaker = "Padre Damaso",
+            text = "Isang malaking pang-aabuso iyon!"
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = false
+                }
+            },
+            
+            speaker = "",
+            text = "Nagpupuyos sa galit ang pari."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = false
+                }
+            },
+            
+            speaker = "Padre Sibyla",
+            text = "Kalmado lamang, Padre."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                },
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = false
+                }
+            },
+            
+            speaker = "",
+            text = "*Bumukas ang pinto*"
+        },
+        {
+            bg = "bg1",
+            
+            speaker = "",
+            text = "Dumating pa ang iba pang panauhin."
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "donyaVictorina", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                }
+            },
+            
+            speaker = "Donya Victorina",
+            text = ""
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "donyaVictorina", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "donTiburcio", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                }
+            },
+            
+            speaker = "Don Tiburcio",
+            text = ""
+        },
+        {
+            bg = "bg1",
+            
+            characters = {
+                {
+                    name = "donyaVictorina", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                },
+                {
+                    name = "donTiburcio", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                }
             },
             
             speaker = "",
             text = "Patuloy ang kasiyahan… ngunit sa ilalim nito ay may tensyong unti-unting nabubuo."
+        },
+        {
+            bg = "bg1",
+            
+            speaker = "",
+            text = "Sa isang gabi ng kasiyahan, nasilayan ang tunay na anyo ng lipunan…"
+        },
+        {
+            bg = "bg1",
+            
+            speaker = "",
+            text = "kapangyarihan, diskriminasyon, at hidwaan."
         }
     },
 
     -- chapter 2
     {
-        {
+        { -- scene 1
             event = "Kabanata 2: Si Crisostomo Ibarra",
             bg = "bg1",
 
@@ -251,14 +666,89 @@ chapter = {
             speaker = "",
             text = ""
         },
+        { 
+            bg = "bg1",
+
+            speaker = "",
+            text = "*Bumukas ang pinto*"
+        },
         {
             bg = "bg1",
+
+            characters = {
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                },
+                {
+                    name = "kapitanTiyago", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                }
+            },
+
+            speaker = "",
+            text = ""
+        },
+        {
+            bg = "bg1",
+
+            characters = {
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                },
+                {
+                    name = "kapitanTiyago", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                }
+            },
 
             speaker = "",
             text = "Dumating si Kapitan Tiyago kasama ang isang binatang bagong balik mula Europa, si Crisostomo Ibarra."
         },
         {
             bg = "bg1",
+
+            characters = {
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                },
+                {
+                    name = "kapitanTiyago", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                }
+            },
 
             speaker = "",
             text = "Pitong taon siyang nag-aral sa Europa."
@@ -267,8 +757,24 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left"}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                },
+                {
+                    name = "kapitanTiyago", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                }
             },
 
             speaker = "Kapitan Tiyago",
@@ -277,17 +783,76 @@ chapter = {
         {
             bg = "bg1",
 
+            characters = {
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                },
+                {
+                    name = "kapitanTiyago", 
+                    pose = "normal", 
+                    pos = "center",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+                },
+                {
+                    name = "npc", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+                }
+            },
+
             speaker = "",
             text = "Napatingin ang lahat. Isang edukadong Indio… bihira at kapansin-pansin."
         },
         {
             bg = "bg1",
 
-            speaker = "",
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                }
+            },
+
+            speaker = "Padre Damaso",
             text = "*nanggagalaiti*"
         },
         {
             bg = "bg1",
+
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                }
+            },
 
             speaker = "",
             text = "Namutla si Padre Damaso nang makilala ang binata."
@@ -296,8 +861,27 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left", flip = true}
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
             },
 
             speaker = "Ibarra",
@@ -307,8 +891,27 @@ chapter = {
             bg = "bg1",
 
             characters = {
-                {name = "padreDamaso", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left", flip = true}
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
             },
 
             speaker = "Padre Damaso",
@@ -317,17 +920,119 @@ chapter = {
         {
             bg = "bg1",
 
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
+            },
+
             speaker = "",
             text = "..."
         },
         {
             bg = "bg1",
 
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
+            },
+
+            speaker = "Padre Damaso",
+            text = "Hindi ko kilala ang iyong ama."
+        },
+        {
+            bg = "bg1",
+
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
+            },
+
             speaker = "",
             text = "Napahiya si Ibarra."
         },
         {
             bg = "bg1",
+
+            characters = {
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
+            },
 
             speaker = "",
             text = "Dahan-dahan niyang iniatras ang kamay."
@@ -336,8 +1041,27 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left", flip = true}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
             },
 
             speaker = "Tiyente",
@@ -347,8 +1071,27 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left", flip = true}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
             },
 
             speaker = "Ibarra",
@@ -358,8 +1101,27 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char1", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left", flip = true}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
             },
 
             speaker = "Tinyete",
@@ -368,17 +1130,67 @@ chapter = {
         {
             bg = "bg1",
 
+            characters = {
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
+            },
+
             speaker = "",
             text = "Isang pahiwatig… na may hindi alam si Ibarra."
         },
         {
             bg = "bg1",
 
+            characters = {
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
+            },
+
             speaker = "",
             text = "Iniwasan ng Tinyente ang binata matapos mapansin ang tingin ni Padre Damaso."
         },
         {
             bg = "bg1",
+
+            characters = {
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                }
+            },
 
             speaker = "",
             text = "Naiwang mag-isa si Ibarra sa gitna ng maraming tao."
@@ -387,8 +1199,27 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"},
-                {name = "char2", pose = "normal", pos = "left", flip = true}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                },
+                {
+                    name = "npc", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                }
             },
 
             speaker = "Ibarra",
@@ -397,11 +1228,59 @@ chapter = {
         {
             bg = "bg1",
 
+            characters = {
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                },
+                {
+                    name = "npc2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                }
+            },
+
             speaker = "",
             text = "Tulad ng kanyang natutunan sa Europa, siya na mismo ang nagpakilala sa iba."
         },
         {
             bg = "bg1",
+
+            characters = {
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                },
+                {
+                    name = "npc2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                }
+            },
 
             speaker = "",
             text = "Ngunit ang mga babae… hindi umimik."
@@ -410,7 +1289,27 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "left", flip = true}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                },
+                {
+                    name = "kapitanTiyago", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                }
             },
 
             speaker = "Kapitan Tinong",
@@ -420,7 +1319,27 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "left", flip = true}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = "right",
+                    exitTo = nil,
+                    fade = true,
+                    move = true
+
+                },
+                {
+                    name = "kapitanTiyago", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = "left",
+                    exitTo = nil,
+                    fade = true,
+                    move = true,
+                    flip = true
+
+                }
             },
 
             speaker = "Ibarra",
