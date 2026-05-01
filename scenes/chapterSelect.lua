@@ -8,7 +8,7 @@ local scrollVel = 0
 local friction = 10
 local minVel = 0.5
 
-local cardW, cardH = 180, 220
+local cardW, cardH = 280, 320
 local spacing = 40
 
 local startX = 100
@@ -203,16 +203,15 @@ function chapterSelect.draw()
     
     local bg = bgImages.menu
     if bg then
-        local baseW, baseH = 1600, 1000
+        local baseW, baseH = 1280, 720
         
-        local scale = math.max(
-            baseW / bg:getWidth(),
-            baseH / bg:getHeight()
-        ) / 2
-        love.graphics.draw(bg, 0, 30, 0, scale , scale)
+        local scale1 = baseW / bg:getWidth()
+        local scale2 = baseH / bg:getHeight()
+        
+        love.graphics.draw(bg, 0, 30, 0, scale1 , scale2)
     end
     
-    love.graphics.setFont(Fonts)
+    love.graphics.setFont(uiFonts)
 
     for i=1,#chapter do
         
@@ -220,37 +219,37 @@ function chapterSelect.draw()
         local y = 200
         
         -- card
-        love.graphics.draw(cardImg, x-23, y-15, 0, 0.4)
+        love.graphics.draw(cardImg, x-29, y-18, 0, 0.59, 0.54)
         
         -- image (placeholder)
-        love.graphics.draw(cardImage, x+13, y+13, 0, 0.081)
+        love.graphics.draw(cardImage, x+13, y+13, 0, 0.128)
         -- title
-        love.graphics.printf(("Kabanata "..i), x, y+115, cardW, "center")
+        love.graphics.printf(("Kabanata "..i), x, y+185, cardW, "center")
 
         local title = chapterTitles[i] or "???"
-        love.graphics.printf(title, x+10, y+135, cardW-20, "center")
+        love.graphics.printf(title, x+10, y+208, cardW-20, "center")
 
         if save.unlocked[i] then
             
             -- PLAY button
             if save.unlocked[i] then
-                love.graphics.draw(button1, x+37, y+185, 0, 0.40, 0.37)
-                love.graphics.print("Simulan", x+55, y+194)
+                love.graphics.draw(button1, x+76, y+255, 0, 0.48, 0.37)
+                love.graphics.print("Simulan", x+100, y+264)
             else
                 love.graphics.setColor(1,1,1,0.3)
-                love.graphics.draw(button1, x+37, y+185, 0, 0.40, 0.37)
-                love.graphics.print("Simulan", x+55, y+194)
+                love.graphics.draw(button1, x+76, y+255, 0, 0.48, 0.37)
+                love.graphics.print("Simulan", x+100, y+264)
                 love.graphics.setColor(1,1,1)
             end
             
             -- QUIZ button
             if save.unlocked[i] then
-                love.graphics.draw(button1, x+28, y+223, 0, 0.48, 0.37)
-                love.graphics.print("Pagsusulit", x+46, y+230)
+                love.graphics.draw(button1, x+73, y+293, 0, 0.507, 0.37)
+                love.graphics.print("Pagsusulit", x+90, y+302)
             else
                 love.graphics.setColor(1,1,1,0.3)
-                love.graphics.draw(button1, x+28, y+223, 0, 0.48, 0.37)
-                love.graphics.print("Pagsusulit", x+46, y+230)
+                love.graphics.draw(button1, x+73, y+293, 0, 0.507, 0.37)
+                love.graphics.print("Pagsusulit", x+90, y+302)
                 love.graphics.setColor(1,1,1)
             end
         end
@@ -264,40 +263,34 @@ function chapterSelect.draw()
         
         -- UNLOCK button (only if locked)
         if not save.unlocked[i] then
-            love.graphics.draw(button1, x+41, y+200, 0, 0.37)
-            love.graphics.print("Buksan", x+58, y+208)
+            love.graphics.draw(button1, x+70, y+268, 0, 0.507, 0.4)
+            love.graphics.printf("Buksan", x+40, y+278, 200, "center")
         end
         
     end
-
-    love.graphics.rectangle("line", 40, 300, 40, 40)
-    love.graphics.draw(arrow, 75, 336, math.pi / 1, 0.07)
-    
-    love.graphics.rectangle("line", 720, 300, 40, 40)
-    love.graphics.draw(arrow, 725, 303, 0, 0.07)
 end
 
 --------------------------------------------------
 
 function chapterSelect.mousepressed(mx,my)
     
-    mx = mx / scaleX
-    my = my / scaleY
+    -- mx = mx / scale
+    -- my = my / scale
 
     local startX = 100
     dragging = true
     dragStartX = mx
     scrollStartX = scrollX
 
-    if mx > 40 and mx < 80 and my > 300 and my < 340 then
-        scrollX = scrollX + 100
-        return
-    end
+    -- if mx > 40 and mx < 80 and my > 300 and my < 340 then
+    --     scrollX = scrollX + 100
+    --     return
+    -- end
 
-    if mx > 720 and mx < 760 and my > 300 and my < 340 then
-        scrollX = scrollX - 100
-        return
-    end
+    -- if mx > 720 and mx < 760 and my > 300 and my < 340 then
+    --     scrollX = scrollX - 100
+    --     return
+    -- end
 
     for i=1,#chapter do
         local x = startX + (i-1)*(cardW + spacing) + scrollX
@@ -305,14 +298,14 @@ function chapterSelect.mousepressed(mx,my)
         
         if save.unlocked[i] then
             -- PLAY
-            if hit(x+37,y+194,100,25,mx,my) then
+            if hit(x+76,y+255,140,30,mx,my) then
                 story.start(i)
                 fade.to(story)
                 return
             end
 
             -- QUIZ
-            if hit(x+37,y+230,100,25,mx,my) then
+            if hit(x+73,y+293,140,25,mx,my) then
                 quiz.start(i)
                 fade.to(quiz)
                 return
@@ -320,7 +313,7 @@ function chapterSelect.mousepressed(mx,my)
         end
 
         -- only clickable if locked
-        if not save.unlocked[i] and hit(x+42,y+200,100,30,mx,my) then
+        if not save.unlocked[i] and hit(x+70,y+268,140,30,mx,my) then
             chapterSelect.askCheat(i)
         end
     end
@@ -344,7 +337,7 @@ end
 ----------------------------------------------
 
 function chapterSelect.mousemoved(mx,my,dx,dy)
-    mx = mx / scaleX
+    -- mx = mx / scale
 
     if dragging then
         scrollVel = (mx - dragStartX) * 10

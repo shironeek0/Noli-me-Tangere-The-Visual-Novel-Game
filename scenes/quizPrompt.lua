@@ -12,44 +12,41 @@ end
 function quizPrompt.draw()
 
     local bg = bgImages.menu
-        
+    
     if bg then
-        local baseW, baseH = 1600, 1000
+        local baseW, baseH = 1280, 720
         
-        local scale = math.max(
-            baseW / bg:getWidth(),
-            baseH / bg:getHeight()
-        ) / 2
-        love.graphics.draw(bg, 0, 30, 0, scale , scale)
+        local scale1 = baseW / bg:getWidth()
+        local scale2 = baseH / bg:getHeight()
+        
+        love.graphics.draw(bg, 0, 30, 0, scale1 , scale2)
     end
     
-    love.graphics.draw(cards, 130, 140, 0, 1, 0.4)
+    love.graphics.draw(cards, 330, 200, 0, 1.1, 0.5)
     
     love.graphics.setFont(uiFonts)
 
-    love.graphics.printf("Handa ka na bang magsagot ng Quiz", 0, 200, 800, "center")
+    love.graphics.printf("Handa ka na bang magsagot ng Quiz", 0, 280, 1280, "center")
 
-    love.graphics.draw(buttons, 295, 280, 0, 0.9, 0.44)
-    love.graphics.printf("Oo, handa na!", 315, 292, 200,"center")
+    love.graphics.draw(buttons, 520, 378, 0, 0.9, 0.48)
+    love.graphics.printf("Oo, handa na!", 0, 392, 1280,"center")
 
-    love.graphics.draw(buttons, 295, 330, 0, 0.9, 0.44)
-    love.graphics.printf("Ayaw ko pa", 315, 344, 200,"center")
+    love.graphics.draw(buttons, 520, 438, 0, 0.9, 0.48)
+    love.graphics.printf("Ayaw ko pa", 0, 454, 1280,"center")
 end
 
 ------------------------------------------
 
 function quizPrompt.mousepressed(x,y)
 
-    x = x / scaleX
-    y = y / scaleY
 
-    if x > 300 and x < 540 and y > 280 and y < 310 then
+    if x > 520 and x < 740 and y > 378 and y < 420 then
         quiz.start(quizPrompt.chapter)
         fade.to(quiz)
         return
     end
 
-    if x > 300 and x < 540 and y > 330 and y < 380 then
+    if x > 520 and x < 740 and y > 438 and y < 490 then
         fade.to(chapterSelect)
         return
     end

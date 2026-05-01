@@ -6,8 +6,8 @@ cheatTarget = 1
 --------------------------------------------------
 
 function cheatInline.draw()
-    love.graphics.printf("Kabanata "..cheatTarget.." Password", 0, 200, 800, "center")
-    love.graphics.printf(cheatInput, 0, 250, 800, "center")
+    love.graphics.printf("Kabanata "..cheatTarget.." Password", 0, 250, 1280, "center")
+    love.graphics.printf(cheatInput, 0, 300, 1280, "center")
 end
 
 --------------------------------------------------

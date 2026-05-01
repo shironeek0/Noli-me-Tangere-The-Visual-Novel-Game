@@ -12,13 +12,13 @@ local selected = 1
 function settings.update()
 
     local mx,my = love.mouse.getPosition()
-    mx = mx / scaleX
-    my = my / scaleY
+    -- mx = mx / scale
+    -- my = my / scale
 
     for i,v in ipairs(options) do
-        local y = 200 + i*40
+        local y = 300 + i*40
 
-        if my > y and my < y+30 then
+        if my > y and my < y+300 then
             selected = i
         end
     end
@@ -27,17 +27,17 @@ end
 function settings.draw()
     love.graphics.setFont(Fonts)
     love.graphics.setColor(1, 1, 1, 0.5)
-    love.graphics.printf("SETTINGS", 0, 120, 800, "center")
+    love.graphics.printf("SETTINGS", 0, 200, 1280, "center")
 
     for i, v in ipairs(options) do
         local y = 200 + i*40
 
         if i == selected then
             love.graphics.setColor(1, 1, 0.8)
-            love.graphics.printf("> "..v.." <", 4, y, 790, "center")
+            love.graphics.printf("> "..v.." <", 4, y+100, 1280, "center")
             love.graphics.setColor(1, 1, 1, 0.5)
         else
-            love.graphics.printf(v, 0, y, 800, "center")
+            love.graphics.printf(v, 0, y+100, 1280, "center")
         end
     end
 end

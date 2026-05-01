@@ -17,7 +17,7 @@ function splash.update(dt)
 end
 
 function splash.draw()
-    love.graphics.printf("NOLI ME TANGERE: THE VISUAL NOVEL", 0, 260, 800, "center")
+    love.graphics.printf("NOLI ME TANGERE: THE VISUAL NOVEL", 0, 360, 1280, "center")
 end
 
 function splash.mousepressed()

@@ -59,10 +59,10 @@ end
 
 function settingsGameplay.mousepressed(x,y)
 
-    x = x / scaleX
-    y = y / scaleY
+    -- x = x / scale
+    -- y = y / scale
 
-    if y > 200 and y < 230 then
+    if y > 200 and ly < 230 then
         settingsData.textSpeed = settingsData.textSpeed % 3 + 1
     end
 

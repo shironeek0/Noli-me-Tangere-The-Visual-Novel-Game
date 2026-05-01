@@ -29,215 +29,205 @@ chapter = {
             speaker = "",
             text = "Sa isang marangyang gabi sa Maynila, isang handaan ang inihanda ni Kapitan Tiyago, kilala sa kanyang kayamanan at pagiging mapagbigay."
         },
-        {
-            bg = "bg1",
+        -- {
+        --     bg = "bg1",
         
-            speaker = "",
-            text = "Ang paanyaya ay kumalat sa buong lungsod. Lahat ay nais dumalo."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "",
+        --     text = "Ang paanyaya ay kumalat sa buong lungsod. Lahat ay nais dumalo."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {
-                    name = "char2", 
-                    pose = "normal", 
-                    pos = "left",
-                    enterFrom = "left",
-                    exitTo = nil,
-                    fade = true,
-                    move = true,
-                    flip = true,
-                    dim = true
-                }
+        --     characters = {
+        --         {
+        --             name = "char2", 
+        --             pose = "normal", 
+        --             pos = "left",
+        --             enterFrom = "left",
+        --             exitTo = nil,
+        --             fade = true,
+        --             move = true,
+        --             flip = true,
+        --             dim = true
+        --         }
                 
-            },
+        --     },
             
             
-            speaker = "Tiya Isabel",
-            text = "Halika po! Dito po kayo!"
-        },
-        {
-            bg = "bg1",
+        --     speaker = "Tiya Isabel",
+        --     text = "Halika po! Dito po kayo!"
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
+        --     characters = {
                 
-                {name = "char2", pose = "normal", flip = true, pos = "left"}
-            },
+        --         {name = "char2", pose = "normal", flip = true, pos = "left"}
+        --     },
             
-            speaker = "",
-            text = "Pinangangasiwaan ni Tiya Isabel ang mga panauhin."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "",
+        --     text = "Pinangangasiwaan ni Tiya Isabel ang mga panauhin."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char3", pose = "normal", pos = "right"}
-            },
+        --     characters = {
+        --         {name = "char3", pose = "normal", pos = "right"}
+        --     },
             
-            speaker = "",
-            text = "..."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "",
+        --     text = "..."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char3", pose = "normal", pos = "right"}
-            },
+        --     characters = {
+        --         {name = "char3", pose = "normal", pos = "right"}
+        --     },
             
-            speaker = "",
-            text = "*Chatter*"
-        },
-        {
-            bg = "bg1",
+        --     speaker = "",
+        --     text = "*Chatter*"
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
+        --     characters = {
+        --         {name = "char2", pose = "normal", pos = "right"}
+        --     },
             
-            speaker = "Dayuhan",
-            text = "Nais kong maunawaan ang lupain ng mga Indiyo."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "Dayuhan",
+        --     text = "Nais kong maunawaan ang lupain ng mga Indiyo."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "padreDamaso", pose = "normal", pos = "right"}
-            },
+        --     characters = {
+        --         {name = "padreDamaso", pose = "normal", pos = "right"}
+        --     },
             
-            speaker = "Padre Damaso",
-            text = "Ang mga Indiyo? Mababa ang kanilang uri."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "Padre Damaso",
+        --     text = "Ang mga Indiyo? Mababa ang kanilang uri."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char2", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "char2", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "",
-            text = "Naging mainit ang usapan nang talakayin ang monopolyo ng tabako."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "",
+        --     text = "Naging mainit ang usapan nang talakayin ang monopolyo ng tabako."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char2", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "char2", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "Padre Sibyla",
-            text = "Marahil ay pag-usapan na lamang natin ang ibang bagay."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "Padre Sibyla",
+        --     text = "Marahil ay pag-usapan na lamang natin ang ibang bagay."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char2", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "char2", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "Tinyente",
-            text = "May karapatan ang Kapitan Heneral bilang kinatawan ng hari."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "Tinyente",
+        --     text = "May karapatan ang Kapitan Heneral bilang kinatawan ng hari."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "padreDamaso", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "padreDamaso", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "Padre Damaso",
-            text = "Ang simbahan ang may kapangyarihan sa mga erehe!"
-        },
-        {
-            bg = "bg1",
+        --     speaker = "Padre Damaso",
+        --     text = "Ang simbahan ang may kapangyarihan sa mga erehe!"
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char2", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "char2", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "",
-            text = "Ang simbahan ang may kapangyarihan sa mga erehe!"
-        },
-        {
-            bg = "bg1",
+        --     speaker = "",
+        --     text = "Ang simbahan ang may kapangyarihan sa mga erehe!"
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char2", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "char2", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "",
-            text = "Isang bangkay ang ipinahukay at inilipat… dahil umano sa pagiging erehe."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "",
+        --     text = "Isang bangkay ang ipinahukay at inilipat… dahil umano sa pagiging erehe."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "padreDamaso", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "padreDamaso", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "Padre Damaso",
-            text = "Isang malaking pang-aabuso iyon!"
-        },
-        {
-            bg = "bg1",
+        --     speaker = "Padre Damaso",
+        --     text = "Isang malaking pang-aabuso iyon!"
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char2", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "char2", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "",
-            text = "Nagpupuyos sa galit ang pari."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "",
+        --     text = "Nagpupuyos sa galit ang pari."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char2", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "char2", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "Padre Sibyla",
-            text = "Kalmado lamang, Padre."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "Padre Sibyla",
+        --     text = "Kalmado lamang, Padre."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char2", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "char2", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "",
-            text = "*door noise*"
-        },
-        {
-            bg = "bg1",
+        --     speaker = "",
+        --     text = "*door noise*"
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char2", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "char2", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "",
-            text = "Dumating pa ang iba pang panauhin."
-        },
-        {
-            bg = "bg1",
+        --     speaker = "",
+        --     text = "Dumating pa ang iba pang panauhin."
+        -- },
+        -- {
+        --     bg = "bg1",
             
-            characters = {
-                {name = "char2", pose = "normal", pos = "center"}
-            },
+        --     characters = {
+        --         {name = "char2", pose = "normal", pos = "center"}
+        --     },
             
-            speaker = "",
-            text = "."
-        },
-        {
-            bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "center"}
-            },
-            
-            speaker = "",
-            text = "Patuloy ang kasiyahan… ngunit sa ilalim nito ay may tensyong unti-unting nabubuo."
-        },
+        --     speaker = "",
+        --     text = "Patuloy ang kasiyahan… ngunit sa ilalim nito ay may tensyong unti-unting nabubuo."
+        -- },
         {
             bg = "bg1",
             
@@ -477,16 +467,6 @@ chapter = {
             },
 
             speaker = "",
-            text = "scene 2"
-        },
-        {
-            bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
-
-            speaker = "",
             text = "Si Padre Damaso ay halatang banas at magaspang ang kilos."
         },
         {
@@ -599,16 +579,6 @@ chapter = {
 
             speaker = "",
             text = "Kay Ibarra naman ang pinakamasarap na bahagi."
-        },
-        {
-            bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
-
-            speaker = "",
-            text = "(hindi direktang linya, galit na ekspresyon)"
         },
         {
             bg = "bg1",

@@ -4,15 +4,15 @@ local selected = 1
 local baseY = 240
 
 local buttons = {
-    {text="Simulan", y=290},
-    {text="Setting", y=347},
-    {text="Kredito", y=403},
-    {text="Umalis", y=460}
+    {text="Simulan", y=390},
+    {text="Setting", y=466},
+    {text="Kredito", y=541},
+    {text="Umalis", y=617}
 }
 
-local btnX = 310
-local btnW = 180
-local btnH = 50
+local btnX = 510
+local btnW = 260
+local btnH = 70
 
 ------------------------------------------------------------
 
@@ -37,38 +37,38 @@ function menu.draw()
     local bg = bgImages.menu
     
     if bg then
-        local baseW, baseH = 1600, 1000
+        local baseW, baseH = 1280, 720
         
-        local scale = math.max(
-            baseW / bg:getWidth(),
-            baseH / bg:getHeight()
-        ) / 2
-        love.graphics.draw(bg, 0, 30, 0, scale , scale)
+        local scale1 = baseW / bg:getWidth()
+        local scale2 = baseH / bg:getHeight()
+        
+        love.graphics.draw(bg, 0, 30, 0, scale1 , scale2)
     end
-    local charScale = 370 / tao1:getWidth()
-    local charScale1 = 340 / tao2:getWidth()
-    love.graphics.draw(tao1,480,104,0, charScale, charScale)
-    love.graphics.draw(tao2,300,110,0, -charScale1, charScale1)
+
+    local charScale = 500 / tao1:getWidth()
+    local charScale1 = 500 / tao2:getWidth()
+    love.graphics.draw(tao1, 835, 104, 0, charScale, charScale)
+    love.graphics.draw(tao2, 427, 117, 0, -charScale1, charScale1)
 
     love.graphics.setColor(0, 0, 0, 0.36)
-    love.graphics.rectangle("fill", 250, 245, 300, 300, 20, 20)
+    love.graphics.rectangle("fill", 420, 305, 450, 400, 20, 20)
     
     -- love.graphics.print("BALIK TANAW", 250, 60)
 
     love.graphics.setColor(255, 255, 255)
     love.graphics.setFont(uiFont)
     
-    local titleWidth = 400
+    local titleWidth = 570
     local titleScale = titleWidth / titleImg.menu:getWidth()
     
-    love.graphics.draw(titleImg.menu, 197, 105, 0, titleScale, titleScale)
-    love.graphics.draw(balikTanaw, 228, 0, 0, titleScale/1.4, titleScale/1.4)
+    love.graphics.draw(titleImg.menu, 354, 135, 0, titleScale, titleScale)
+    love.graphics.draw(balikTanaw, 385, 10, 0, titleScale/1.4, titleScale/1.4)
     
     -- buttons
     love.graphics.setFont(uiFonts)
     local mx, my = love.mouse.getPosition()
-    mx = mx / scaleX
-    my = my / scaleY
+    -- mx = mx / scale
+    -- my = my / scale
 
     for i, b in ipairs(buttons) do
         local hovered = ui.isHovered(mx, my, btnX, b.y, btnW, btnH)
@@ -117,8 +117,8 @@ end
 
 function menu.mousepressed(x, y)
 
-    x = x / scaleX
-    y = y / scaleY
+    -- x = x / scale
+    -- y = y / scale
     for i, b in ipairs(buttons) do
 
         if ui.isHovered(x, y, btnX, b.y, btnW, btnH) then
@@ -177,5 +177,7 @@ function menu.keypressed(key)
     -- elseif key == "return" then
     --     menu.mousepressed()
     -- end
+
+    
 
 end

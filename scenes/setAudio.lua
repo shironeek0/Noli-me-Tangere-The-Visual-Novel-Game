@@ -29,8 +29,8 @@ end
 
 function settingsAudio.mousepressed(x,y)
 
-    x = x / scaleX
-    y = y / scaleY
+    -- x = x / scale
+    -- y = y / scale
 
     for i=1, 4 do
         local sy = 180 + i*40

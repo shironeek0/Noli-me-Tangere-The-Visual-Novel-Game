@@ -24,8 +24,8 @@ local bgAlpha = 1
 
 local currentFont = nil
 
-local boxX, boxY, boxW, boxH = 0, 400, 800, 160
-local textX, textY = 70, 420
+local boxX, boxY, boxW, boxH = 20, 550, 1235, 160
+local textX, textY = 70, 565
 
 local eventText  = nil
 local eventAlpha = 0
@@ -286,7 +286,7 @@ function story.draw()
     if eventText then
         love.graphics.setColor(1, 1, 1, eventAlpha)
         
-        love.graphics.printf(eventText, 0, 260, 800, "center")
+        love.graphics.printf(eventText, 0, 260, 1280, "center")
         
         love.graphics.setColor(1, 1, 1)
         return
@@ -299,15 +299,13 @@ function story.draw()
     local function drawBG(bg, alpha)
         if not bg then return end
 
-        local baseW, baseH = 1600, 1000
-
-        local scale = math.max(
-            baseW / bg:getWidth(),
-            baseH / bg:getHeight()
-        ) / 2
+        local baseW, baseH = 1280, 720
+        
+        local scale1 = baseW / bg:getWidth()
+        local scale2 = baseH / bg:getHeight()
 
         love.graphics.setColor(1, 1, 1, alpha)
-        love.graphics.draw(bg, 0, 50, 0, scale, scale)
+        love.graphics.draw(bg, 0, 50, 0, scale1, scale2)
     end
 
     if currentBG then 
@@ -349,19 +347,19 @@ function story.draw()
                 
                 local img = loadChar(c.name, c.pose)
                 local charHeight = 400
-                local scale = charHeight / img:getHeight()
-                local y = baseY - (img:getHeight() * scale)
+                local charH = charHeight / img:getHeight()
+                local y = baseY - (img:getHeight() * charH)
                 
                 local state = charState[c.name]
                 
                 if state then
-                    local scaleX = c.flip and -0.5 or 0.5
+                    local charW = c.flip and -0.5 or 0.5
                     local offsetx = c.flip and img:getWidth()-330 or 0
                     
                     
                     love.graphics.setColor(1, 1, 1, state.alpha)
                     
-                    love.graphics.draw(img, state.x + offsetx +200, y, 0, scaleX, scale)
+                    love.graphics.draw(img, state.x + offsetx +200, y, 0, charW, charH)
                     
                     love.graphics.setColor(1, 1, 1)
                 end
@@ -395,10 +393,10 @@ function story.draw()
     if d.speaker and d.speaker ~= "" then
         
         love.graphics.setColor(0,0,0,0.7)
-        love.graphics.rectangle("fill", 40, 375, 200, 25)
+        love.graphics.rectangle("fill", 40, 520, 200, 30)
         
         love.graphics.setColor(1, 1, 1)
-        love.graphics.print(d.speaker, 60, 380)
+        love.graphics.print(d.speaker, 60, 528)
         
         love.graphics.setColor(1, 1, 1)
     end

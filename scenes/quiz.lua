@@ -71,40 +71,39 @@ function quiz.draw()
     if not q then return end
     
     local bg = bgImages.menu
-        
+    
     if bg then
-        local baseW, baseH = 1600, 1000
+        local baseW, baseH = 1280, 720
         
-        local scale = math.max(
-            baseW / bg:getWidth(),
-            baseH / bg:getHeight()
-        ) / 2
-        love.graphics.draw(bg, 0, 30, 0, scale , scale)
+        local scale1 = baseW / bg:getWidth()
+        local scale2 = baseH / bg:getHeight()
+        
+        love.graphics.draw(bg, 0, 30, 0, scale1 , scale2)
     end
 
     love.graphics.setColor(0, 0, 0, 0.6)
-    love.graphics.rectangle("fill", 40, 380, 720, 160, 20, 20)
-    love.graphics.rectangle("fill", 80, 350, 160, 30)
+    love.graphics.rectangle("fill", 40, 500, 1200, 160, 20, 20)
+    love.graphics.rectangle("fill", 80, 460, 167, 40)
     love.graphics.setColor(1, 1, 1)
 
-    love.graphics.setFont(Fonts)
+    love.graphics.setFont(uiFonts)
     
     local q = quizzes[quiz.chapter][currentQ]
     
-    love.graphics.printf("Question "..currentQ.."/5", 95, 357, 800, "left")
-    love.graphics.printf(q.question, 60, 390, 600, "left")
+    love.graphics.printf("Question "..currentQ.."/5", 95, 474, 800, "left")
+    love.graphics.printf(q.question, 70, 520, 600, "left")
     
     for i,choice in ipairs(q.choices) do
-        local y = 220 + i * 40
+        local y = 220 + i * 60
         local button1 = buttons
 
         if selected == i then
-            love.graphics.draw(button1, 300, y-110, 0, 0.9, 0.44)
-            love.graphics.print("> "..choice, 350, y-100)
+            love.graphics.draw(button1, 450, y-120, 0, 1.45, 0.64)
+            love.graphics.printf("> "..choice, 0, y-100, 1280, "center")
             
         else
-            love.graphics.draw(button1, 254, y-110, 0, 1.25, 0.44)
-            love.graphics.printf(choice, 120, y-100, 600, "center")
+            love.graphics.draw(button1, 450, y-120, 0, 1.45, 0.64)
+            love.graphics.printf(choice, 0, y-100, 1280, "center")
         end
     end
 
@@ -115,8 +114,8 @@ end
 
 function quiz.mousepressed(x,y)
     
-    x = x / scaleX
-    y = y / scaleY
+    -- x = x / scale
+    -- y = y / scale
 
     -- local q = quizData[quiz.chapter][quiz.index]
     -- if not q then return end
@@ -164,10 +163,10 @@ function quiz.mousepressed(x,y)
     local q = quizzes[quiz.chapter][currentQ]
     
     for i=1, #q.choices do
-        local cy = 220 +i * 40
-        cy = cy - 100
+        local cy = 220 +i * 60
+        cy = cy - 128
     
-        if x > 260 and x < 590 and y > cy and y < cy + 38 then
+        if x > 455 and x < 890 and y > cy and y < cy + 56 then
             selected = i
 
             if selected == q.correct then
