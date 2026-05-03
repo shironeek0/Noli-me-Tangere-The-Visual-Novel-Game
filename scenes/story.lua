@@ -32,9 +32,9 @@ local eventAlpha = 0
 local eventTimer = 0
 
 local baseX = {
-    left = 120,
-    center = 600,
-    right = 1080
+    left = -370,
+    center = 1000,
+    right = 1570
 }
 
 local logViewY = 80
@@ -374,23 +374,23 @@ function story.draw()
                 local state = charState[c.name]
                 
                 if state then
-                    local charW = c.flip and -0.5 or 0.5
+                    local charW = c.flip and -0.2 or 0.2
                     local offsetx = c.flip and img:getWidth()-330 or 0
                     
-                    
-                    love.graphics.setColor(1, 1, 1, state.alpha)
+                    -- dim effect
+                    if c.dim then
+                        love.graphics.setColor(0.4,0.4,0.4, state.alpha)
+                    else    
+                        love.graphics.setColor(1,1,1, state.alpha)
+                    end
                     
                     love.graphics.draw(img, state.x + offsetx +200, y, 0, charW, charH)
+                    
+                    -- love.graphics.setColor(1, 1, 1, state.alpha)
                     
                     love.graphics.setColor(1, 1, 1)
                 end
                 
-                -- dim effect
-                if c.dim then
-                    love.graphics.setColor(0.6,0.6,0.6)
-                else    
-                    love.graphics.setColor(1,1,1)
-                end
             end
         end
     end    

@@ -43,10 +43,10 @@ chapter = {
                     name = "npc2", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true,
                     dim = false
                 }
@@ -80,12 +80,12 @@ chapter = {
                 {
                     name = "tinyente", 
                     pose = "normal", 
-                    pos = "right",
-                    enterFrom = "right",
+                    pos = "left",
+                    enterFrom = nil,
                     exitTo = nil,
-                    fade = false,
-                    move = true,
-                    flip = false
+                    fade = true,
+                    move = false,
+                    flip = true
                 }
                 
             },
@@ -98,25 +98,14 @@ chapter = {
             
             characters = {
                 {
-                    name = "tinyente", 
-                    pose = "normal", 
-                    pos = "right",
-                    enterFrom = nil,
-                    exitTo = nil,
-                    fade = false,
-                    move = false,
-                    flip = false,
-                    dim = true
-                },
-                {
                     name = "padreSybila", 
                     pose = "normal", 
-                    pos = "center",
-                    enterFrom = "right",
+                    pos = "left",
+                    enterFrom = nil,
                     exitTo = nil,
-                    fade = false,
-                    move = true,
-                    flip = false
+                    fade = true,
+                    move = false,
+                    flip = true
                 }
                 
             },
@@ -129,37 +118,14 @@ chapter = {
             
             characters = {
                 {
-                    name = "tinyente", 
-                    pose = "normal", 
-                    pos = "right",
-                    enterFrom = nil,
-                    exitTo = "left",
-                    fade = false,
-                    move = false,
-                    flip = false,
-                    dim = true
-                },
-                {
-                    name = "padreSybila", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = nil,
-                    exitTo = "left",
-                    fade = true,
-                    move = true,
-                    flip = false,
-                    dim = true
-                },
-                {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
-                    flip = true,
-                    dim = false
+                    move = false,
+                    flip = true
                 }
                 
             },
@@ -171,7 +137,7 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "npc", pose = "normal", pos = "right", flip = true}
+                {name = "npc", pose = "normal", pos = "left", flip = true}
             },
             
             speaker = "Dayuhan",
@@ -181,18 +147,17 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                    {name = "npc", pose = "normal", pos = "right", dim = true},
-                    {
-                        name = "padreDamaso", 
-                        pose = "normal", 
-                        pos = "left",
-                        enterFrom = "left",
-                        exitTo = nil,
-                        fade = true,
-                        move = true,
-                        flip = true,
-                    }
-                },
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
+            },
             
             speaker = "Padre Damaso",
             text = "Ang mga Indiyo? Mababa ang kanilang uri."
@@ -201,18 +166,17 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "npc", pose = "normal", pos = "right", dim = true},
                 {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true,
+                    dim = true
                 }
-                
             },
             
             speaker = "",
@@ -222,26 +186,25 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "npc", pose = "normal", pos = "right", dim = true},
                 {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true,
+                    dim = true
                 },
                 {
                     name = "padreSybila", 
                     pose = "normal", 
-                    pos = "center",
-                    enterFrom = "left",
+                    pos = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
-                    flip = true,
+                    move = false
                 }
             },
             
@@ -256,31 +219,21 @@ chapter = {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
-                    flip = true
-                },
-                {
-                    name = "padreSybila", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = "left",
-                    exitTo = nil,
-                    fade = true,
-                    move = true,
-                    flip = true
+                    move = false,
+                    flip = true,
+                    dim = true
                 },
                 {
                     name = "tinyente", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
-                    flip = false
+                    move = false
                 }
             },
             
@@ -302,16 +255,6 @@ chapter = {
                     flip = true
                 },
                 {
-                    name = "padreSybila", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = "left",
-                    exitTo = nil,
-                    fade = true,
-                    move = true,
-                    flip = true
-                },
-                {
                     name = "tinyente", 
                     pose = "normal", 
                     pos = "right",
@@ -319,7 +262,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = false
+                    flip = false,
+                    dim = true
                 }
             },
             
@@ -338,17 +282,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = true
-                },
-                {
-                    name = "padreSybila", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = "left",
-                    exitTo = nil,
-                    fade = true,
-                    move = true,
-                    flip = true
+                    flip = true,
+                    dim = true
                 },
                 {
                     name = "tinyente", 
@@ -358,7 +293,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = false
+                    flip = false,
+                    dim = true
                 }
             },
             
@@ -377,17 +313,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = true
-                },
-                {
-                    name = "padreSybila", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = "left",
-                    exitTo = nil,
-                    fade = true,
-                    move = true,
-                    flip = true
+                    flip = true,
+                    dim = true
                 },
                 {
                     name = "tinyente", 
@@ -397,7 +324,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = false
+                    flip = false,
+                    dim = true
                 }
             },
             
@@ -419,16 +347,6 @@ chapter = {
                     flip = true
                 },
                 {
-                    name = "padreSybila", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = "left",
-                    exitTo = nil,
-                    fade = true,
-                    move = true,
-                    flip = true
-                },
-                {
                     name = "tinyente", 
                     pose = "normal", 
                     pos = "right",
@@ -436,7 +354,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = false
+                    flip = false,
+                    dim = true
                 }
             },
             
@@ -455,17 +374,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = true
-                },
-                {
-                    name = "padreSybila", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = "left",
-                    exitTo = nil,
-                    fade = true,
-                    move = true,
-                    flip = true
+                    flip = true,
+                    dim = true
                 },
                 {
                     name = "tinyente", 
@@ -475,7 +385,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = false
+                    flip = false,
+                    dim = true
                 }
             },
             
@@ -497,16 +408,6 @@ chapter = {
                     flip = true
                 },
                 {
-                    name = "padreSybila", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = "left",
-                    exitTo = nil,
-                    fade = true,
-                    move = true,
-                    flip = true
-                },
-                {
                     name = "tinyente", 
                     pose = "normal", 
                     pos = "right",
@@ -514,7 +415,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = false
+                    flip = false,
+                    dim = true
                 }
             },
             
@@ -532,16 +434,8 @@ chapter = {
                     enterFrom = "left",
                     exitTo = nil,
                     fade = true,
-                    move = true
-                },
-                {
-                    name = "padreSybila", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = "left",
-                    exitTo = nil,
-                    fade = true,
-                    move = true
+                    move = true,
+                    dim = true
                 },
                 {
                     name = "tinyente", 
@@ -551,7 +445,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = false
+                    flip = false,
+                    dim = true
                 }
             },
             
@@ -572,10 +467,10 @@ chapter = {
                     name = "donyaVictorina", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true
                 }
             },
@@ -591,21 +486,21 @@ chapter = {
                     name = "donyaVictorina", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
-                    flip = true
+                    move = false,
+                    flip = true,
+                    dim = true
                 },
                 {
                     name = "donTiburcio", 
                     pose = "normal", 
                     pos = "center",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
-                    flip = true
+                    move = false
                 }
             },
             
@@ -620,21 +515,22 @@ chapter = {
                     name = "donyaVictorina", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
-                    flip = true
+                    move = false,
+                    flip = true,
+                    dim = true
                 },
                 {
                     name = "donTiburcio", 
                     pose = "normal", 
                     pos = "center",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
-                    flip = true
+                    move = false,
+                    dim = true
                 }
             },
             
@@ -677,22 +573,14 @@ chapter = {
 
             characters = {
                 {
-                    name = "char2", 
-                    pose = "normal", 
-                    pos = "right",
-                    enterFrom = "right",
-                    exitTo = nil,
-                    fade = true,
-                    move = true
-                },
-                {
                     name = "kapitanTiyago", 
                     pose = "normal", 
-                    pos = "center",
-                    enterFrom = "right",
+                    pos = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
+                    move = false,
+                    flip = true
                 }
             },
 
@@ -706,20 +594,12 @@ chapter = {
                 {
                     name = "char2", 
                     pose = "normal", 
-                    pos = "right",
-                    enterFrom = "right",
+                    pos = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-                },
-                {
-                    name = "kapitanTiyago", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = "right",
-                    exitTo = nil,
-                    fade = true,
-                    move = true
+                    move = false,
+                    flip = true
                 }
             },
 
@@ -733,20 +613,12 @@ chapter = {
                 {
                     name = "char2", 
                     pose = "normal", 
-                    pos = "right",
-                    enterFrom = "right",
+                    pos = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-                },
-                {
-                    name = "kapitanTiyago", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = "right",
-                    exitTo = nil,
-                    fade = true,
-                    move = true
+                    move = false,
+                    flip = true
                 }
             },
 
@@ -760,21 +632,24 @@ chapter = {
                 {
                     name = "char2", 
                     pose = "normal", 
-                    pos = "right",
-                    enterFrom = "right",
+                    pos = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
+                    move = false,
+                    flip = true,
+                    dim = true
                 },
                 {
                     name = "kapitanTiyago", 
                     pose = "normal", 
-                    pos = "center",
-                    enterFrom = "right",
+                    pos = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
+                    move = false
                 }
+
             },
 
             speaker = "Kapitan Tiyago",
@@ -782,37 +657,6 @@ chapter = {
         },
         {
             bg = "bg1",
-
-            characters = {
-                {
-                    name = "char2", 
-                    pose = "normal", 
-                    pos = "right",
-                    enterFrom = "right",
-                    exitTo = nil,
-                    fade = true,
-                    move = true
-                },
-                {
-                    name = "kapitanTiyago", 
-                    pose = "normal", 
-                    pos = "center",
-                    enterFrom = "right",
-                    exitTo = nil,
-                    fade = true,
-                    move = true
-                },
-                {
-                    name = "npc", 
-                    pose = "normal", 
-                    pos = "left",
-                    enterFrom = "left",
-                    exitTo = nil,
-                    fade = true,
-                    move = true,
-                    flip = true
-                }
-            },
 
             speaker = "",
             text = "Napatingin ang lahat. Isang edukadong Indio… bihira at kapansin-pansin."
@@ -825,12 +669,11 @@ chapter = {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true
-
                 }
             },
 
@@ -845,12 +688,11 @@ chapter = {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true
-
                 }
             },
 
@@ -865,22 +707,21 @@ chapter = {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
-                    flip = true
-
+                    move = false,
+                    flip = true,
+                    dim = true
                 },
                 {
                     name = "char2", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-
+                    move = false
                 }
             },
 
@@ -895,22 +736,21 @@ chapter = {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true
-
                 },
                 {
                     name = "char2", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-
+                    move = false,
+                    dim = true
                 }
             },
 
@@ -925,22 +765,20 @@ chapter = {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true
-
                 },
                 {
                     name = "char2", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-
+                    move = false
                 }
             },
 
@@ -955,22 +793,21 @@ chapter = {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true
-
                 },
                 {
                     name = "char2", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-
+                    move = false,
+                    dim = true
                 }
             },
 
@@ -985,22 +822,20 @@ chapter = {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true
-
                 },
                 {
                     name = "char2", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-
+                    move = false
                 }
             },
 
@@ -1015,22 +850,20 @@ chapter = {
                     name = "padreDamaso", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true
-
                 },
                 {
                     name = "char2", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-
+                    move = false
                 }
             },
 
@@ -1045,22 +878,21 @@ chapter = {
                     name = "tinyente", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true
-
                 },
                 {
                     name = "char2", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-
+                    move = false,
+                    dim = true
                 }
             },
 
@@ -1075,22 +907,21 @@ chapter = {
                     name = "tinyente", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
-                    flip = true
-
+                    move = false,
+                    flip = true,
+                    dim = true
                 },
                 {
                     name = "char2", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-
+                    move = false
                 }
             },
 
@@ -1105,22 +936,21 @@ chapter = {
                     name = "tinyente", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true
-
                 },
                 {
                     name = "char2", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-
+                    move = false,
+                    dim = true
                 }
             },
 
@@ -1135,22 +965,20 @@ chapter = {
                     name = "tinyente", 
                     pose = "normal", 
                     pos = "left",
-                    enterFrom = "left",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true,
+                    move = false,
                     flip = true
-
                 },
                 {
                     name = "char2", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-
+                    move = false
                 }
             },
 
@@ -1161,15 +989,15 @@ chapter = {
             bg = "bg1",
 
             characters = {
+                
                 {
                     name = "char2", 
                     pose = "normal", 
                     pos = "right",
-                    enterFrom = "right",
+                    enterFrom = nil,
                     exitTo = nil,
                     fade = true,
-                    move = true
-
+                    move = false
                 }
             },
 
@@ -1217,7 +1045,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = true
+                    flip = true,
+                    dim = true
 
                 }
             },
@@ -1296,7 +1125,8 @@ chapter = {
                     enterFrom = "right",
                     exitTo = nil,
                     fade = true,
-                    move = true
+                    move = true,
+                    dim = true
 
                 },
                 {
@@ -1337,7 +1167,8 @@ chapter = {
                     exitTo = nil,
                     fade = true,
                     move = true,
-                    flip = true
+                    flip = true,
+                    dim = true
 
                 }
             },
@@ -1347,10 +1178,6 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "left", flip = true}
-            },
 
             speaker = "",
             text = "Sa kanyang pagbabalik, sinalubong si Ibarra ng karangyaan, ngunit pati na rin ng lamig ng pagtanggi at mga lihim ng nakaraan."
@@ -1370,10 +1197,6 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Nagtungo ang mga panauhin sa hapag-kainan."
@@ -1382,7 +1205,16 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
 
             speaker = "",
@@ -1392,7 +1224,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true,
+                    dim = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                },
             },
 
             speaker = "Padre Sibyla",
@@ -1402,8 +1253,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"},
-                {name = "padreDamaso", pose = "normal", pos = "left", flip = true}
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                },
             },
 
             speaker = "Padre Damaso",
@@ -1413,7 +1282,25 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                },
             },
 
             speaker = "",
@@ -1423,7 +1310,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "tinyete", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                },
             },
 
             speaker = "Padre Sibyla",
@@ -1433,7 +1339,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "padreSybila", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true,
+                    dim = true
+                },
+                {
+                    name = "tinyete", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                },
             },
 
             speaker = "Tinyente",
@@ -1441,10 +1366,6 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Si Ibarra ang naupo sa kabisera."
@@ -1453,7 +1374,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "kapitanTiyago", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                },
             },
 
             speaker = "Ibarra",
@@ -1463,7 +1403,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true,
+                    dim = true
+                },
+                {
+                    name = "kapitanTiyago", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                },
             },
 
             speaker = "Kapitan Tiyago",
@@ -1471,30 +1430,18 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Inihain ang tinola."
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Kay Padre Damaso napunta ang leeg at pakpak."
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Kay Ibarra naman ang pinakamasarap na bahagi."
@@ -1503,7 +1450,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "npc", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                },
             },
 
             speaker = "Laruja",
@@ -1513,7 +1479,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "npc", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true,
+                    dim = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                },
             },
 
             speaker = "Ibarra",
@@ -1523,7 +1508,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "npc", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true,
+                    dim = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                },
             },
 
             speaker = "Ibarra",
@@ -1531,10 +1535,6 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Wala siyang nalalaman sa sinapit ng kanyang ama."
@@ -1543,7 +1543,16 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "donyaVictorina", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
 
             speaker = "Donya Victorina",
@@ -1553,7 +1562,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "donyaVictorina", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true,
+                    dim = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                },
             },
 
             speaker = "Ibarra",
@@ -1561,9 +1589,27 @@ chapter = {
         },
         {
             bg = "bg1",
-            
+
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "donyaVictorina", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                },
             },
 
             speaker = "",
@@ -1573,7 +1619,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "donyaVictorina", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true,
+                    dim = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                },
             },
 
             speaker = "Ibarra",
@@ -1583,8 +1648,16 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "padreDamaso", pose = "normal", pos = "left", flip = true},
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
 
             speaker = "Padre Damaso",
@@ -1592,10 +1665,6 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Nagulat ang lahat."
@@ -1604,7 +1673,16 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
 
             speaker = "Ibarra",
@@ -1612,19 +1690,24 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
-            text = "Naalala ko lamang po ang inyong pagbisita sa aming tahanan noon."
+            text = "Hindi nakaimik si Padre Damaso."
         },
         {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
 
             speaker = "Ibarra",
@@ -1634,7 +1717,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true,
+                    dim = true
+                },
+                {
+                    name = "kapitanTiyago", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                }
             },
 
             speaker = "Kapitan Tiyago",
@@ -1644,7 +1746,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "kapitanTiyago", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Ibarra",
@@ -1654,7 +1775,16 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "padreDamaso", pose = "normal", pos = "left", flip = true}
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
 
             speaker = "Padre Damaso",
@@ -1664,7 +1794,16 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "padreDamaso", pose = "normal", pos = "left", flip = true}
+                {
+                    name = "padreDamaso", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
 
             speaker = "Padre Damaso",
@@ -1672,20 +1811,12 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Sa hapag na puno ng pagkain…"
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "lumantad ang gutom sa kapangyarihan at pagmamataas."
@@ -1707,7 +1838,16 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
 
             speaker = "",
@@ -1717,7 +1857,16 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
 
             speaker = "",
@@ -1727,7 +1876,16 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1735,10 +1893,6 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Hinabol siya ng Tinyente Guevarra."
@@ -1747,7 +1901,16 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1757,7 +1920,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true,
+                    dim = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                }
             },
 
             speaker = "Ibarra",
@@ -1767,7 +1949,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1777,7 +1978,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true,
+                    dim = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                }
             },
 
             speaker = "Ibarra",
@@ -1787,7 +2007,25 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                }
             },
 
             speaker = "",
@@ -1797,7 +2035,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1807,7 +2064,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1815,9 +2091,27 @@ chapter = {
         },
         {
             bg = "bg1",
-            
+
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                }
             },
 
             speaker = "",
@@ -1827,7 +2121,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1837,7 +2150,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1847,7 +2179,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1855,20 +2206,12 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Dalawang salitang kay bigat… na maaaring magwasak ng buhay."
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "May isang artilyero na nanakit ng bata."
@@ -1877,7 +2220,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1897,7 +2259,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1907,7 +2288,25 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                }
             },
 
             speaker = "",
@@ -1917,7 +2316,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1927,7 +2345,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1937,7 +2374,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1947,7 +2403,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1955,10 +2430,6 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Lumabas sa pagsusuri… hindi niya kasalanan ang pagkamatay ng artilyero."
@@ -1967,7 +2438,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1977,7 +2467,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -1987,7 +2496,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -2005,10 +2533,6 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "At si Ibarra… naiwan sa bigat ng katotohanan."
@@ -2017,7 +2541,26 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    dim = true
+                }
             },
 
             speaker = "Tinyente",
@@ -2027,7 +2570,25 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "tinyente", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                },
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                }
             },
 
             speaker = "",
@@ -2035,30 +2596,18 @@ chapter = {
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "Sa gabing iyon…"
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "hindi lamang alaala ang kanyang dala…"
         },
         {
             bg = "bg1",
-            
-            characters = {
-                {name = "char2", pose = "normal", pos = "right"}
-            },
 
             speaker = "",
             text = "kundi ang bigat ng isang pangalan na dinungisan ng kasinungalingan."
@@ -2078,6 +2627,19 @@ chapter = {
         },
         {
             bg = "bg1",
+
+            characters = {
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
+            },
             
             speaker = "",
             text = "Dumating si Ibarra sa Fonda de Lala."
@@ -2087,7 +2649,16 @@ chapter = {
             bg = "bg1",
             
             characters = {
-                {name = "char2", pose = "normal", pos = "right"}
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
             },
             
             speaker = "Ibarra",
@@ -2096,6 +2667,19 @@ chapter = {
         {
             
             bg = "bg1",
+
+            characters = {
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
+            },
             
             speaker = "",
             text = "Umupo siya sa isang silyon… tahimik… mag-isa."
@@ -2103,12 +2687,24 @@ chapter = {
         {
             
             bg = "bg1",
+
+            characters = {
+                {
+                    name = "char2", 
+                    pose = "normal", 
+                    pos = "left",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false,
+                    flip = true
+                }
+            },
             
             speaker = "",
             text = "Magulo ang kanyang isip sa sinapit ng kanyang ama."
         },
         {
-            
             bg = "bg1",
             
             speaker = "",
@@ -2119,73 +2715,76 @@ chapter = {
             bg = "bg1",
             
             speaker = "",
-            text = "Sa kabilang dako… may kasiyahan."
+            text = "Isang maliwanag na tahanan… puno ng musika at tawanan."
         },
         {
             
             bg = "bg1",
+
+            characters = {
+                {
+                    name = "char4", 
+                    pose = "normal", 
+                    pos = "right",
+                    enterFrom = nil,
+                    exitTo = nil,
+                    fade = true,
+                    move = false
+                }
+            },
             
             speaker = "",
             text = "Naroon si Maria Clara… hinahangaan ng lahat."
         },
         {
-            
             bg = "bg1",
             
             speaker = "",
             text = "Ang mga panauhin pari, opisyal, at mamamayan lahat ay nakatuon sa kanyang kagandahan."
         },
         {
-            
             bg = "bg1",
             
             speaker = "",
             text = "Si Padre Sibyla ay abala sa pakikipag-usap."
         },
         {
-            
             bg = "bg1",
             
             speaker = "",
             text = "Ngunit may isang hindi nakikibahagi."
         },
         {
-            
             bg = "bg1",
             
             speaker = "",
             text = "Ngunit may isang hindi nakikibahagi."
         },
         {
-            
             bg = "bg1",
             
             speaker = "",
             text = "Sa isang panig - kasiyahan."
         },
         {
-            
             bg = "bg1",
             
             speaker = "",
             text = "Sa kabila - kalungkutan."
         },
         {
-            
             bg = "bg1",
             
             speaker = "",
             text = "Sa pagod ng isip at katawan… madali siyang nakatulog."
         },
         {
-            
             bg = "bg1",
             
             speaker = "",
             text = "Ngunit sa gabing iyon… Ngunit sa gabing iyon…"
         },
         {
-            
             bg = "bg1",
             
             speaker = "",

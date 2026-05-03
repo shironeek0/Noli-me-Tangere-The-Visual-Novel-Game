@@ -3,12 +3,19 @@ menu = {}
 local selected = 1
 local baseY = 240
 
+-- local buttons = {
+--     {text="Simulan ang laro", y=340},
+--     {text="Glosaryo", y=413},
+--     {text="Opsyon", y=486},
+--     {text="Kredito", y=559},
+--     {text="Umalis sa laro", y=632}
+-- }
+
 local buttons = {
-    {text="Simulan ang laro", y=350},
-    {text="Glosaryo", y=430},
-    {text="Opsyon", y=510},
-    {text="Kredito", y=591},
-    {text="Umalis sa laro", y=670}
+    {text="Simulan ang laro", y=340},
+    {text="Opsyon", y=413},
+    {text="Kredito", y=486},
+    {text="Umalis sa laro", y=559}
 }
 
 local btnX = 510
@@ -26,8 +33,8 @@ function menu.load()
     audio.playBGM("menu")
     arrow = love.graphics.newImage("assets/ui/Arrow1.png")
     balikTanaw = love.graphics.newImage("assets/ui/Balik_Tanaw.png")
-    tao1 = love.graphics.newImage("assets/characters/char2_normal.png")
-    tao2 = love.graphics.newImage("assets/characters/char4_normal.png")
+    tao1 = love.graphics.newImage("assets/characters/menuChar.png")
+    tao2 = love.graphics.newImage("assets/characters/menuChar2.png")
 end
 
 ------------------------------------------------------------
@@ -57,16 +64,15 @@ function menu.draw()
     love.graphics.draw(tao2, 427, 117, 0, -charScale1, charScale1)
 
     love.graphics.setColor(0, 0, 0, 0.36)
-    love.graphics.rectangle("fill", 420, 305, 450, 400, 20, 20)
+    love.graphics.rectangle("fill", 420, 310, 450, 400, 20, 20)
 
     love.graphics.setColor(255, 255, 255)
     love.graphics.setFont(uiFont)
     
-    local titleWidth = 570
+    local titleWidth = 800
     local titleScale = titleWidth / titleImg.menu:getWidth()
     
-    love.graphics.draw(titleImg.menu, 354, 135, 0, titleScale, titleScale)
-    love.graphics.draw(balikTanaw, 385, 10, 0, titleScale/1.4, titleScale/1.4)
+    love.graphics.draw(titleImg.menu, 237, -30, 0, titleScale, titleScale)
     
     -- buttons
     love.graphics.setFont(uiFonts)
@@ -134,11 +140,24 @@ function menu.mousepressed(x, y)
 
         if ui.isHovered(x, y, btnX, b.y, btnW, btnH) then
 
+            -- if b.text == "Simulan ang laro" then
+            --     fade.to(chapterSelect)
+                
+            -- elseif b.text == "Glosaryo" then
+            --     fade.to(glossary)
+
+            -- elseif b.text == "Opsyon" then
+            --     fade.to(settings)
+
+            -- elseif b.text == "Kredito" then
+            --     fade.to(credits)
+
+            -- elseif b.text == "Umalis sa laro" then
+            --     exitPrompt = true -- 🔥 CHANGE HERE
+            -- end
+
             if b.text == "Simulan ang laro" then
                 fade.to(chapterSelect)
-                
-            elseif b.text == "Glosaryo" then
-                fade.to(glossary)
 
             elseif b.text == "Opsyon" then
                 fade.to(settings)

@@ -135,11 +135,11 @@ function love.keypressed(key)
         state.current.keypressed(key)
     end
 
-    -- if DEV_MODE == true then 
-    --     if key == "escape" then
-    --        love.event.quit()
-    --     end
-    -- end
+    if DEV_MODE == true then 
+        if key == "escape" then
+           love.event.quit()
+        end
+    end
 end
 
 function love.mousemoved(x,y,dx,dy)

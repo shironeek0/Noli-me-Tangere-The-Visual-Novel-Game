@@ -232,7 +232,7 @@ quizzes = {
     },
     
     [5] = {
-
+        
         {
             question = "Saan natuloy si Ibarra?",
             choices = {
@@ -243,7 +243,7 @@ quizzes = {
             },
             correct = 2
         },
-
+        
         {
             question = "Ano ang ginawa ni Ibarra sa kanyang silid?",
             choices = {
@@ -254,7 +254,7 @@ quizzes = {
             },
             correct = 4
         },
-
+        
         {
             question = "Sino ang nakita sa kabilang bahay?",
             choices = {
@@ -265,7 +265,7 @@ quizzes = {
             },
             correct = 2
         },
-
+        
         {
             question = "Ano ang ginawa ng mga tao sa kabilang buhay?",
             choices = {
@@ -276,7 +276,7 @@ quizzes = {
             },
             correct = 3
         },
-
+        
         {
             question = "Sino ang hindi nakatulog sa gabing iyon?",
             choices = {
@@ -289,4 +289,109 @@ quizzes = {
         }
     },
     
+    [6] = {
+        {
+            question = "Sino si Kapitan Tiyago?",
+            choices = {
+                "Sundalo",
+                "Pari",
+                "Mayamang Mangangalakal",
+                "Guro",
+            },
+            correct = 3
+        },
+        {
+            question = "Paano niya tinitingnan ang kanyang sarili?",
+            choices = {
+                "Pilipino",
+                "Kastila",
+                "Intsik",
+                "Europeo",
+            },
+            correct = 2
+        },
+        {
+            question = "Sino ang asawa ni Kapitan Tiyago?",
+            choices = {
+                "Pia Alba",
+                "Tiya Isabel",
+                "Maria Clara",
+                "Donya Victorina",
+            },
+            correct = 1
+        },
+        {
+            question = "Ano ang nangyari kay Pia Alba?",
+            choices = {
+                "Umalis",
+                "Nawala",
+                "Namatay matapos manganak",
+                "Nagkasakit",
+            },
+            correct = 3
+        },
+        {
+            question = "Ano ang kasunduan nina Don Rafael at Kapitan Tiyago?",
+            choices = {
+                "Negosyo",
+                "Pag-aaral",
+                "Pagpapakasal nina Ibarra at Maria Clara",
+                "Paglalakbay",
+            },
+            correct = 3
+        },
+    },
+    
+    [7] = {
+        {
+            question = "Saan nag-usap sina Ibarra at Maria Clara?",
+            choices = {
+                "Hardin",
+                "Asotea",
+                "Simbahan",
+                "Silid",
+            },
+            correct = 2
+        },
+        {
+            question = "Ano ang tanong ni Maria Clara kay Ibarra?",
+            choices = {
+                "Kailan siya babalik",
+                "Kung siya ay nalimutan",
+                "Kung siya ay mayaman",
+                "Kung siya ay aalis",
+            },
+            correct = 2
+        },
+        {
+            question = "Ano ang isinumpa ni Ibarra?",
+            choices = {
+                "Mag-aral",
+                "Yumaman",
+                "Ibigin si Maria Clara",
+                "Umalis",
+            },
+            correct = 3
+        },
+        {
+            question = "Ano ang itinago ni Ibarra?",
+            choices = {
+                "Singsing",
+                "Sulat",
+                "Dahon ng sambong",
+                "Bulaklak",
+            },
+            correct = 3
+        },
+        {
+            question = "Bakit kailangang umalis si Ibarra?",
+            choices = {
+                "May sakit",
+                "May lakad",
+                "May bisita",
+                "Undas",
+            },
+            correct = 4
+        },
+    },
 }
