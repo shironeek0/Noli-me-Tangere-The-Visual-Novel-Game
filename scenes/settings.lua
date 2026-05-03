@@ -2,7 +2,7 @@ settings = {}
 
 local options = {
     "Grapiko",
-    "Tunog",
+    "Musika",
     "Bumalik"
 }
 
@@ -24,7 +24,7 @@ end
 function settings.draw()
     love.graphics.setFont(Fonts)
     love.graphics.setColor(1, 1, 1, 0.5)
-    love.graphics.printf("SETTINGS", 0, 200, 1280, "center")
+    love.graphics.printf("Opsyon", 0, 200, 1280, "center")
 
     for i, v in ipairs(options) do
         local y = 200 + i*40
@@ -54,7 +54,7 @@ function settings.keypressed(key)
         if options[selected] == "Grapiko" then
             fade.to(settingsGraphics)
 
-        elseif options[selected] == "Tunog" then
+        elseif options[selected] == "Musika" then
             fade.to(settingsAudio)
 
         elseif options[selected] == "Bumalik" then
@@ -72,7 +72,7 @@ function settings.mousepressed(x,y)
     if choice == "Grapiko" then
         state.switch(settingsGraphics)
 
-    elseif choice == "Tunog" then
+    elseif choice == "Musika" then
         state.switch(settingsAudio)
 
     elseif choice == "Bumalik" then

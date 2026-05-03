@@ -4,7 +4,7 @@ local anim = {display=0, brightness=0}
 
 local selected = 1
 
-local displayModes = {"Windowed", "Fullscreen", "Borderless"}
+local displayModes = {"Naka Window", "Buong Iskrin", "Walang Border"}
 local brightnessModes = {"Madilim", "Katam-taman", "Maliwanag"}
 local speeds = {"Mabagal","Normal","Mabilis"}
 
@@ -16,9 +16,9 @@ function applyGraphics()
     if settingsData.display == 1 then
         love.window.setMode(w,h,{fullscreen=false,borderless=false})
     elseif settingsData.display == 2 then
-        love.window.setMode(w,h,{fullscreen=true,fullscreentype="desktop"})
+        love.window.setMode(0,0,{fullscreen=true,fullscreentype="desktop"})
     else
-        love.window.setMode(w,h,{fullscreen=false,borderless=true})
+        love.window.setMode(0,0,{fullscreen=false,borderless=true})
     end
 end
 

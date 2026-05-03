@@ -4,15 +4,21 @@ local selected = 1
 local baseY = 240
 
 local buttons = {
-    {text="Simulan", y=390},
-    {text="Setting", y=466},
-    {text="Kredito", y=541},
-    {text="Umalis", y=617}
+    {text="Simulan ang laro", y=350},
+    {text="Glosaryo", y=430},
+    {text="Opsyon", y=510},
+    {text="Kredito", y=591},
+    {text="Umalis sa laro", y=670}
 }
 
 local btnX = 510
 local btnW = 260
 local btnH = 70
+
+local exitPrompt = false
+
+local yesX, yesY, yesW, yesH = 340, 360, 600, 40
+local noX,  noY,  noW,  noH  = 340, 420, 600, 40
 
 ------------------------------------------------------------
 
@@ -52,8 +58,6 @@ function menu.draw()
 
     love.graphics.setColor(0, 0, 0, 0.36)
     love.graphics.rectangle("fill", 420, 305, 450, 400, 20, 20)
-    
-    -- love.graphics.print("BALIK TANAW", 250, 60)
 
     love.graphics.setColor(255, 255, 255)
     love.graphics.setFont(uiFont)
@@ -67,29 +71,35 @@ function menu.draw()
     -- buttons
     love.graphics.setFont(uiFonts)
     local mx, my = love.mouse.getPosition()
-    -- mx = mx / scale
-    -- my = my / scale
 
     for i, b in ipairs(buttons) do
         local hovered = ui.isHovered(mx, my, btnX, b.y, btnW, btnH)
         ui.drawButton(btnX, b.y, btnW, btnH, b.text, hovered)
     end
 
+    if exitPrompt then
 
-    -- for i,v in ipairs(items) do
-        
-    --     local y = baseY + i * 40
+        -- dark overlay
+        love.graphics.setColor(0,0,0,0.6)
+        love.graphics.rectangle("fill", 0,0,1280,720)
 
-    --     local arrowWidth = 15
-    --     local arrowScale = arrowWidth / arrow:getWidth()
-        
-    --     if i == selected then
-    --         love.graphics.draw(arrow, 75, y+3, 0, arrowScale, arrowScale)
-    --         love.graphics.printf(v.name, 95, y, 400, "left")
-    --     else
-    --         love.graphics.printf(v.name, 90, y, 400, "left")
-    --     end
-    -- end
+        -- dialog box
+        love.graphics.setColor(0,0,0,0.9)
+        love.graphics.rectangle("fill", 340, 250, 600, 220, 12, 12)
+
+        love.graphics.setColor(1,1,1)
+        love.graphics.printf("Sigurado ka bang gusto mong umalis?", 340, 280, 600, "center")
+
+        -- YES
+        love.graphics.setColor(1,1,1)
+        love.graphics.printf("Oo, umalis na ako", yesX, yesY, yesW, "center")
+
+        -- NO
+        love.graphics.setColor(0.7,0.7,0.7)
+        love.graphics.printf("Hindi, babalik ako", noX, noY, noW, "center")
+
+        love.graphics.setColor(1,1,1)
+    end
 
     audio.stopBGM()
 end
@@ -97,87 +107,53 @@ end
 ------------------------------------------------------------
 
 function menu.update()
-    
-    -- local mx,my = love.mouse.getPosition()
-    
-    -- mx = mx / scaleX
-    -- my = my / scaleY
-    
-    -- for i=1,#items do
-    --     local y = baseY + i * 40
-        
-    --     if hit(mx,my, 0, y, 800, 32) then
-    --         selected = i
-    --     end
-    -- end
-    
 end
 
 ------------------------------------------------------------
 
 function menu.mousepressed(x, y)
 
-    -- x = x / scale
-    -- y = y / scale
+    -- ✅ IF PROMPT IS OPEN
+    if exitPrompt then
+
+        if x >= yesX and x <= yesX + yesW and y >= yesY and y <= yesY + yesH then
+            love.event.quit()
+            return
+        end
+
+        if x >= noX and x <= noX + noW and y >= noY and y <= noY + noH then
+            exitPrompt = false
+            return
+        end
+
+        return
+    end
+
+    -- ✅ NORMAL BUTTONS
     for i, b in ipairs(buttons) do
 
         if ui.isHovered(x, y, btnX, b.y, btnW, btnH) then
 
-            if b.text == "Simulan" then
+            if b.text == "Simulan ang laro" then
                 fade.to(chapterSelect)
                 
-            elseif b.text == "Setting" then
+            elseif b.text == "Glosaryo" then
+                fade.to(glossary)
+
+            elseif b.text == "Opsyon" then
                 fade.to(settings)
 
             elseif b.text == "Kredito" then
                 fade.to(credits)
 
-            elseif b.text == "Umalis" then
-                love.event.quit()
+            elseif b.text == "Umalis sa laro" then
+                exitPrompt = true -- 🔥 CHANGE HERE
             end
         end
     end  
-
-
-
-
-
-    -- local choice = items[selected].name
-    
-    -- if choice == "Start" then
-    --     story.start(1)
-    --     fade.to(story)
-        
-    -- elseif choice == "Chapter Select" then
-    --     fade.to(chapterSelect)
-        
-    -- elseif choice == "Settings" then
-    --     fade.to(settings)
-
-    -- elseif choice == "Credits" then
-    --     fade.to(credits)
-        
-    -- elseif choice == "Exit" then
-    --     love.event.quit()
-    -- end
 end
 
 ------------------------------------------------------------
 
 function menu.keypressed(key)
-
-    -- if key == "up" then
-    --     selected = selected - 1
-    --     if selected < 1 then selected = #items end
-
-    -- elseif key == "down" then
-    --     selected = selected + 1
-    --     if selected > #items then selected = 1 end
-
-    -- elseif key == "return" then
-    --     menu.mousepressed()
-    -- end
-
-    
-
 end

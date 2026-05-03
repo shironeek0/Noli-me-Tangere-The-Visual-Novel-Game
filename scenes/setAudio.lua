@@ -10,19 +10,19 @@ function settingsAudio.draw()
 
     love.graphics.printf("TUNOG", 0, 100, 1280, "center")
 
-    local labels = {"Master", "Music", "SFX"}
+    local labels = {"Panglahatang Tunog", "Musika", "Iba pang Tunog"}
 
     for i=1, 3 do
         local y = 180 + i*40
         local val = settingsData.audio[i]
 
-        love.graphics.print(labels[i], 200, y)
+        love.graphics.printf(labels[i], -730, y, 1280, "right")
 
-        love.graphics.rectangle("line", 320, y+10, 200, 6)
-        love.graphics.rectangle("fill", 320 + val*200 - 3, y+6, 6, 14)
+        love.graphics.rectangle("line", 580, y+10, 200, 6)
+        love.graphics.rectangle("fill", 580 + val*200 - 3, y+6, 6, 14)
     end
 
-    love.graphics.print('"ESC" Para Bumalik', 200, 380)
+    love.graphics.printf('"ESC" Para Bumalik', 0, 380, 1280, "center")
 end
 
 -------------------------------------------------
@@ -31,8 +31,8 @@ function settingsAudio.mousepressed(x,y)
     for i=1, 4 do
         local sy = 180 + i*40
 
-        if x > 320 and x < 520 and y > sy + 10 and y < sy + 20 then
-            settingsData.audio[i] = clamp((x-320)/200)
+        if x > 580 and x < 780 and y > sy + 10 and y < sy + 20 then
+            settingsData.audio[i] = clamp((x-580)/200)
         end
     end
 end

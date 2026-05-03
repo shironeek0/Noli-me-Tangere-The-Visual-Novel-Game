@@ -26,7 +26,7 @@ function quizPrompt.draw()
     
     love.graphics.setFont(uiFonts)
 
-    love.graphics.printf("Handa ka na bang magsagot ng Quiz", 0, 280, 1280, "center")
+    love.graphics.printf("Handa ka na bang magsagot ng Pagsusulit", 0, 280, 1280, "center")
 
     love.graphics.draw(buttons, 520, 378, 0, 0.9, 0.48)
     love.graphics.printf("Oo, handa na!", 0, 392, 1280,"center")

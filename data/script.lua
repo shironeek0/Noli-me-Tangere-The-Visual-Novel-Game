@@ -1914,7 +1914,7 @@ chapter = {
             text = "Kahit walang sapat na patunay."
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -1924,7 +1924,7 @@ chapter = {
             text = "Siya ay ibinilanggo."
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -1934,7 +1934,7 @@ chapter = {
             text = "Dinagdagan pa ang paratang…"
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -1944,7 +1944,7 @@ chapter = {
             text = "pagbabasa ng ipinagbabawal na aklat… pakikipag-ugnayan sa tulisan…"
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -1954,7 +1954,7 @@ chapter = {
             text = "Tinulungan ko siya. Naghanap ako ng abogado."
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -1964,7 +1964,7 @@ chapter = {
             text = "Lumabas sa pagsusuri… hindi niya kasalanan ang pagkamatay ng artilyero."
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -1974,7 +1974,7 @@ chapter = {
             text = "Malapit na siyang mapawalang-sala…"
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -1984,7 +1984,7 @@ chapter = {
             text = "..."
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -1994,7 +1994,7 @@ chapter = {
             text = "Ngunit… namatay siya sa loob ng bilangguan."
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -2004,7 +2004,7 @@ chapter = {
             text = "Hindi na niya naabutan ang kalayaan."
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -2014,7 +2014,7 @@ chapter = {
             text = "At si Ibarra… naiwan sa bigat ng katotohanan."
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -2024,7 +2024,7 @@ chapter = {
             text = "At si Ibarra… naiwan sa bigat ng katotohanan."
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -2034,7 +2034,7 @@ chapter = {
             text = "Naghiwalay sila sa tapat ng kuwartel."
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -2044,7 +2044,7 @@ chapter = {
             text = "Sa gabing iyon…"
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
@@ -2054,7 +2054,7 @@ chapter = {
             text = "hindi lamang alaala ang kanyang dala…"
         },
         {
-            bg = "bg11",
+            bg = "bg1",
             
             characters = {
                 {name = "char2", pose = "normal", pos = "right"}
