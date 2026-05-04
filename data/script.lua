@@ -896,7 +896,7 @@ chapter = {
                 }
             },
 
-            speaker = "Tiyente",
+            speaker = "Tinyente",
             text = "Ikinalulugod kong ligtas kang nakabalik."
         },
         {
@@ -954,7 +954,7 @@ chapter = {
                 }
             },
 
-            speaker = "Tinyete",
+            speaker = "Tinyente",
             text = "Nawa'y maging mas mapalad ka kaysa sa iyong ama."
         },
         {
@@ -1321,7 +1321,7 @@ chapter = {
                     flip = true
                 },
                 {
-                    name = "tinyete", 
+                    name = "tinyente", 
                     pose = "normal", 
                     pos = "right",
                     enterFrom = nil,
@@ -1351,7 +1351,7 @@ chapter = {
                     dim = true
                 },
                 {
-                    name = "tinyete", 
+                    name = "tinyente", 
                     pose = "normal", 
                     pos = "right",
                     enterFrom = nil,
