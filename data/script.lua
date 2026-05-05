@@ -9436,8 +9436,9 @@ chapter = {
             text = "Sa gitna ng katahimikan ng gubat… nabuo ang isang tanong ano ang tamang paraan upang baguhin ang mundo?"
         }
     },
-
-    {
+    
+    -- #KABANATA NO.
+    {  
         {
             event = "Kabanata 25: Sa Tahanan ng Pilosopo",
             bg = "bg1",
@@ -9473,7 +9474,7 @@ chapter = {
         {
             bg = "bg1",
             speaker = "Ibarra",
-            text = "Ako’y naparito upang humingi ng payo."
+            text = "Ako'y naparito upang humingi ng payo."
         },
 
         -- scene 4
@@ -10192,7 +10193,4134 @@ chapter = {
             speaker = "",
             text = "Sa loob ng simbahan… hindi lamang pananampalataya ang naroon kundi kapangyarihan… at paninira."
         }
-    }
+    },
+
+      -- #KABANATA 31
+    {
+        {
+            event = "Kabanata 31: Ang Sermon",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nagpatuloy ang misa… ngunit ang lahat ay nakatuon sa sermon."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Si Padre Damaso… hindi lamang nagsasalita kundi nangingibabaw."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Malakas… mahaba… at puno ng emosyon ang kanyang pananalita."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Gumamit siya ng mga kuwento at halimbawa. Ngunit ang layunin… hindi lamang pagtuturo."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Padre Damaso",
+            text = "May mga taong nag-aakalang sila'y marunong…"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ginawa niyang katawa-tawa ang mga hindi niya sinasang-ayunan."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Padre Damaso",
+            text = "Ang mga taong lumalayo sa tradisyon… ay nawawala sa landas."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi niya binanggit ang pangalan… Ngunit malinaw ang tinutukoy, si Ibarra."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang ilan ay humahanga… ang iba ay hindi komportable."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naroon si Ibarra… pinipigil ang kanyang sarili."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi ito ang lugar…"
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Padre Damaso",
+            text = "Ang pagsunod… ang tanging daan!"
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi espada ang gamit… kundi salita. Ngunit pareho ang epekto."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Natapos ang sermon… ngunit hindi ang sugat na iniwan nito."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Minsan… ang pinakamatinding laban ay yaong hindi ipinapakita kundi pinipigilan."
+        },
+    },
+
+  -- #KABANATA 32
+    {
+        {
+            event = "Kabanata 32: Ang Panghugos",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa tabing-lawa… nagtipon ang mga tao para sa panghugos."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Mangingisda",
+            text = "Palilibutan natin ang lawa… at huhulihin ang isda nang sabay-sabay!"
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Isang paraan ng pangingisda — sabayan, sama-sama, at mabilis."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Pumuwesto ang mga tao sa paligid ng lawa."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Mangingisda",
+            text = "Simulan na!"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting sumikip ang bilog… Pinipilit ang mga isda papunta sa gitna."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ngunit kasabay ng saya… dumating ang kaguluhan."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Tao",
+            text = "Mag-ingat!"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May mga nadadapa… may nawawalan ng balanse."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang saya… unti-unting napapalitan ng pag-aalala."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Mag-ingat kayo!"
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naroon si Elias… handang tumulong."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May nasugatan sa gitna ng kaguluhan."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Dito!"
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Mabilis siyang kumilos upang iligtas ang iba."
+        },
+
+        -- scene 16
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting humupa ang kaguluhan. May mga nahuling isda… Ngunit may mga nasaktan din."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang kilos na sama-sama… lumitaw ang lakas at ang panganib."
+        },
+    },
+
+  -- #KABANATA 33
+    {
+        {
+            event = "Kabanata 33: Malayang Kaisipan",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa tabi ng lawa… muling nagtagpo sina Ibarra at Elias."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "May nais akong sabihin sa iyo."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Nakikinig ako."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Hindi pantay ang mundo. May inaapi… at may nananamantala."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Hanggang kailan tayo magtitiis?"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Naniniwala ako sa pagbabago… ngunit sa mapayapang paraan."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "At kung ang kapayapaan… ay hindi sapat?"
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi dapat idaan sa dahas."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Minsan… ang katahimikan ang nagpapalakas sa pang-aapi."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ito ang sagupaan ng dalawang pananaw — reforma… at paglaya."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Kung walang kikilos… walang magbabago."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Kung mali ang paraan… mauulit lang ang problema."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sandaling katahimikan… na puno ng hindi pagkakasundo."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Magkaiba tayo ng landas…"
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ngunit pareho ang layunin."
+        },
+
+        -- scene 16
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naghiwalay sila… dala ang kani-kanilang paniniwala."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang malayang kaisipan… ay hindi laging nagkakasundo ngunit ito ang simula ng tunay na pagbabago."
+        },
+    },
+
+  -- #KABANATA 34
+    {
+        {
+            event = "Kabanata 34: Ang Pananghalian",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa oras ng pananghalian… nagtipon ang mga panauhin."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Maingat ang pagkakaayos ng upuan… ayon sa ranggo at katayuan."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nasa gitna ang mga makapangyarihan."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naroon si Ibarra… tahimik, ngunit mapagmatyag."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Panauhin 1",
+            text = "Masarap ang handa!"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Panauhin 2",
+            text = "Tunay ngang engrande ang pista."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ngunit hindi nagtagal… nagbago ang himig ng usapan."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Padre Damaso",
+            text = "Hindi ito ang nais kong pagkain."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Padre Damaso",
+            text = "Bakit ito ang inihain?"
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa harap ng lahat… ipinakita niya ang kanyang pagkainis."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Kapitan Tiyago",
+            text = "Padre, papalitan natin agad…"
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Padre Damaso",
+            text = "May mga bagay na dapat alam ng maybahay ng bahay…"
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Tahimik ang karamihan. Walang gustong sumagot."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naroon si Ibarra… muling pinipigil ang sarili."
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "Kapitan Tiyago",
+            text = "Paumanhin po…"
+        },
+
+        -- scene 16
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting bumalik ang usapan… Ngunit hindi na tulad ng dati."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang simpleng hapag-kainan… lumitaw ang tunay na anyo ng kapangyarihan."
+        },
+    },
+
+  -- #KABANATA 35
+    {
+        {
+            event = "Kabanata 35: Mga Usap-usapan",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Matapos ang mga pangyayari… nagkalat ang usap-usapan sa buong bayan."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 1",
+            text = "Narinig mo ba ang nangyari sa pananghalian?"
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 2",
+            text = "Oo! Napahiya raw si Kapitan Tiyago!"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 3",
+            text = "Hindi lang iyon… galit na galit daw ang pari!"
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa bawat pagsasalaysay… nadadagdagan ang detalye."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 4",
+            text = "Nandoon ako! Kita ko ang lahat!"
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Kahit hindi naman kumpleto ang nakita."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nahati ang opinyon ng mga tao."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Dumaan si Pilosopo Tasyo."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Iba-iba ang kwento… ngunit iisa ang pinagmulan."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Hindi lahat ng naririnig… ay buo ang katotohanan."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 1",
+            text = "Baliw na naman siya."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Madalas… hindi pinapakinggan ang kanyang sinasabi."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nararamdaman ni Ibarra ang mga bulong… kahit walang direktang salita."
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ngunit ang mga kwento… patuloy na kumakalat."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang bayan… ang katotohanan ay hindi lamang kung ano ang nangyari kundi kung paano ito ikinukwento."
+        },
+    },
+
+  -- #KABANATA 36
+    {
+        {
+            event = "Kabanata 36: Ang Unang Suliranin",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa tribunal… abala si Don Filipo sa kanyang tungkulin."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Bilang tenyente mayor… siya ang katuwang ng gobernadorcillo. Ngunit hindi lahat ng kapangyarihan ay nasa kanyang kamay."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Opisyal 1",
+            text = "May mga bagay tayong kailangang pagdesisyunan."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May isang usapin… na hindi madaling resolbahin."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Opisyal 2",
+            text = "May mga utos mula sa kura at sa mas mataas na awtoridad."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Don Filipo",
+            text = "Makatarungan ba ang mga utos na ito?"
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Walang sumagot."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nasa pagitan siya ng dalawang bagay — ang tungkulin… at ang konsensya."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Opisyal 1",
+            text = "Mas mabuting sumunod na lamang."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Alam niya ang tama… ngunit alam din niya ang maaaring mangyari kung susuway."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi madali ang kanyang magiging pasya."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Natapos ang pulong… ngunit hindi ang kanyang suliranin."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Minsan… ang pinakamahirap na laban ay hindi laban sa iba kundi laban sa sariling paninindigan."
+        },
+    },
+
+  -- #KABANATA 37
+    {
+        {
+            event = "Kabanata 37: Ang Kapitan-Heneral",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Dumating ang Kapitan-Heneral sa San Diego."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Handa ang buong bayan upang siya'y salubungin. Maayos… tahimik… at puno ng paggalang."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nasa unahan ang mga pinuno — nagnanais magpakita ng katapatan."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang pinakamataas na kinatawan ng kapangyarihan ng pamahalaan."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Gobernadorcillo",
+            text = "Maligayang pagdating po."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Napansin niya si Ibarra."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Kapitan-Heneral",
+            text = "Ikaw ba ang anak ni Don Rafael?"
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Opo."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nagbago ang kanyang tono. Hindi tulad ng inaasahan ng iba."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi niya agad hinusgahan si Ibarra."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang presensya ng Kapitan-Heneral… nagbabago ng galaw ng lahat."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Pamahalaan… at simbahan. Dalawang puwersang magkaiba ngunit parehong makapangyarihan."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa harap ng tunay na kapangyarihan… lumilitaw kung sino ang sumusunod at kung sino ang may sariling paninindigan."
+        },
+    },
+
+  -- #KABANATA 38
+    {
+        {
+            event = "Kabanata 38: Ang Prusisyon",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nagsimula ang prusisyon sa gabi ng pista."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naglalakbay ang liwanag sa dilim… tila gabay sa mga tao."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Isa-isang inilabas ang mga imahen ng mga santo. Bawat isa… may sariling kahulugan."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Maayos ang pagkakasunod-sunod — ayon sa kahalagahan at katayuan."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sumasama ang mga tao — may panalangin… may panata."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naroon din ang mga makapangyarihan… kasama sa hanay."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Si Maria Clara… tahimik na nakikiisa."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Si Ibarra… hindi lamang nakikibahagi kundi nagmamasid."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang prusisyon… hindi lamang panalangin. Ito rin ay pagpapakita ng kaayusan ng lipunan."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Dumaan ang prusisyon sa iba't ibang bahagi ng bayan."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa gitna ng dilim… nangingibabaw ang liwanag."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May mga nanonood lamang… hindi kasama sa hanay."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting natapos ang prusisyon."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang gabi ng liwanag… lumitaw ang anyo ng pananampalataya at ang estruktura ng lipunan na nakapaligid dito."
+        },
+    },
+
+  -- #KABANATA 39
+    {
+        {
+            event = "Kabanata 39: Si Donya Consolacion",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa bahay ng alperes… hindi katahimikan ang naghahari."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Si Donya Consolacion — isang babaeng pilit inaangat ang sarili."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Donya Consolacion",
+            text = "Hindi ako tulad nila!"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Pilit niyang ginagaya ang asal ng mga Español."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Alperes",
+            text = "Tama na!"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Donya Consolacion",
+            text = "Ako ang mas nakakaalam!"
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang kanilang tahanan… puno ng sigalot."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Isang babaeng ligaw ang isip… dinala sa kanilang harapan."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Donya Consolacion",
+            text = "Ano ang nangyari sa kanya?"
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Guardia",
+            text = "Baliw po… palaboy."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa halip na awa… interes ang namayani."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Donya Consolacion",
+            text = "Pagsalitain niyo siya."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Sisa",
+            text = "Crispin… Basilio…"
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "Donya Consolacion",
+            text = "Sumagot ka!"
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang lugar na dapat may kaayusan… lumitaw ang kawalan ng malasakit."
+        },
+    },
+
+  -- #KABANATA 40
+    {
+        {
+            event = "Kabanata 40: Ang Karapatan at Lakas",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa loob ng bahay ng alperes… umiiral ang kapangyarihan ngunit hindi katahimikan."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Magkaiba ang kanilang paraan — isa'y awtoridad… ang isa'y pagmamataas."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Alperes",
+            text = "May hangganan ang lahat."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Donya Consolacion",
+            text = "Ako ang dapat sundin dito!"
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi lamang salita ang nagbabanggaan — kundi pagtingin sa kapangyarihan."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Muling dinala si Sisa — isang ina na nawawala sa sariling mundo."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Para sa kanya… isa lamang itong kaso."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Para kay Donya Consolacion… ito'y pagkakataon."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Donya Consolacion",
+            text = "Pagsalitain niyo siya."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Sisa",
+            text = "Mga anak ko…"
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi niya kayang ipaliwanag ang sarili — at walang tunay na nakikinig."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang kapangyarihan… nagiging pabigat."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Alperes",
+            text = "Tama na."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Isang utos… sapat upang tumigil ang lahat."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa pagitan ng karapatan at lakas… hindi laging malinaw kung alin ang nangingibabaw."
+        },
+    },
+
+  -- #KABANATA 41
+    {
+        {
+            event = "Kabanata 41: Dalawang Dalawa",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Dalawang dalaw… dalawang mukha ng lipunan."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Dumalaw ang Kapitan-Heneral kay Ibarra."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Maligayang pagdating po."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Kapitan-Heneral",
+            text = "Ako'y naparito upang makipag-usap."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Kapitan-Heneral",
+            text = "Narinig ko ang iyong mga plano."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Nais ko lamang makatulong sa bayan."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi siya agad humusga. Nakinig… at nagmasid."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Kapitan-Heneral",
+            text = "Ipagpatuloy mo ang iyong layunin."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Isang dalaw… na may pag-asa."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ngunit hindi nagtagal… dumating ang isa pa."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Padre Damaso",
+            text = "Kailangan nating mag-usap."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Padre Damaso",
+            text = "Hindi ka dapat nakakalimot sa iyong lugar."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Wala akong ginagawang masama."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Muli… pinipigil ni Ibarra ang sarili."
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Isang dalaw… na may banta."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa iisang tahanan… dumaan ang pag-asa at pagbabanta — magkasunod, ngunit magkaiba ng landas."
+        },
+    },
+
+  -- #KABANATA 42
+    {
+        {
+            event = "Kabanata 42: Ang Mag-asawang De Espadaña",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naglalakbay ang mag-asawang de Espadaña."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Si Donya Victorina, isang babaeng pilit nagiging Español sa anyo at asal."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Donya Victorina",
+            text = "Hindi ako tulad ng ibang Pilipina!"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "At si Don Tiburcio, isang asawang sunod-sunuran."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Donya Victorina",
+            text = "Ayusin mo ang sarili mo!"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Don Tiburcio",
+            text = "Opo…"
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Pilit nilang ginagaya ang buhay ng mga Español — kahit hindi ito ang kanilang tunay na kalagayan."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Donya Victorina",
+            text = "Kailangan mong magmukhang kagalang-galang!"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa likod ng pagmamataas… may takot na hindi matanggap."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Dumating sila sa kanilang pupuntahan."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Pinapansin sila… ngunit hindi lahat ay humahanga."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa kanilang pagsisikap maging iba… lalo silang nagiging kapansin-pansin."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Minsan… ang pinakamatinding pagpapanggap ay nagmumula sa pagnanais na matanggap."
+        },
+    },
+
+  -- #KABANATA 43
+    {
+        {
+            event = "Kabanata 43: Mga Balak o Panukala",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa gitna ng katahimikan… si Ibarra ay nagpaplano."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Kailangan itong maisakatuparan…"
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang paaralan — hindi lamang gusali… kundi pag-asa."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Inaayos niya ang bawat detalye — pondo, lugar, at mga taong kakailanganin."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Don Filipo",
+            text = "Narito ako upang tumulong."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Guro",
+            text = "Malaki ang maitutulong nito sa mga bata."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Kailangan natin ng suporta mula sa bayan."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Don Filipo",
+            text = "May mga tututol…"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi lahat ay sang-ayon sa pagbabago."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Handa akong harapin iyon."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Guro",
+            text = "Kung ito'y magtagumpay… magbabago ang kinabukasan ng mga bata."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Don Filipo",
+            text = "Simulan na natin."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Para sa bayan…"
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang mga plano… ay simula lamang. Ang tunay na hamon ay kung paano ito maisasakatuparan."
+        },
+    },
+
+  -- #KABANATA 44
+    {
+        {
+            event = "Kabanata 44: Pagsusuri sa Budhi",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Mag-isa si Ibarra… at gising ang kanyang isipan."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Tama ba ang aking ginagawa?"
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Bumalik sa kanyang isip ang mga nangyari — ang mga salita… ang mga tingin… ang mga parinig."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "At higit sa lahat… ang alaala ng kanyang ama."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Kung siya ang narito… ano ang kanyang gagawin?"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May galit… ngunit may pagpipigil."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Lumaban… o magtiis."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Kung walang kikilos… walang magbabago."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ngunit hindi sa dahas…"
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Tinitimbang niya ang bawat hakbang — hindi lamang para sa sarili… kundi para sa bayan."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "At kung mabigo ako?"
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ito ang tunay na laban — ang harapin ang sariling pagdududa."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ipagpapatuloy ko."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Walang nakarinig sa kanyang desisyon… ngunit dito nagsimula ang tunay na pagbabago."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa pagsusuri ng budhi… nabubuo ang paninindigan."
+        },
+    },
+
+  -- #KABANATA 45
+    {
+        {
+            event = "Kabanata 45: Ang mga Pinag-uusig",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa San Diego… may mga taong pinaparusahan."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi lahat ay may sala… ngunit sila'y pinagdududahan."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 1",
+            text = "Huwag kang magsalita…"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 2",
+            text = "Baka ikaw ang susunod."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naroon ang mga guwardiya… bilang paalala ng kapangyarihan."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May mga dinadala… kahit walang malinaw na paliwanag."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naiiwan ang mga pamilya — punô ng takot at pag-aalala."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 3",
+            text = "Dahil daw sa mga nangyari sa pista…"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 4",
+            text = "May hinahanap silang may sala."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ngunit walang malinaw na sagot… kung sino ang tunay na may kasalanan."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naroon si Ibarra… nakikita ang nangyayari."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi ito ang nais kong mangyari…"
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang sistemang may kapangyarihan… madalas ang mahina ang naaapektuhan."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting tumataas ang takot sa bayan. At karamihan… pinipiling manahimik."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa likod ng kaayusan… may mga inosenteng nagdurusa."
+        },
+    },
+
+  -- #KABANATA 46
+    {
+        {
+            event = "Kabanata 46: Ang Sabungan",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa sabungan… nagtipon ang maraming tao."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Iba ang sigla rito — mas maingay… mas magulo… mas buhay."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Magkakasama ang iba't ibang uri ng tao ngunit iisa ang layunin."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 1",
+            text = "Sa akin ang pula!"
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 2",
+            text = "Hindi, mananalo ang puti!"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Tumataas ang sigla… habang lumalapit ang laban."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Ang tao… madaling malibang."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nagsimula ang laban… at sumabay ang sigawan ng mga tao."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 3",
+            text = "Panalo!"
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 4",
+            text = "Hindi pa tapos!"
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Galak… galit… pananabik — lahat sabay-sabay."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Habang abala sila rito… may ibang bagay na hindi napapansin."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Para sa ilan… ito ay libangan. Para sa iba… simbolo."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting humupa ang ingay… At nag-uwian ang mga tao — tila walang nangyari."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa gitna ng kasiyahan… may mga katotohanang natatabunan — hindi dahil wala… kundi dahil hindi tinitingnan."
+        },
+    },
+
+  -- #KABANATA 47
+    {
+        {
+            event = "Kabanata 47: Ang Dalawang Senyora",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa gitna ng bayan… nagtagpo ang dalawang senyora."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Si Donya Victorina, puno ng kumpiyansa… at pagpapanggap."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "At si Donya Consolacion, matigas ang kilos… at mapagmataas."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Isang tingin pa lamang… ramdam na ang hidwaan."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Donya Victorina",
+            text = "Magandang araw."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Donya Victorina",
+            text = "Napakaganda ng aking kasuotan, hindi ba?"
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Donya Consolacion",
+            text = "Hindi iyon ang sukatan ng dangal."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang simpleng usapan… nagiging paligsahan."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Donya Victorina",
+            text = "Mas alam ko ang asal ng mga Español."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Donya Consolacion",
+            text = "Hindi sa pananamit nasusukat ang pagiging kagalang-galang."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Pinagmamasdan sila ng mga tao… tila isang palabas."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Dalawang senyora… parehong naghahangad ng pagkilala."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naghiwalay sila… ngunit walang nagwagi."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa kanilang pagtatalo… hindi lamang pagmamataas ang lumitaw kundi ang paghahanap ng lugar sa lipunan."
+        },
+    },
+
+  -- #KABANATA 48
+    {
+        {
+            event = "Kabanata 48: Ang Talinhaga",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang tahimik na lugar… nag-uusap sina Ibarra at Pilosopo Tasyo."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "May nais po ba kayong ibahagi?"
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Isang palaisipan."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Isipin mo… isang taong may kakayahang gumawa ng mabuti ngunit pinipiling manahimik."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Ano ang mas mabigat — ang paggawa ng mali… o ang hindi paggawa ng tama?"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi agad nakasagot si Ibarra."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Minsan… ang katahimikan ay nagiging bahagi ng problema."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi lamang ito palaisipan… kundi salamin ng lipunan."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naalala ni Ibarra ang mga nangyayari sa bayan."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi sapat ang manahimik."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Ngunit tandaan… ang bawat kilos ay may kapalit."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Ang pag-iisip nang malaya… madalas hindi tinatanggap."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Maraming salamat."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Ang sagot… ikaw ang magbibigay."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang palaisipan… hindi para sagutin agad kundi para pag-isipan… at isabuhay."
+        },
+    },
+
+  -- #KABANATA 49
+    {
+        {
+            event = "Kabanata 49: Ang Tinig ng mga Pinag-uusig",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang sulok ng bayan… naroon ang mga inuusig."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi sila makapangyarihan. Hindi rin sila naririnig."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Bilanggo 1",
+            text = "Wala akong kasalanan…"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Bilanggo 2",
+            text = "Nadamay lang ako…"
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Iba-iba ang kanilang kwento… ngunit iisa ang kanilang kalagayan."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Bilanggo 3",
+            text = "Hindi natin alam kung kailan tayo lalaya…"
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Mas mabigat pa sa tanikala… ang kawalan ng kasiguruhan."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Bilanggo 1",
+            text = "Kumusta na kaya sila…"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Bilanggo 2",
+            text = "May makakatulong pa kaya sa atin?"
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Dumating si Ibarra."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi na ito balita o kwento — ito ay realidad sa kanyang harapan."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ano ang nangyari sa inyo?"
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Bilanggo 1",
+            text = "Wala po… dinampot lang kami."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "Bilanggo 2",
+            text = "May hinahanap silang may sala…"
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi ito tama…"
+        },
+
+        -- scene 16
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Umalis si Ibarra — dala ang mga tinig na hindi niya kayang balewalain."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang tinig ng mga inuusig… mahina sa pandinig ng marami ngunit sapat upang baguhin ang isang taong handang makinig."
+        },
+    },
+
+  -- #KABANATA 50
+    {
+        {
+            event = "Kabanata 50: Ang mga Kaanak ni Elias",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa katahimikan ng gabi… nagsimulang magkwento si Elias."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "May nais akong ibahagi sa iyo…"
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Nakikinig ako."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ikinuwento niya ang pinagmulan ng kanyang pamilya."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Ang aking ninuno… napagbintangan."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Isang paratang… na nagbago ng kanilang buhay."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting nawala ang kanilang dangal sa lipunan. Iniwasan sila… tinanggihan… kinalimutan."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi lamang ang isang tao ang naapektuhan — kundi buong salinlahi."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Ang paratang… hindi nawala. Ipinasa ito sa amin."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "At dito nagsimula ang kanyang buhay — dala ang kasalanan na hindi niya ginawa."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi ito makatarungan…"
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Ganito ang sistema."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang kanyang kwento… hindi naiiba sa iba. Ito ay bahagi ng mas malaking problema."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ngayon ko lamang nauunawaan…"
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Ito ang aking pinagmulan."
+        },
+
+        -- scene 16
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "At ang tanong — paano ito matatapos?"
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang kasaysayan… kapag hindi nababago, patuloy na inuulit."
+        },
+    },
+
+  -- #KABANATA 51
+    {
+        {
+            event = "Kabanata 51: Mga Pagbabago",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa San Diego… may mga pagbabagong hindi agad napapansin."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang mga tao… mas maingat na sa kanilang kilos at salita."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 1",
+            text = "Iba na ang pakiramdam sa bayan…"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 2",
+            text = "Parang may nagbago."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang dating masigla… ngayon ay may halong pag-aalinlangan."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Napapansin ni Ibarra ang mga pagbabagong ito."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "May nag-iiba…"
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang mga makapangyarihan… mas nagiging maingat at mapagmatyag."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang mga dating inuusig… patuloy pa ring apektado."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May mga lumalayo… may mga nananahimik."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Si Maria Clara… tahimik na nagmamasid."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi lamang ang bayan ang nagbabago — kundi pati ang ugnayan ng mga tao."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang mga nangyari… may epekto."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi na ito tulad ng dati."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang pagbabago… hindi laging biglaan. Minsan, unti-unti itong nararamdaman — hanggang sa hindi na maibalik ang dati."
+        },
+    },
+
+  -- #KABANATA 52
+    {
+        {
+            event = "Kabanata 52: Ang Baraha ng Patay at ang mga Anino",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa dilim ng gabi… may mga bagay na hindi lantad ngunit nararamdaman."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Humahaba ang mga anino… tila may sariling galaw."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May ilan pa ring gising ngunit hindi mapakali."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang sulok… may naglalaro ng baraha."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi ito karaniwang laro — may kakaibang bigat ang paligid."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang mga baraha… tila may sinasabi ngunit hindi tuwirang naiintindihan."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa likod ng bawat kilos… may aninong nakamasid."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Tao 1",
+            text = "May kakaiba…"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Tao 2",
+            text = "Parang may mangyayari."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang laro… hindi lamang laro. Isa itong paalala — na may mga puwersang hindi kontrolado."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naroon si Ibarra… ramdam ang pagbabago sa paligid."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "May darating…"
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Lalong dumilim ang gabi."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang mga anino… hindi lamang nasa paligid kundi sa mga pangyayaring paparating."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi lahat ng babala ay malinaw. Minsan… dumarating ito bilang pakiramdam bago pa man mangyari ang lahat."
+        },
+    },
+
+  -- #KABANATA 53
+    {
+        {
+            event = "Kabanata 53: Ang Mabuting Araw ay Nakikilala sa Umaga",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sumikat ang araw sa San Diego. Ngunit hindi lahat ng umaga… nangangahulugang mabuting araw."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nagising ang bayan tulad ng dati ngunit may kakaibang pakiramdam sa hangin."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May mga maliliit na senyales… na hindi agad napapansin."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 1",
+            text = "Parang may mangyayari…"
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 2",
+            text = "Hindi ko maipaliwanag…"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Napapansin ni Ibarra ang kakaibang katahimikan."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "May mali…"
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang mga makapangyarihan… tila mas handa kaysa dati."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang liwanag ng umaga… hindi sapat upang itago ang nararamdaman."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Kahit sa umaga… may anino pa rin."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi siya mapakali."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ito na ba ang simula?"
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang araw ay nagsisimula… ngunit ang direksyon nito ay hindi pa malinaw."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting tumitindi ang pakiramdam ng pagbabago."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sinasabi na ang mabuting araw ay nakikilala sa umaga — ngunit minsan… ang umaga ang unang babala."
+        },
+    },
+
+  -- #KABANATA 54
+    {
+        {
+            event = "Kabanata 54: Lahat ng Lihim ay Nabubunyag at Walang Di Nagkakamit ng Parusa",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa San Diego… may mga lihim na hindi na kayang itago."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 1",
+            text = "Narinig mo ba?"
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 2",
+            text = "Lumabas na ang totoo…"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi na tsismis ang mga usapan — kundi mga katotohanang unti-unting nabubunyag."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May nagulat… may nagduda… at may natakot."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi nakaligtas si Ibarra sa mga pagbubunyag."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 3",
+            text = "May lumabas na balita tungkol sa iyo…"
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang mga lihim… nagiging sandata."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 4",
+            text = "Totoo kaya iyon?"
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 5",
+            text = "Kung totoo… delikado."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Kaya pala…"
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting nauunawaan ni Ibarra… na may mga kumikilos laban sa kanya."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa likod ng mga balitang ito… may mga taong may layunin."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nagbabago ang tingin ng mga tao sa kanya."
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Pinili niyang manahimik… ngunit hindi ibig sabihin ay wala siyang nararamdaman."
+        },
+
+        -- scene 16
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Kapag ang lihim ay nabunyag… hindi na ito maibabalik sa dati. At dito nagsisimula ang tunay na epekto."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang lihim… maaaring itago sa loob ng mahabang panahon ngunit kapag lumabas… binabago nito ang lahat."
+        },
+    },
+
+  -- #KABANATA 55
+    {
+        {
+            event = "Kabanata 55: Ang Pagkakagulo",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa gitna ng bayan… nagsimula ang kaguluhan."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 1",
+            text = "Ano ang nangyayari?"
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 2",
+            text = "May problema!"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Walang malinaw na sagot — ngunit ramdam ang takot."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Guardia",
+            text = "Ayusin ang hanay!"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa halip na humupa… lalo itong lumala."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May tumatakbo… may nananatili… walang sigurado sa nangyayari."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ano ang nangyayari rito?"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 3",
+            text = "May mga inaresto!"
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 4",
+            text = "May pinaghihinalaan!"
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang mga hinala… nagiging aksyon."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting nawawala ang kaayusan."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi ito dapat umabot sa ganito…"
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang takot… kumakalat nang mas mabilis kaysa katotohanan."
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Kapag ang kaguluhan ay nagsimula… hindi madaling pigilan."
+        },
+
+        -- scene 16
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting humupa ang ingay… ngunit hindi ang epekto."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang iglap… ang katahimikan ay napalitan ng kaguluhan at ang kaguluhan… nag-iwan ng marka."
+        },
+    },
+
+  -- #KABANATA 56
+    {
+        {
+            event = "Kabanata 56: Ang mga Sabi at Kuro-kuro",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Matapos ang kaguluhan… nagsimula ang mga usap-usapan."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 1",
+            text = "Alam ko ang nangyari! May nagpasimula talaga!"
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 2",
+            text = "Hindi! Kusang nangyari iyon!"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa bawat grupo… may sariling kwento."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 3",
+            text = "Mas malala pa nga raw iyon!"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 4",
+            text = "Hindi, mas simple lang…"
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Habang ipinapasa ang kwento… lalo itong nag-iiba."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 5",
+            text = "May mga taong may pakana…"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Mamamayan 6",
+            text = "Sino ang dapat sisihin?"
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naririnig ni Ibarra ang iba't ibang bersyon."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi lahat ng naririnig… ay totoo."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Tasyo",
+            text = "Ang katotohanan… madalas nawawala sa dami ng salita."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Mas malakas ang kuro-kuro… kaysa sa malinaw na pangyayari."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "At sa huli… pinipili ng bawat isa ang kwentong paniniwalaan nila."
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ito ang laban na hindi nakikita…"
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Matapos ang kaguluhan… hindi katahimikan ang sumusunod kundi ingay ng mga opinyon."
+        },
+    },
+
+  -- #KABANATA 57
+    {
+        {
+            event = "Kabanata 57: Vae Victus! Sa Aba ng Mga Manlulupig",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa tribunal… nagsimula ang paghatol."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naroon ang mga inuusig — hindi handa… at walang sapat na panlaban."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang proseso… tila maayos sa anyo ngunit hindi patas sa laman."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Isa-isa… ibinibigay ang mga hatol."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May nagulat… may tumahimik… at may tumanggap na lamang."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Inuusig 1",
+            text = "Wala kaming magawa…"
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naroon ang kapangyarihan — hindi upang makinig… kundi magpasya."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nakikita ni Ibarra ang lahat."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ganito ba ang katarungan?"
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unti niyang nauunawaan — na ang laban ay hindi lamang laban ng ideya."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang mga hatol… may dalang bigat na hindi madaling mawala."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Matapos ang lahat… bumalik ang katahimikan."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "\"Vae Victis\" — sa talunan… ang kaparusahan."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang sistemang hindi pantay… ang pagkatalo ay hindi lamang pagkabigo kundi kapalaran."
+        },
+    },
+
+  -- #KABANATA 58
+    {
+        {
+            event = "Kabanata 58: Ang Sinumpa",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang tahimik na sulok… naroon si Elias."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Isang taong tila hinahabol ng kanyang nakaraan… kahit wala siyang kasalanan."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Hindi ko pinili ang landas na ito…"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Tinawag siyang sinumpa — hindi dahil sa ginawa… kundi sa pinagmulan."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa mata ng lipunan… may mga taong hindi na binibigyan ng pagkakataon."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "At sa pag-iisa… mas malinaw ang bigat ng katotohanan."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Elias…"
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi mo kasalanan ang nangyari."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Ngunit ako ang nagdadala nito."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "May mga bagay na hindi nabubura… kahit wala kang ginawang mali."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Mas lumalim ang pag-unawa ni Ibarra — hindi lamang sa sistema… kundi sa tao."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Magkaiba tayo ng mundo…"
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ngunit hindi ibig sabihin… hindi kita naiintindihan."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa katahimikan… may pagkakaunawaan."
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ngunit ang katotohanan ay nananatili — may mga tinatanggap… at may mga itinataboy."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang \"sinumpa\"… hindi laging isinilang na ganoon — minsan, sila ay ginagawa ng lipunan."
+        },
+    },
+
+  -- #KABANATA 59
+    {
+        {
+            event = "Kabanata 59: Pag-ibig sa Bayan",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa tabi ng ilog… muling nag-usap sina Ibarra at Elias."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Ano ang kahulugan ng pag-ibig sa bayan para sa iyo?"
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ang pagnanais na mapaunlad ito."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Naniniwala ako sa pagbabago — sa pamamagitan ng kaayusan at edukasyon."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "At kung ang sistema mismo ang hadlang?"
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi dapat sirain ang kaayusan."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Kung ang kaayusan ay hindi makatarungan… dapat ba itong panatilihin?"
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi ito simpleng pagtatalo — kundi paghahanap ng tamang paraan."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Ang tunay na pag-ibig sa bayan… handa kang magsakripisyo para dito."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hanggang saan ang sakripisyo?"
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Hindi sapat ang mabuting hangarin kung walang lakas upang ipaglaban ito."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Reporma… o radikal na pagbabago."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Magkaiba ang ating paniniwala…"
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Ngunit pareho ang ating layunin."
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa kabila ng pagkakaiba… may pagkakaisa sa hangarin."
+        },
+
+        -- scene 16
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Ang tanong… paano mo ito isasabuhay?"
+        },
+
+        -- scene 17
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Iniwan si Ibarra… kasama ang tanong na walang madaling sagot."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang pag-ibig sa bayan… hindi nasusukat sa salita kundi sa desisyon kung paano ito ipaglalaban."
+        },
+    },
+
+  -- #KABANATA 60
+    {
+        {
+            event = "Kabanata 60: Ikakasal na si Maria Clara",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa loob ng tahanan… isang desisyon ang nauna nang ginawa."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Kapitan Tiyago",
+            text = "Ikakasal ka."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Walang pagtutol… ngunit may bigat ang katahimikan."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi ito simpleng balita — kundi kapalarang hindi niya pinili."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Mag-isa… hinaharap niya ang kanyang magiging kinabukasan."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naalala niya ang mga nakaraan — mga pangakong hindi na matutupad."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Maria Clara",
+            text = "Ganito na ba ang lahat?"
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Maria Clara…"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Totoo ba ang balita?"
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Maria Clara",
+            text = "Oo."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "At tinanggap mo?"
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Maria Clara",
+            text = "Wala akong pagpipilian."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Maraming gustong sabihin… ngunit walang sapat na salita."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Naiintindihan ko…"
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi sigaw… hindi galit — kundi tahimik na paghihiwalay."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang desisyon… hindi lamang puso ang nasira kundi ang mga pangarap na hindi na maibabalik."
+        },
+    },
+
+  -- #KABANATA 61
+    {
+        {
+            event = "Kabanata 61: Ang Barilan sa Lawa",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa tabi ng lawa… nagsimula ang paggalaw."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Kailangan na nating umalis."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Ano ang nangyayari?"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May mga paparating — hindi bilang kaibigan."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Sumakay ka."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "At nagsimula ang habulan sa lawa."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Pilit nilang nilalayo ang sarili… habang ang panganib ay papalapit."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi ito titigil…"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Hangga't may paraan… lalaban tayo."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Mas lumalapit ang humahabol."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi na ito simpleng pagtakas — kundi laban para sa kaligtasan."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Kailangan mong mabuhay."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Hindi kita iiwan…"
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Makinig ka."
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa gitna ng panganib… may kailangang magpasya."
+        },
+
+        -- scene 16
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "At doon… nagsimula ang paghihiwalay."
+        },
+
+        -- scene 17
+        {
+            bg = "bg1",
+            speaker = "Ibarra",
+            text = "Elias…"
+        },
+
+        -- scene 18
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi siya tumingin pabalik."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa habulan sa lawa… hindi lamang distansya ang naglayo kundi mga kapalarang magkaibang landas."
+        },
+    },
+
+  -- #KABANATA 62
+    {
+        {
+            event = "Kabanata 62: Ang Pagtatapat ni Padre Damaso",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa loob ng tahanan… may katotohanang hindi na maitatago."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "Maria Clara",
+            text = "Bakit ninyo ito ginawa?"
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi tulad ng dati… may bigat ang kanyang katahimikan."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Padre Damaso",
+            text = "May mga bagay… na kailangan kong ipaliwanag."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Isang lihim ang ibinunyag — isang katotohanang magbabago sa lahat."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi siya sumigaw. Ngunit ramdam ang bigat ng nalaman niya."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Padre Damaso",
+            text = "Ginawa ko ito… para sa iyong kapakanan."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Maria Clara",
+            text = "Kapakanan… o kontrol?"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang paliwanag… hindi sapat upang pagaanin ang katotohanan."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa pagitan nila… hindi na maibabalik ang dati."
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Maria Clara",
+            text = "Nauunawaan ko…"
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ngunit ang pag-unawa… ay hindi katumbas ng pagtanggap."
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "May distansyang nabuo — hindi pisikal… kundi emosyonal."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa unang pagkakataon… hindi siya ang may kontrol."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang katotohanan… kapag nalaman, hindi na maaaring balewalain."
+        },
+    },
+
+  -- #KABANATA 63
+    {
+        {
+            event = "Kabanata 63: Ang Noche Buena",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Gabi ng Noche Buena sa San Diego. Sa maraming tahanan… may kasiyahan at salu-salo."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ngunit hindi lahat… nakikibahagi sa saya."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Si Basilio… naglalakad sa dilim."
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "Basilio",
+            text = "Inay…?"
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hinahanap niya ang kanyang ina."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "Basilio",
+            text = "Inay!"
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "Sisa",
+            text = "Crispin…?"
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Hindi na siya lubos na nakakaunawa."
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "Basilio",
+            text = "Ako ito… si Basilio."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Sisa",
+            text = "Basilio…?"
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa isang sandali… tila bumalik ang kanyang ulirat."
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Sisa",
+            text = "Anak ko…"
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Nagtagpo muli ang ina at anak — sa gitna ng dilim."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ngunit ang sandaling iyon… hindi nagtagal."
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "Basilio",
+            text = "Inay…?"
+        },
+
+        -- scene 16
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting nanghina si Sisa."
+        },
+
+        -- scene 17
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "At sa gabing dapat puno ng saya… may isang pusong tuluyang napagod."
+        },
+
+        -- scene 18
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Habang ang iba ay nagdiriwang… may mga kwentong tahimik na nagtatapos."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang Noche Buena… hindi pareho para sa lahat."
+        },
+    },
+
+  -- #KABANATA 64
+    {
+        {
+            event = "Kabanata 64: Katapusan",
+            bgm = "story",
+            bg = "bg1",
+            speaker = "",
+            text = ""
+        },
+
+        -- scene 1
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sumapit ang umaga… matapos ang isang gabi ng pagkawala."
+        },
+
+        -- scene 2
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naroon si Sisa… tahimik."
+        },
+
+        -- scene 3
+        {
+            bg = "bg1",
+            speaker = "Basilio",
+            text = "Inay…"
+        },
+
+        -- scene 4
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Walang tugon."
+        },
+
+        -- scene 5
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Unti-unting nauunawaan ni Basilio ang katotohanan."
+        },
+
+        -- scene 6
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Mag-isa… inihanda niya ang paglilibing."
+        },
+
+        -- scene 7
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "At sa gitna ng kanyang ginagawa… may dumating."
+        },
+
+        -- scene 8
+        {
+            bg = "bg1",
+            speaker = "Basilio",
+            text = "Ikaw…?"
+        },
+
+        -- scene 9
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sugatan… at pagod si Elias."
+        },
+
+        -- scene 10
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Huwag kang matakot…"
+        },
+
+        -- scene 11
+        {
+            bg = "bg1",
+            speaker = "Basilio",
+            text = "Ano ang nangyari sa iyo?"
+        },
+
+        -- scene 12
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Hindi na mahalaga iyon…"
+        },
+
+        -- scene 13
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Tulungan mo akong makapahinga… dito."
+        },
+
+        -- scene 14
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Dalawang buhay… parehong dinurog ng sistema — nagtagpo sa isang lugar."
+        },
+
+        -- scene 15
+        {
+            bg = "bg1",
+            speaker = "Basilio",
+            text = "Sige…"
+        },
+
+        -- scene 16
+        {
+            bg = "bg1",
+            speaker = "Elias",
+            text = "Kung may darating na panahon… ipaglaban mo ang tama."
+        },
+
+        -- scene 17
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa gitna ng umaga… isang buhay ang tuluyang huminto."
+        },
+
+        -- scene 18
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naiwan si Basilio — kasama ang alaala ng kanyang ina… at ni Elias."
+        },
+
+        -- scene 19
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Sa gitna ng pagkawala… may nabubuong paninindigan."
+        },
+
+        -- scene 20
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Naglakad siya palayo — dala ang mga aral ng kanyang naranasan."
+        },
+
+        -- scene end
+        {
+            bg = "bg1",
+            speaker = "",
+            text = "Ang katapusan… hindi nagtatapos sa isang tao kundi nagpapatuloy sa mga naiwan."
+        },
+    },
+
 
     -- {
     --     {

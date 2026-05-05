@@ -3,7 +3,7 @@ settings = {}
 local options = {
     "Grapiko",
     "Musika",
-    "Bumalik"
+    "Bumalik sa menu"
 }
 
 local selected = 1
@@ -57,7 +57,7 @@ function settings.keypressed(key)
         elseif options[selected] == "Musika" then
             fade.to(settingsAudio)
 
-        elseif options[selected] == "Bumalik" then
+        elseif options[selected] == "Bumalik sa menu" then
             fade.to(menu)
         end
     elseif key == "escape" then
@@ -75,7 +75,7 @@ function settings.mousepressed(x,y)
     elseif choice == "Musika" then
         state.switch(settingsAudio)
 
-    elseif choice == "Bumalik" then
+    elseif choice == "Bumalik sa menu" then
         state.switch(menu)
     end
 end

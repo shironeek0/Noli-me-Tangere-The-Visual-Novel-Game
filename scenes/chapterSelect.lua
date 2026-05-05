@@ -213,6 +213,12 @@ function chapterSelect.draw()
     
     love.graphics.setFont(uiFonts)
 
+    love.graphics.setColor(0, 0, 0)
+    love.graphics.print("Bumalik sa", 35, 63)
+    love.graphics.print("Menyu", 63, 86)
+    love.graphics.setColor(1,1,1)
+    love.graphics.rectangle("line", 20, 55, 140, 57, 20, 20)
+
     for i=1,#chapter do
         
         local x = startX + (i-1)*(cardW + spacing) + scrollX
@@ -273,24 +279,12 @@ end
 --------------------------------------------------
 
 function chapterSelect.mousepressed(mx,my)
-    
-    -- mx = mx / scale
-    -- my = my / scale
 
     local startX = 100
     dragging = true
     dragStartX = mx
     scrollStartX = scrollX
 
-    -- if mx > 40 and mx < 80 and my > 300 and my < 340 then
-    --     scrollX = scrollX + 100
-    --     return
-    -- end
-
-    -- if mx > 720 and mx < 760 and my > 300 and my < 340 then
-    --     scrollX = scrollX - 100
-    --     return
-    -- end
 
     for i=1,#chapter do
         local x = startX + (i-1)*(cardW + spacing) + scrollX
@@ -316,7 +310,12 @@ function chapterSelect.mousepressed(mx,my)
         if not save.unlocked[i] and hit(x+70,y+268,140,30,mx,my) then
             chapterSelect.askCheat(i)
         end
+        if mx > 20 and mx < 160 and my > 55 and my < 115 then
+            fade.to(menu)
+        end
     end
+
+    
 end
 
 function chapterSelect.keypressed(key)
@@ -324,6 +323,8 @@ function chapterSelect.keypressed(key)
         fade.to(menu)
     end
 end
+
+
 
 --------------------------------------------------
 

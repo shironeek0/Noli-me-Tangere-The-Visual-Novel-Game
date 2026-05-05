@@ -469,6 +469,15 @@ function story.draw()
         love.graphics.setColor(1,1,1)
     end
 
+    if exitPrompt == false then
+
+        love.graphics.setColor(0, 0, 0)
+        love.graphics.print("Bumalik sa mga", 35, 63)
+        love.graphics.print("Kabanata", 63, 86)
+        love.graphics.setColor(1,1,1)
+        love.graphics.rectangle("line", 20, 55, 190, 57, 20, 20)
+    end
+
     if logOpen then
 
         -- background
@@ -554,12 +563,18 @@ function story.mousepressed(x,y)
             
             if y > 340 and y < 370 then
                 fade.to(chapterSelect)
+                exitPrompt = false
             elseif y > 380 and y < 410 then
                 exitPrompt = false
             end
         end
         return
     end
+
+    if x > 20 and x < 210 and y > 55 and y < 115 then
+        exitPrompt = true
+    end
+    
     
     if logOpen then
         logOpen = false
