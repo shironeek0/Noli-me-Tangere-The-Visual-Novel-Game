@@ -213,12 +213,12 @@ function chapterSelect.draw()
     
     love.graphics.setFont(uiFonts)
 
-    love.graphics.setColor(0, 0, 0)
+    love.graphics.setColor(0,0,0,0.6)
+    love.graphics.rectangle("fill", 20, 55, 140, 57, 10, 10)
+    love.graphics.setColor(1,1,1)
     love.graphics.print("Bumalik sa", 35, 63)
     love.graphics.print("Menyu", 63, 86)
-    love.graphics.setColor(1,1,1)
-    love.graphics.rectangle("line", 20, 55, 140, 57, 20, 20)
-
+    
     for i=1,#chapter do
         
         local x = startX + (i-1)*(cardW + spacing) + scrollX

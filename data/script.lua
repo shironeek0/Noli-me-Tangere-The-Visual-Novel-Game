@@ -4046,14 +4046,15 @@ chapter = {
             characters = {
                 { name = "char2", pose = "normal", pos = "left", flip = true }
             },
-
+            
             speaker = "Padre Sibyla",
             text = "At sa Pilipinas... nagiging hamon ang mga mamamayan."
         },
         {
             bg = "bg1",
-
-            speaker = "At ang nangyari sa handaan… nalaman din ng Kapitan Heneral."
+            
+            speaker = "",
+            text = "At ang nangyari sa handaan… nalaman din ng Kapitan Heneral."
         },
 
         -- scene 14

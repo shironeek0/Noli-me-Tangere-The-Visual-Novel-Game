@@ -471,11 +471,11 @@ function story.draw()
 
     if exitPrompt == false then
 
-        love.graphics.setColor(0, 0, 0)
+        love.graphics.setColor(0,0,0,0.6)
+        love.graphics.rectangle("fill", 20, 55, 190, 57, 10, 10)
+        love.graphics.setColor(1,1,1)
         love.graphics.print("Bumalik sa mga", 35, 63)
         love.graphics.print("Kabanata", 63, 86)
-        love.graphics.setColor(1,1,1)
-        love.graphics.rectangle("line", 20, 55, 190, 57, 20, 20)
     end
 
     if logOpen then
