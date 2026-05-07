@@ -2564,7 +2564,7 @@ chapter = {
             },
 
             speaker = "Tinyente",
-            text = "At si Ibarra… naiwan sa bigat ng katotohanan."
+            text = "Si Kapitan Tiyago na ang magsasabi ng iba."
         },
         {
             bg = "bg1",
@@ -2758,7 +2758,7 @@ chapter = {
             bg = "bg1",
             
             speaker = "",
-            text = "Ngunit may isang hindi nakikibahagi."
+            text = "Isang batang Pransiskano… tahimik… maputla."
         },
         {
             bg = "bg1",
@@ -2782,7 +2782,13 @@ chapter = {
             bg = "bg1",
             
             speaker = "",
-            text = "Ngunit sa gabing iyon… Ngunit sa gabing iyon…"
+            text = "Ngunit sa gabing iyon…"
+        },
+        {
+            bg = "bg1",
+            
+            speaker = "",
+            text = "hindi lahat ay dinapuan ng antok."
         },
         {
             bg = "bg1",
