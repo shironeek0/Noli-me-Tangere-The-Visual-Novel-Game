@@ -83,14 +83,14 @@ function quiz.draw()
 
     love.graphics.setColor(0, 0, 0, 0.6)
     love.graphics.rectangle("fill", 40, 500, 1200, 160, 20, 20)
-    love.graphics.rectangle("fill", 80, 460, 167, 40)
+    love.graphics.rectangle("fill", 80, 460, 217, 40)
     love.graphics.setColor(1, 1, 1)
 
     love.graphics.setFont(uiFonts)
     
     local q = quizzes[quiz.chapter][currentQ]
-    
-    love.graphics.printf("Question "..currentQ.."/5", 95, 474, 800, "left")
+    local qNo = bilang[currentQ] or "???"
+    love.graphics.printf(qNo.." Tanong", 95, 474, 800, "left")
     love.graphics.printf(q.question, 70, 520, 600, "left")
     
     for i,choice in ipairs(q.choices) do
@@ -98,11 +98,11 @@ function quiz.draw()
         local button1 = buttons
 
         if selected == i then
-            love.graphics.draw(button1, 450, y-120, 0, 1.45, 0.64)
+            love.graphics.draw(button1, 350, y-120, 0, 2.2, 0.64)
             love.graphics.printf("> "..choice, 0, y-100, 1280, "center")
             
         else
-            love.graphics.draw(button1, 450, y-120, 0, 1.45, 0.64)
+            love.graphics.draw(button1, 350, y-120, 0, 2.2, 0.64)
             love.graphics.printf(choice, 0, y-100, 1280, "center")
         end
     end

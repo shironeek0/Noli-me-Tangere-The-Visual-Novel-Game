@@ -14,11 +14,11 @@ function ui.drawButton(x, y, w, h, text, hovered)
     love.graphics.rectangle("fill", x+2, y+2, w-4, h/2, h/2, h/2)
 
     -- inner shadow (bottom-right dark)
-    love.graphics.setColor(0,0,0,0.3)
+    love.graphics.setColor(156/255,76/255,20/255,0.3)
     love.graphics.rectangle("fill", x+2, y + h/2, w-4, h/2 - 2, h/2, h/2)
 
     -- border (subtle)
-    love.graphics.setColor(0,0,0,0.6)
+    love.graphics.setColor(156/255,76/255,20/255,0.6)
     love.graphics.rectangle("line", x, y, w, h, h/2, h/2)
 
     -- text

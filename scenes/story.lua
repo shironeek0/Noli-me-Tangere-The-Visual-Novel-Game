@@ -46,6 +46,10 @@ local logAutoScroll = true
 local exitPrompt = false
 local promptChoice = 1
 
+local animCache = {}
+
+local playedSFXLine = -1
+
 --------------------------------------------------
 
 local function loadBG(name)
@@ -63,6 +67,46 @@ local function loadChar(name, pose)
         )
     end
     return charCache[key]
+end
+
+--------------------------------------------------
+
+local function loadAnimatedChar(name, pose, frameW, frameH, frames, columns, speed)
+
+    local key = name.."_"..pose
+
+    if not animCache[key] then
+
+        local img = love.graphics.newImage(
+            "assets/characters/"..key..".png"
+        )
+
+        local quads = {}
+
+        for i = 0, frames - 1 do
+            local col = i % columns
+            local row = math.floor(i / columns)
+
+            quads[i + 1] = love.graphics.newQuad(
+                col * frameW,
+                row * frameH,
+                frameW,
+                frameH,
+                img:getDimensions()
+            )
+        end
+
+        animCache[key] = {
+            image = img,
+            quads = quads,
+            frame = 1,
+            timer = 0,
+            speed = speed or 0.12,
+            frames = frames
+        }
+    end
+
+    return animCache[key]
 end
 
 --------------------------------------------------
@@ -106,6 +150,18 @@ function story.update(dt)
     if not chapterData then return end
     
     local d = chapterData[story.index]
+
+    if not d then
+        quizPrompt.setChapter(story.chapter)
+        audio.stopBGM()
+        fade.to(quizPrompt)
+        return
+    end
+
+    if d.sfx and playedSFXLine ~= story.index then
+        audio.playSFX(d.sfx)
+        playedSFXLine = story.index
+    end
     
     -- bgm
     if d.bgm then
@@ -283,6 +339,20 @@ function story.update(dt)
             end
         end
     end
+
+    for _, anim in pairs(animCache) do
+
+        anim.timer = anim.timer + dt
+
+        if anim.timer >= anim.speed then
+            anim.timer = 0
+            anim.frame = anim.frame + 1
+
+            if anim.frame > anim.frames then
+                anim.frame = 1
+            end
+        end
+    end
 end
 
 
@@ -358,8 +428,30 @@ function story.draw()
             
             for i, c in ipairs(list) do
                 
-                local img = loadChar(c.name, c.pose)
-                
+                local img
+                local quad
+                local isAnimated = false
+
+                if c.animated then
+
+                    local anim = loadAnimatedChar(
+                        c.name,
+                        c.pose,
+                        c.frameW,
+                        c.frameH,
+                        c.frames,
+                        c.columns,
+                        c.animSpeed
+                    )
+
+                    img = anim.image
+                    quad = anim.quads[anim.frame]
+                    isAnimated = true
+
+                else
+                    img = loadChar(c.name, c.pose)
+                end
+
                 -- spacing if multiple characters
                 local offset = (i-1) * 90
                 
@@ -384,8 +476,36 @@ function story.draw()
                         love.graphics.setColor(1,1,1, state.alpha)
                     end
                     
-                    love.graphics.draw(img, state.x + offsetx +200, y, 0, charW, charH)
-                    
+                    if isAnimated then
+
+                        local scale = charH -- reuse your existing scale system
+
+                        local animScaleW = 4  -- <- adjust this (try 1.5 to 2.5)
+                        local animScaleH = 10  -- <- adjust this (try 1.5 to 2.5)
+
+                        love.graphics.draw(
+                            img,
+                            quad,
+                            state.x + offsetx,
+                            y,
+                            0,
+                            charW * animScaleW,
+                            charH * animScaleH
+                        )
+
+                    else
+
+                        love.graphics.draw(
+                            img,
+                            state.x + offsetx + 200,
+                            y,
+                            0,
+                            charW,
+                            charH
+                        )
+
+                    end
+
                     -- love.graphics.setColor(1, 1, 1, state.alpha)
                     
                     love.graphics.setColor(1, 1, 1)
@@ -415,7 +535,7 @@ function story.draw()
         if d.speaker and d.speaker ~= "" then
             
             love.graphics.setColor(0,0,0,0.7)
-            love.graphics.rectangle("fill", 40, 520, 200, 30)
+            love.graphics.rectangle("fill", 40, 520, 300, 30)
             
             love.graphics.setColor(1, 1, 1)
             love.graphics.print(d.speaker, 60, 528)
@@ -635,6 +755,7 @@ function story.mousepressed(x,y)
 
     -- move to next line
     story.index = story.index + 1
+    playedSFXLine = -1
 
     if story.index > #chapter[story.chapter] then
         quizPrompt.setChapter(story.chapter)
@@ -694,6 +815,7 @@ function story.keypressed(key)
 
         -- move to next line
         story.index = story.index + 1
+        playedSFXLine = -1
         
         if story.index > #chapter[story.chapter] then
             quizPrompt.setChapter(story.chapter)

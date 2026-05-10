@@ -26,6 +26,8 @@ local exitPrompt = false
 
 local yesX, yesY, yesW, yesH = 340, 360, 600, 40
 local noX,  noY,  noW,  noH  = 340, 420, 600, 40
+local tao1Anim = {}
+local tao2Anim = {}
 
 ------------------------------------------------------------
 
@@ -33,8 +35,55 @@ function menu.load()
     audio.playBGM("menu")
     arrow = love.graphics.newImage("assets/ui/Arrow1.png")
     balikTanaw = love.graphics.newImage("assets/ui/Balik_Tanaw.png")
-    tao1 = love.graphics.newImage("assets/characters/menuChar.png")
-    tao2 = love.graphics.newImage("assets/characters/menuChar2.png")
+    tao1Anim.image = love.graphics.newImage(
+        "assets/characters/ibarra_smile.png"
+    )
+    tao2Anim.image = love.graphics.newImage(
+        "assets/characters/maria_smile.png"
+    )
+    tao1Anim.quads = {}
+    tao1Anim.frame = 1
+    tao1Anim.timer = 0
+    tao1Anim.speed = 0.15
+    tao2Anim.quads = {}
+    tao2Anim.frame = 1
+    tao2Anim.timer = 0
+    tao2Anim.speed = 0.15
+
+    local frameW = 410
+    local frameH = 590
+    local frames = 47
+    local columns = 5
+
+    for i = 0, frames - 1 do
+
+        local col = i % columns
+        local row = math.floor(i / columns)
+
+        tao1Anim.quads[i + 1] = love.graphics.newQuad(
+            col * frameW,
+            row * frameH,
+            frameW,
+            frameH,
+            tao1Anim.image:getDimensions() 
+        )
+    end
+    for i = 0, frames - 1 do
+
+        local col = i % columns
+        local row = math.floor(i / columns)
+
+        tao2Anim.quads[i + 1] = love.graphics.newQuad(
+            col * frameW,
+            row * frameH,
+            frameW,
+            frameH,
+            tao2Anim.image:getDimensions()
+        )
+    end
+    
+
+
 end
 
 ------------------------------------------------------------
@@ -58,10 +107,31 @@ function menu.draw()
         love.graphics.draw(bg, 0, 30, 0, scale1 , scale2)
     end
 
-    local charScale = 500 / tao1:getWidth()
-    local charScale1 = 500 / tao2:getWidth()
-    love.graphics.draw(tao1, 835, 104, 0, charScale, charScale)
-    love.graphics.draw(tao2, 427, 117, 0, -charScale1, charScale1)
+    local frameW = 410
+    local frameH = 590
+
+    local charScale = 1.2
+    local charScale1 = 1.2
+
+    love.graphics.draw(
+        tao1Anim.image,
+        tao1Anim.quads[tao1Anim.frame],
+        835,
+        70,
+        0,
+        charScale,
+        charScale
+    )
+
+    love.graphics.draw(
+        tao2Anim.image,
+        tao2Anim.quads[tao2Anim.frame],
+        444,
+        70,
+        0,
+        -charScale1,
+        charScale1
+    )
 
     love.graphics.setColor(0, 0, 0, 0.36)
     love.graphics.rectangle("fill", 420, 310, 450, 400, 20, 20)
@@ -112,7 +182,24 @@ end
 
 ------------------------------------------------------------
 
-function menu.update()
+function menu.update(dt)
+
+    local anims = {tao1Anim, tao2Anim}
+
+    for _, anim in ipairs(anims) do
+
+        anim.timer = anim.timer + dt
+
+        if anim.timer >= anim.speed then
+
+            anim.timer = 0
+            anim.frame = anim.frame + 1
+
+            if anim.frame > #anim.quads then
+                anim.frame = 1
+            end
+        end
+    end
 end
 
 ------------------------------------------------------------

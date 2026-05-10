@@ -2,7 +2,24 @@ settingsAudio = {}
 
 local selected = 1
 
+local sampleSFX = love.audio.newSource(
+    "assets/audio/fo.ogg",
+    "static"
+)
+
 local function clamp(v) return math.max(0, math.min(1, v)) end
+
+local function playSample()
+
+    sampleSFX:stop()
+
+    local master = settingsData.audio[1] or 1
+    local sfxVol = settingsData.audio[3] or 1
+
+    sampleSFX:setVolume(master * sfxVol)
+
+    sampleSFX:play()
+end
 
 function settingsAudio.draw()
 
@@ -28,11 +45,20 @@ end
 -------------------------------------------------
 
 function settingsAudio.mousepressed(x,y)
-    for i=1, 4 do
+
+    for i=1, 3 do
+
         local sy = 180 + i*40
 
         if x > 580 and x < 780 and y > sy + 10 and y < sy + 20 then
-            settingsData.audio[i] = clamp((x-580)/200)
+
+            settingsData.audio[i] =
+                clamp((x-580)/200)
+
+            -- PLAY SAMPLE WHEN SFX CHANGES
+            if i == 3 then
+                playSample()
+            end
         end
     end
 end

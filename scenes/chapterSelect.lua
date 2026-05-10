@@ -19,7 +19,7 @@ end
 
 local arrow = love.graphics.newImage("assets/ui/Arrow1.png")
 local cardImg = love.graphics.newImage("assets/ui/card.png")
-local cardImage = love.graphics.newImage("assets/backgrounds/bg2.png")
+local cardImage = love.graphics.newImage("assets/backgrounds/BG13.png")
 
 chapterCodes = {
     [1] = "",
@@ -155,6 +155,73 @@ chapterTitles = {
     [64] = "Katapusan"
 }
 
+bilang = {
+    [1] = "Panguna",
+    [2] = "Pangalawa",
+    [3] = "Pangatlo",
+    [4] = "Pangapat",
+    [5] = "Panlima",
+    [6] = "Panganim",
+    [7] = "Pampito",
+    [8] = "Pangwalo",
+    [9] = "Pangsiyam",
+    [10] = "Ika-sampong",
+    [11] = "Ika-sampot Isang",
+    [12] = "Ika-sampot Pangalawang",
+    [13] = "Ika-sampot Pangatlong",
+    [14] = "Ika-sampot Pangapat na",
+    [15] = "Ika-sampot Panlimang",
+    [16] = "Ika-sampot Panganim na",
+    [17] = "Ika-sampot Pampitong",
+    [18] = "Ika-sampot Pangwalong",
+    [19] = "Ika-sampot Pansiyam na",
+    [20] = "Ika-dalawampong",
+    [21] = "Ika-dalawampot Isang",
+    [22] = "Ika-dalawampot Pangalawang",
+    [23] = "Ika-dalawampot Pangatlong",
+    [24] = "Ika-dalawampot Pangapat na",
+    [25] = "Ika-dalawampot Panlimang",
+    [26] = "Ika-dalawampot Panganim na",
+    [27] = "Ika-dalawampot Pampitong",
+    [28] = "Ika-dalawampot Pangwalong",
+    [29] = "Ika-dalawampot Pansiyam na",
+    [30] = "Ika-tatlumpong",
+    [31] = "Ika-tatlumpot Isang",
+    [32] = "Ika-tatlumpot Pangalawang",
+    [33] = "Ika-tatlumpot Pangatlong",
+    [34] = "Ika-tatlumpot Pangapat na",
+    [35] = "Ika-tatlumpot Panlimang",
+    [36] = "Ika-tatlumpot Panganim na",
+    [37] = "Ika-tatlumpot Pampitong",
+    [38] = "Ika-tatlumpot Pangwalong",
+    [39] = "Ika-tatlumpot Pansiyam na",
+    [40] = "Ika-apatnapong",
+    [41] = "Ika-apatnapot Isang",
+    [42] = "Ika-apatnapot Pangalawang",
+    [43] = "Ika-apatnapot Pangatlong",
+    [44] = "Ika-apatnapot Pangapat na",
+    [45] = "Ika-apatnapot Panlimang",
+    [46] = "Ika-apatnapot Panganim na",
+    [47] = "Ika-apatnapot Pampitong",
+    [48] = "Ika-apatnapot Pangwalong",
+    [49] = "Ika-apatnapot Pansiyam na",
+    [50] = "Ika-limampong",
+    [51] = "Ika-limampot Isang",
+    [52] = "Ika-limampot Pangalawang",
+    [53] = "Ika-limampot Pangatlong",
+    [54] = "Ika-limampot Pangapat na",
+    [55] = "Ika-limampot Panlimang",
+    [56] = "Ika-limampot Panganim na",
+    [57] = "Ika-limampot Pampitong",
+    [58] = "Ika-limampot Pangwalong",
+    [59] = "Ika-limampot Pansiyam na",
+    [60] = "Ika-animpong",
+    [61] = "Ika-animpot Isang",
+    [62] = "Ika-animpot Pangalawang",
+    [63] = "Ika-animpot Pangatlong",
+    [64] = "Ika-animpo Pangapat na"
+}
+
 
 function chapterSelect.load()
     audio.playBGM("menu")
@@ -230,32 +297,31 @@ function chapterSelect.draw()
         -- image (placeholder)
         love.graphics.draw(cardImage, x+13, y+13, 0, 0.128)
         -- title
-        love.graphics.printf(("Kabanata "..i), x, y+185, cardW, "center")
-
+        local chNO = bilang[i] or "???"
         local title = chapterTitles[i] or "???"
-        love.graphics.printf(title, x+10, y+208, cardW-20, "center")
+        love.graphics.printf((chNO.." Kabanata "..title), x, y+185, cardW, "center")
 
         if save.unlocked[i] then
             
             -- PLAY button
             if save.unlocked[i] then
-                love.graphics.draw(button1, x+76, y+255, 0, 0.48, 0.37)
-                love.graphics.print("Simulan", x+100, y+264)
+                love.graphics.draw(button1, x+76, y+270, 0, 0.48, 0.37)
+                love.graphics.print("Simulan", x+100, y+279)
             else
                 love.graphics.setColor(1,1,1,0.3)
-                love.graphics.draw(button1, x+76, y+255, 0, 0.48, 0.37)
-                love.graphics.print("Simulan", x+100, y+264)
+                love.graphics.draw(button1, x+76, y+270, 0, 0.48, 0.37)
+                love.graphics.print("Simulan", x+100, y+279)
                 love.graphics.setColor(1,1,1)
             end
             
             -- QUIZ button
             if save.unlocked[i] then
-                love.graphics.draw(button1, x+73, y+293, 0, 0.507, 0.37)
-                love.graphics.print("Pagsusulit", x+90, y+302)
+                love.graphics.draw(button1, x+73, y+308, 0, 0.507, 0.37)
+                love.graphics.print("Pagsusulit", x+90, y+317)
             else
                 love.graphics.setColor(1,1,1,0.3)
-                love.graphics.draw(button1, x+73, y+293, 0, 0.507, 0.37)
-                love.graphics.print("Pagsusulit", x+90, y+302)
+                love.graphics.draw(button1, x+73, y+308, 0, 0.507, 0.37)
+                love.graphics.print("Pagsusulit", x+90, y+317)
                 love.graphics.setColor(1,1,1)
             end
         end
@@ -292,14 +358,14 @@ function chapterSelect.mousepressed(mx,my)
         
         if save.unlocked[i] then
             -- PLAY
-            if hit(x+76,y+255,140,30,mx,my) then
+            if hit(x+76,y+270,140,30,mx,my) then
                 story.start(i)
                 fade.to(story)
                 return
             end
 
             -- QUIZ
-            if hit(x+73,y+293,140,25,mx,my) then
+            if hit(x+73,y+308,140,25,mx,my) then
                 quiz.start(i)
                 fade.to(quiz)
                 return
